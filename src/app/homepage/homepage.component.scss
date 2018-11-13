@@ -1,0 +1,60 @@
+.panel {
+  height: 800px;
+  padding: 50px;
+}
+
+.panel-gray {
+  background: #f0f0f0;
+}
+
+.nav-bar {
+  width: 1100px;
+}
+
+.banner {
+  height: 600px;
+
+  //-webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
+  //filter: grayscale(100%);
+
+  background:
+
+    /* top, transparent red, faked with gradient */
+    linear-gradient(
+        rgba(#000000, 0.75),
+        rgba(#000000, 0.75)
+    ),
+
+    /* bottom image */
+    url(https://images.pexels.com/photos/908284/pexels-photo-908284.jpeg?auto=compress&cs=tinysrgb&h=650&w=940);
+
+  background-size: cover;
+  background-position: center bottom;
+
+  img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+
+.fnt-roboto {
+  font-family: 'Roboto', sans-serif;
+}
+
+.fnt-lato {
+  font-family: 'Lato', sans-serif;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.black {
+  font-weight: 900;
+}
+
+.clickable {
+  cursor: pointer;
+}
