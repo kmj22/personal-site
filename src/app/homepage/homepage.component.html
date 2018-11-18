@@ -5,7 +5,7 @@
     <div class="nav-option clickable">RESUME</div>
     <div class="nav-option clickable">PROJECTS</div>
     <div class="nav-option clickable">ABOUT ME</div>
-    <div class="nav-option clickable">CONTACTS</div>
+    <div class="nav-option clickable">CONTACT</div>
   </div>
 
   <div fxLayout="column nowrap" fxLayoutAlign="center center" fxFlex>
@@ -21,16 +21,16 @@
   </div>
 </div>
 
-<div class="panel panel-gray" style="text-align: center;">
+<div class="panel panel-gray fnt-lato" style="text-align: center;">
   <div class="fnt-lato" style="font-size: 60px;">Who Am I?</div>
 
   <div class="" style="min-width: 400px; max-width: 800px; margin: 30px auto 0;">
-    <div fxLayout="row nowrap" fxLayoutAlign="space-between" fxLayoutGap="20px">
+    <div fxLayout="row" fxLayoutAlign="space-between" fxLayoutGap="20px">
       <img src="https://kmj22.github.io/portfolio-site/img/me.jpg"
            style="border-radius: 50%; height: 200px; width: 200px; object-fit: cover;" fxFlex="0 0 auto">
 
       <div class="fnt-lato" style="font-size: 18px; text-align: left;">
-        <p>Hi! I'm Kevyn. I do full-stack software development. I graduated from The New Jersey Institute of Technology
+        <p>Hi- I'm Kevyn. I do full-stack software development. I graduated from The New Jersey Institute of Technology
           with a BS in Computer Science and a minor in Web & Information Systems. I'm currently leading the front-end
           development of an upcoming ecommerce platform, <a href="www.giftapart.com" target="_blank">Giftapart!</a></p>
 
@@ -39,13 +39,142 @@
           I've since extended my front-end skills after becoming fluent with the Angular Framework. Because much of my
           knowledge (and enjoyment of programming) lies within concepts such as Data Structures, Algorithms, and OOP, I
           believe that I offer a unique and valuable perspective to full-stack development</p>
+
+        <p>Here are some of my core competencies:</p>
       </div>
     </div>
 
-  </div>
+    <div fxLayout="row wrap" fxLayoutAlign="space-between">
+      <div class="skill-col">
+        <div class="skill-header">Server Side</div>
+        <ul class="skill-list">
+          <li>Java</li>
+          <li>Spring Framework</li>
+          <li>JPA / Hibernate</li>
+          <li>Python</li>
+          <li>Postgres</li>
+          <li>MongoDB</li>
+        </ul>
+      </div>
 
+      <div class="skill-col">
+        <div class="skill-header">Client Side</div>
+        <ul class="skill-list">
+          <li>Javascript</li>
+          <li>Angular (2+)</li>
+          <li>RxJS</li>
+          <li>Bootstrap</li>
+          <li>jQuery</li>
+          <li>CSS</li>
+          <li>SASS / SCSS</li>
+          <li>HTML5</li>
+          <li>AJAX</li>
+        </ul>
+      </div>
+
+      <div class="skill-col">
+        <div class="skill-header">Other Technologies</div>
+        <ul class="skill-list">
+          <li>Git</li>
+          <li>IntelliJ</li>
+          <li>Webstorm</li>
+          <li>Adobe Creative Suite</li>
+          <li>Game Maker Studio</li>
+        </ul>
+      </div>
+    </div>
+
+    <div fxLayout="row" fxLayoutAlign="flex-end">
+      <div class="see-more clickable">More about my skills...</div>
+    </div>
+  </div>
 </div>
 
 <div class="panel" style="text-align: center;">
   <div class="fnt-lato" style="font-size: 60px;">Things I've Done</div>
+
+  <div class="panel-content">
+
+    <div class="job-history" fxLayout="column" fxLayoutGap="20px">
+      <div class="job" fxLayout="row" fxLayoutAlign="space-between" fxLayoutGap="30px" *ngFor="let i of [1, 2, 3]">
+        <img class="job-img" src="https://cdn.newswire.com/files/x/f2/dd/7f2033d2f512149579942f3b5441.png">
+
+        <div class="job-info fnt-lato">
+          <div class="job-title">Giftapart</div>
+          <div class="job-position">Director of Front End Development</div>
+          <p class="job-description">My team works on building amazing user experiences for Google Cloud users. I helped
+            carry out the top-to-bottom redesign and implementation of Cloud Datastore's UI, and currently lead the
+            front-end team of Google's Cloud SQL product. March 2017, we launched our PostgreSQL offering – which
+            increased Cloud SQL's total addressable market by ~40%.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div fxLayout="row" fxLayoutAlign="flex-end">
+      <div class="see-more clickable fnt-lato">See my full employment history...</div>
+    </div>
+
+  </div>
+</div>
+
+<div class="panel panel-gray fnt-lato">
+  <div class="fnt-lato" style="font-size: 60px; text-align: center;">A Few Side Projects</div>
+
+  <div class="panel-content">
+    <div class="project" fxLayout="row" fxLayoutGap="30px" fxLayoutAlign="space-between">
+      <img class="project-img" src="https://kmj22.github.io/portfolio-site/img/gameplay6.gif">
+      <div class="project-info">
+        <div class="project-title">Paper Mario - Fan-made Game</div>
+        <div class="project-description">My team works on building amazing user experiences for Google Cloud users. I
+          helped
+          carry out the top-to-bottom redesign and implementation of Cloud Datastore's UI, and currently lead the
+          front-end team of Google's Cloud SQL product. March 2017, we launched our PostgreSQL offering – which
+          increased Cloud SQL's total addressable market by ~40%.
+        </div>
+      </div>
+    </div>
+
+    <div class="project" fxLayout="row" fxLayoutGap="30px" fxLayoutAlign="space-between">
+      <div class="project-info">
+        <div class="project-title">Paper Mario - Fan-made Game</div>
+        <div class="project-description">My team works on building amazing user experiences for Google Cloud users. I
+          helped
+          carry out the top-to-bottom redesign and implementation of Cloud Datastore's UI, and currently lead the
+          front-end team of Google's Cloud SQL product. March 2017, we launched our PostgreSQL offering – which
+          increased Cloud SQL's total addressable market by ~40%.
+        </div>
+      </div>
+      <img class="project-img" src="https://kmj22.github.io/portfolio-site/img/gameplay6.gif">
+    </div>
+
+    <div fxLayout="row" fxLayoutAlign="flex-end">
+      <div class="see-more clickable">See more of my projects...</div>
+    </div>
+  </div>
+</div>
+
+<div class="panel fnt-lato">
+  <div class="fnt-lato" style="font-size: 60px; text-align: center;">My Life</div>
+
+  <div class="panel-content">
+    <div class="my-life" fxLayout="row wrap">
+      <img class="life-photo" *ngFor="let img of SELF_PICS" [src]="img">
+    </div>
+
+    <div fxLayout="row" fxLayoutAlign="flex-end">
+      <div class="see-more clickable">More about me...</div>
+    </div>
+  </div>
+</div>
+
+<div class="panel panel-contact">
+  <div class="fnt-lato" style="font-size: 60px; text-align: center; color: white;">Contact</div>
+
+  <fa-icon [icon]="['fab', 'github']" size="2x" class="contact-icon"></fa-icon>
+  <fa-icon [icon]="['fab', 'linkedin-in']" size="2x" class="contact-icon"></fa-icon>
+  <fa-icon [icon]="['fas', 'at']" size="2x" class="contact-icon"></fa-icon>
+
+  <!--<img class="contact-icon" src="https://mbtskoudsalg.com/images/linkedin-icon-white-png-5.png">-->
+  <!--<img class="contact-icon" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Ei-sc-github.svg/200px-Ei-sc-github.svg.png">-->
 </div>

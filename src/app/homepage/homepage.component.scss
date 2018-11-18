@@ -1,10 +1,14 @@
 .panel {
-  height: 800px;
+  //height: 800px;
   padding: 50px;
 }
 
 .panel-gray {
   background: #f0f0f0;
+}
+
+.panel-contact {
+  background: #41404c;
 }
 
 .nav-bar {
@@ -57,4 +61,67 @@
 
 .clickable {
   cursor: pointer;
+}
+
+.skill-header {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.skill-list {
+  text-align: left;
+}
+
+.see-more {
+
+}
+
+.panel-content {
+  width: 800px;
+  margin: 30px auto 0;
+}
+
+
+.job {
+
+  .job-img {
+    width: 300px;
+    height: 250px;
+    border-radius: 15%;
+    object-fit: contain;
+
+    border: 2px solid gray;
+  }
+
+  .job-info {
+    width: 500px;
+    text-align: left;
+  }
+}
+
+.project {
+  margin-bottom: 20px;
+}
+
+.project-img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 15%;
+}
+
+.life-photo {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+
+  margin: 5px;
+}
+
+.contact-icon {
+  color: white;
+
+  &:hover {
+    color: grey;
+  }
 }
