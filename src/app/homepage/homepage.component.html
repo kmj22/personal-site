@@ -168,13 +168,27 @@
   </div>
 </div>
 
-<div class="panel panel-contact">
-  <div class="fnt-lato" style="font-size: 60px; text-align: center; color: white;">Contact</div>
+<div class="panel panel-contact fnt-lato">
+  <div class="fnt-lato" style="font-size: 40px; text-align: center; color: white;">Contact</div>
 
-  <fa-icon [icon]="['fab', 'github']" size="2x" class="contact-icon"></fa-icon>
-  <fa-icon [icon]="['fab', 'linkedin-in']" size="2x" class="contact-icon"></fa-icon>
-  <fa-icon [icon]="['fas', 'at']" size="2x" class="contact-icon"></fa-icon>
+  <div class="panel-content">
+    <div class="" fxLayout="row" fxLayoutAlign="center" fxLayoutGap="40px" style="margin-bottom: 30px">
+      <div class="contact-item">
+        <fa-icon [icon]="['fab', 'linkedin-in']" class="contact-icon"></fa-icon>
+        <span class="contact-info">Linkedin</span>
+      </div>
+      <div class="contact-item">
+        <fa-icon [icon]="['fab', 'github']" class="contact-icon"></fa-icon>
+        <span class="contact-info">Github</span>
+      </div>
+      <div class="contact-item">
+        <fa-icon [icon]="['fas', 'at']" class="contact-icon"></fa-icon>
+        <span class="contact-info">Email</span>
+      </div>
+    </div>
 
+    <div class="copyright ta-center">© 2018 Kevyn Jaremko. All rights reserved.</div>
+  </div>
   <!--<img class="contact-icon" src="https://mbtskoudsalg.com/images/linkedin-icon-white-png-5.png">-->
   <!--<img class="contact-icon" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Ei-sc-github.svg/200px-Ei-sc-github.svg.png">-->
 </div>

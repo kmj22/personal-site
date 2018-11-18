@@ -118,10 +118,29 @@
   margin: 5px;
 }
 
+.contact-item {
+  display: flex;
+  align-items: center;
+}
+
+.contact-info {
+  color: white;
+}
+
 .contact-icon {
   color: white;
+  font-size: 28px;
 
   &:hover {
     color: grey;
   }
+}
+
+.copyright {
+  color: #7c7c8b;
+  font-size: 11px;
+}
+
+.ta-center {
+  text-align: center;
 }
