@@ -12,7 +12,8 @@
     <div fxLayout="column nowrap" fxLayoutAlign="center center" fxFlex>
       <div style="color: white; font-size: 8vw;" class="fnt-roboto bold">KEVYN JAREMKO</div>
 
-      <div style="color: white; font-size: 24px;" class="subtitle" fxLayout="row nowrap" fxLayout.xs="column" fxLayoutAlign="center"
+      <div style="color: white; font-size: 24px;" class="subtitle" fxLayout="row nowrap" fxLayout.xs="column"
+           fxLayoutAlign="center"
            fxLayoutGap="10px">
         <!--<div class="subtitle-item">Software Engineer.</div>-->
         <!--<div class="subtitle-item">Full Stack Developer.</div>-->
@@ -26,8 +27,10 @@
   <div class="panel panel-gray fnt-lato" style="text-align: center;">
     <div class="fnt-lato" style="font-size: 60px;">Who Am I?</div>
 
-    <div class="" style="min-width: 400px; max-width: 800px; margin: 30px auto 0;">
-      <div fxLayout="row" fxLayoutAlign="space-between" fxLayoutGap="20px">
+    <div style="margin: 30px auto 0;">
+      <div fxLayout="row" fxLayoutAlign="space-between" fxLayoutGap="20px"
+           fxLayout.xs="column" fxLayoutAlign.xs="flex-start center"
+      >
         <img src="https://kmj22.github.io/portfolio-site/img/me.jpg"
              style="border-radius: 50%; height: 200px; width: 200px; object-fit: cover;" fxFlex="0 0 auto">
 
@@ -42,52 +45,109 @@
             server-side development in languages such as Java, Python, and C++.
             I've since extended my front-end skills after becoming fluent with the Angular Framework. Because much of my
             knowledge (and enjoyment of programming) lies within concepts such as Data Structures, Algorithms, and OOP,
-            I
-            believe that I offer a unique and valuable perspective to full-stack development</p>
+            I believe that I offer a unique and valuable perspective to full-stack development.</p>
 
-          <p>Here are some of my core competencies:</p>
+          <p>Here are some of the skills I've been using recently:</p>
         </div>
       </div>
 
-      <div fxLayout="row wrap" fxLayoutAlign="space-between">
-        <div class="skill-col">
-          <div class="skill-header">Server Side</div>
-          <ul class="skill-list">
-            <li>Java</li>
-            <li>Spring Framework</li>
-            <li>JPA / Hibernate</li>
-            <li>Python</li>
-            <li>Postgres</li>
-            <li>MongoDB</li>
-          </ul>
+      <div fxLayout="row wrap" fxLayoutAlign="space-between" fxLayoutGap.gt-xs="40px" style="text-align: left;"
+           fxLayout.xs="column">
+        <div fxFlex>
+          <div class="skill-item">
+            <span class="skill-name">Java</span>
+            <app-star-rating [rating]="5"></app-star-rating>
+          </div>
+
+          <div class="skill-item">
+            <span class="skill-name">JSON</span>
+            <app-star-rating [rating]="5"></app-star-rating>
+          </div>
+
+          <div class="skill-item">
+            <span class="skill-name">AJAX / API Calls</span>
+            <app-star-rating [rating]="5"></app-star-rating>
+          </div>
+
+          <div class="skill-item">
+            <span class="skill-name">Game Maker Studio</span>
+            <app-star-rating [rating]="5"></app-star-rating>
+          </div>
+
+          <div class="skill-item">
+            <span class="skill-name">Angular (2+)</span>
+            <app-star-rating [rating]="4.5"></app-star-rating>
+          </div>
+
+          <div class="skill-item">
+            <span class="skill-name">HTML(5)</span>
+            <app-star-rating [rating]="4.5"></app-star-rating>
+          </div>
+
+          <div class="skill-item">
+            <span class="skill-name">Spring Framework (Spring Boot)</span>
+            <app-star-rating [rating]="4"></app-star-rating>
+          </div>
+
+          <div class="skill-item">
+            <span class="skill-name">SQL (Postgres)</span>
+            <app-star-rating [rating]="4"></app-star-rating>
+          </div>
+
+          <div class="skill-item">
+            <span class="skill-name">JPA / Hibernate</span>
+            <app-star-rating [rating]="4"></app-star-rating>
+          </div>
         </div>
 
-        <div class="skill-col">
-          <div class="skill-header">Client Side</div>
-          <ul class="skill-list">
-            <li>Javascript</li>
-            <li>Angular (2+)</li>
-            <li>RxJS</li>
-            <li>Bootstrap</li>
-            <li>jQuery</li>
-            <li>CSS</li>
-            <li>SASS / SCSS</li>
-            <li>HTML5</li>
-            <li>AJAX</li>
-          </ul>
-        </div>
+        <div fxFlex>
+          <div class="skill-item">
+            <span class="skill-name">JavaScipt</span>
+            <app-star-rating [rating]="4"></app-star-rating>
+          </div>
 
-        <div class="skill-col">
-          <div class="skill-header">Other Technologies</div>
-          <ul class="skill-list">
-            <li>Git</li>
-            <li>IntelliJ</li>
-            <li>Webstorm</li>
-            <li>Adobe Creative Suite</li>
-            <li>Game Maker Studio</li>
-          </ul>
+          <div class="skill-item">
+            <span class="skill-name">RxJS (Observables)</span>
+            <app-star-rating [rating]="4"></app-star-rating>
+          </div>
+
+          <div class="skill-item">
+            <span class="skill-name">CSS</span>
+            <app-star-rating [rating]="4"></app-star-rating>
+          </div>
+
+          <div class="skill-item">
+            <span class="skill-name">SASS / SCSS</span>
+            <app-star-rating [rating]="3.5"></app-star-rating>
+          </div>
+
+          <div class="skill-item">
+            <span class="skill-name">Python</span>
+            <app-star-rating [rating]="3"></app-star-rating>
+          </div>
+
+          <div class="skill-item">
+            <span class="skill-name">MongoDB</span>
+            <app-star-rating [rating]="3"></app-star-rating>
+          </div>
+
+          <div class="skill-item">
+            <span class="skill-name">Bootstrap</span>
+            <app-star-rating [rating]="3"></app-star-rating>
+          </div>
+
+          <div class="skill-item">
+            <span class="skill-name">jQuery</span>
+            <app-star-rating [rating]="2"></app-star-rating>
+          </div>
+
+          <div class="skill-item">
+            <span class="skill-name">ElasticSearch</span>
+            <app-star-rating [rating]="2"></app-star-rating>
+          </div>
         </div>
       </div>
+
 
       <div fxLayout="row" fxLayoutAlign="flex-end">
         <div class="see-more clickable">More about my skills...</div>
@@ -95,18 +155,16 @@
     </div>
   </div>
 
-  <ng-container *ngIf="false">
-
   <div class="panel" style="text-align: center;">
     <div class="fnt-lato" style="font-size: 60px;">Things I've Done</div>
 
     <div class="panel-content">
 
       <div class="job-history" fxLayout="column" fxLayoutGap="20px">
-        <div class="job" fxLayout="row" fxLayoutAlign="space-between" fxLayoutGap="30px" *ngFor="let i of [1, 2, 3]">
-          <img class="job-img" src="https://cdn.newswire.com/files/x/f2/dd/7f2033d2f512149579942f3b5441.png">
+        <div class="job" fxLayout="row" fxLayout.xs="column" fxLayoutAlign="space-between" fxLayoutAlign.xs="flex-start"  fxLayoutGap.gt-xs="30px" *ngFor="let i of 3 | loopRange">
+          <img class="job-img" src="https://cdn.newswire.com/files/x/f2/dd/7f2033d2f512149579942f3b5441.png" fxFlex="0 1 300px">
 
-          <div class="job-info fnt-lato">
+          <div class="job-info fnt-lato" fxFlex>
             <div class="job-title">Giftapart</div>
             <div class="job-position">Director of Front End Development</div>
             <p class="job-description">My team works on building amazing user experiences for Google Cloud users. I
@@ -126,80 +184,84 @@
     </div>
   </div>
 
-  <div class="panel panel-gray fnt-lato">
-    <div class="fnt-lato" style="font-size: 60px; text-align: center;">A Few Side Projects</div>
+  <ng-container *ngIf="false">
 
-    <div class="panel-content">
-      <div class="project" fxLayout="row" fxLayoutGap="30px" fxLayoutAlign="space-between">
-        <img class="project-img" src="https://kmj22.github.io/portfolio-site/img/gameplay6.gif">
-        <div class="project-info">
-          <div class="project-title">Paper Mario - Fan-made Game</div>
-          <div class="project-description">My team works on building amazing user experiences for Google Cloud users. I
-            helped
-            carry out the top-to-bottom redesign and implementation of Cloud Datastore's UI, and currently lead the
-            front-end team of Google's Cloud SQL product. March 2017, we launched our PostgreSQL offering – which
-            increased Cloud SQL's total addressable market by ~40%.
+    <div class="panel panel-gray fnt-lato">
+      <div class="fnt-lato" style="font-size: 60px; text-align: center;">A Few Side Projects</div>
+
+      <div class="panel-content">
+        <div class="project" fxLayout="row" fxLayoutGap="30px" fxLayoutAlign="space-between">
+          <img class="project-img" src="https://kmj22.github.io/portfolio-site/img/gameplay6.gif">
+          <div class="project-info">
+            <div class="project-title">Paper Mario - Fan-made Game</div>
+            <div class="project-description">My team works on building amazing user experiences for Google Cloud users.
+              I
+              helped
+              carry out the top-to-bottom redesign and implementation of Cloud Datastore's UI, and currently lead the
+              front-end team of Google's Cloud SQL product. March 2017, we launched our PostgreSQL offering – which
+              increased Cloud SQL's total addressable market by ~40%.
+            </div>
           </div>
         </div>
-      </div>
 
-      <div class="project" fxLayout="row" fxLayoutGap="30px" fxLayoutAlign="space-between">
-        <div class="project-info">
-          <div class="project-title">Paper Mario - Fan-made Game</div>
-          <div class="project-description">My team works on building amazing user experiences for Google Cloud users. I
-            helped
-            carry out the top-to-bottom redesign and implementation of Cloud Datastore's UI, and currently lead the
-            front-end team of Google's Cloud SQL product. March 2017, we launched our PostgreSQL offering – which
-            increased Cloud SQL's total addressable market by ~40%.
+        <div class="project" fxLayout="row" fxLayoutGap="30px" fxLayoutAlign="space-between">
+          <div class="project-info">
+            <div class="project-title">Paper Mario - Fan-made Game</div>
+            <div class="project-description">My team works on building amazing user experiences for Google Cloud users.
+              I
+              helped
+              carry out the top-to-bottom redesign and implementation of Cloud Datastore's UI, and currently lead the
+              front-end team of Google's Cloud SQL product. March 2017, we launched our PostgreSQL offering – which
+              increased Cloud SQL's total addressable market by ~40%.
+            </div>
+          </div>
+          <img class="project-img" src="https://kmj22.github.io/portfolio-site/img/gameplay6.gif">
+        </div>
+
+        <div fxLayout="row" fxLayoutAlign="flex-end">
+          <div class="see-more clickable">See more of my projects...</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="panel fnt-lato">
+      <div class="fnt-lato" style="font-size: 60px; text-align: center;">My Life</div>
+
+      <div class="panel-content">
+        <div class="my-life" fxLayout="row wrap">
+          <img class="life-photo" *ngFor="let img of SELF_PICS" [src]="img">
+        </div>
+
+        <div fxLayout="row" fxLayoutAlign="flex-end">
+          <div class="see-more clickable">More about me...</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="panel panel-contact fnt-lato">
+      <div class="fnt-lato" style="font-size: 40px; text-align: center; color: white;">Contact</div>
+
+      <div class="panel-content">
+        <div class="" fxLayout="row" fxLayoutAlign="center" fxLayoutGap="40px" style="margin-bottom: 30px">
+          <div class="contact-item">
+            <fa-icon [icon]="['fab', 'linkedin-in']" class="contact-icon"></fa-icon>
+            <span class="contact-info">Linkedin</span>
+          </div>
+          <div class="contact-item">
+            <fa-icon [icon]="['fab', 'github']" class="contact-icon"></fa-icon>
+            <span class="contact-info">Github</span>
+          </div>
+          <div class="contact-item">
+            <fa-icon [icon]="['fas', 'at']" class="contact-icon"></fa-icon>
+            <span class="contact-info">Email</span>
           </div>
         </div>
-        <img class="project-img" src="https://kmj22.github.io/portfolio-site/img/gameplay6.gif">
-      </div>
 
-      <div fxLayout="row" fxLayoutAlign="flex-end">
-        <div class="see-more clickable">See more of my projects...</div>
+        <div class="copyright ta-center">© 2018 Kevyn Jaremko. All rights reserved.</div>
       </div>
+      <!--<img class="contact-icon" src="https://mbtskoudsalg.com/images/linkedin-icon-white-png-5.png">-->
+      <!--<img class="contact-icon" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Ei-sc-github.svg/200px-Ei-sc-github.svg.png">-->
     </div>
-  </div>
-
-  <div class="panel fnt-lato">
-    <div class="fnt-lato" style="font-size: 60px; text-align: center;">My Life</div>
-
-    <div class="panel-content">
-      <div class="my-life" fxLayout="row wrap">
-        <img class="life-photo" *ngFor="let img of SELF_PICS" [src]="img">
-      </div>
-
-      <div fxLayout="row" fxLayoutAlign="flex-end">
-        <div class="see-more clickable">More about me...</div>
-      </div>
-    </div>
-  </div>
-
-  <div class="panel panel-contact fnt-lato">
-    <div class="fnt-lato" style="font-size: 40px; text-align: center; color: white;">Contact</div>
-
-    <div class="panel-content">
-      <div class="" fxLayout="row" fxLayoutAlign="center" fxLayoutGap="40px" style="margin-bottom: 30px">
-        <div class="contact-item">
-          <fa-icon [icon]="['fab', 'linkedin-in']" class="contact-icon"></fa-icon>
-          <span class="contact-info">Linkedin</span>
-        </div>
-        <div class="contact-item">
-          <fa-icon [icon]="['fab', 'github']" class="contact-icon"></fa-icon>
-          <span class="contact-info">Github</span>
-        </div>
-        <div class="contact-item">
-          <fa-icon [icon]="['fas', 'at']" class="contact-icon"></fa-icon>
-          <span class="contact-info">Email</span>
-        </div>
-      </div>
-
-      <div class="copyright ta-center">© 2018 Kevyn Jaremko. All rights reserved.</div>
-    </div>
-    <!--<img class="contact-icon" src="https://mbtskoudsalg.com/images/linkedin-icon-white-png-5.png">-->
-    <!--<img class="contact-icon" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Ei-sc-github.svg/200px-Ei-sc-github.svg.png">-->
-  </div>
   </ng-container>
 
 </div>
