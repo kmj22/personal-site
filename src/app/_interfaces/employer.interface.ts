@@ -1,0 +1,8 @@
+export interface Employer {
+  name: string;
+  start_date: Date;
+  end_date?: Date;
+  job_title: string;
+  description: string;
+  image: string;
+}

@@ -161,18 +161,15 @@
     <div class="panel-content">
 
       <div class="job-history" fxLayout="column" fxLayoutGap="20px">
-        <div class="job" fxLayout="row" fxLayout.xs="column" fxLayoutAlign="space-between" fxLayoutAlign.xs="flex-start"  fxLayoutGap.gt-xs="30px" *ngFor="let i of 3 | loopRange">
-          <img class="job-img" src="https://cdn.newswire.com/files/x/f2/dd/7f2033d2f512149579942f3b5441.png" fxFlex="0 1 300px">
+        <div class="job"
+             fxLayout="row" fxLayout.xs="column" fxLayoutAlign="space-between" fxLayoutAlign.xs="flex-start"  fxLayoutGap.gt-xs="30px"
+             *ngFor="let employer of EMPLOYERS">
+          <img class="job-img" [src]="employer.image" fxFlex="0 1 300px">
 
           <div class="job-info fnt-lato" fxFlex>
-            <div class="job-title">Giftapart</div>
-            <div class="job-position">Director of Front End Development</div>
-            <p class="job-description">My team works on building amazing user experiences for Google Cloud users. I
-              helped
-              carry out the top-to-bottom redesign and implementation of Cloud Datastore's UI, and currently lead the
-              front-end team of Google's Cloud SQL product. March 2017, we launched our PostgreSQL offering – which
-              increased Cloud SQL's total addressable market by ~40%.
-            </p>
+            <div class="job-title">{{employer.name}}</div>
+            <div class="job-position">{{employer.job_title}}</div>
+            <p class="job-description">{{employer.description}}</p>
           </div>
         </div>
       </div>
