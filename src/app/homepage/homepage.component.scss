@@ -1,5 +1,4 @@
 .panel {
-  //height: 800px;
   padding: 50px;
 }
 
@@ -11,8 +10,27 @@
   background: #41404c;
 }
 
+.panel-header {
+  font-size: 60px;
+  text-align: center;
+}
+
+.contact-header {
+  font-size: 40px;
+  text-align: center;
+  color: white;
+}
+
+.panel-content {
+  margin: 30px auto 0;
+}
+
 .nav-bar {
   width: 100%;
+  margin-top: 30px;
+  margin-right: 30px;
+  color: white;
+  font-size: 14px;
 }
 
 .banner {
@@ -33,33 +51,25 @@
   background-position: center bottom;
 }
 
-.fnt-roboto {
-  font-family: 'Roboto', sans-serif;
+.banner-title {
+  color: white;
+  font-size: 8vw;
 }
 
-.fnt-lato {
-  font-family: 'Lato', sans-serif;
+.banner-subtitle {
+  color: white;
+  font-size: 24px;
 }
 
-.bold {
-  font-weight: bold;
+.personal-pic {
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+  object-fit: cover;
 }
 
-.black {
-  font-weight: 900;
-}
-
-.clickable {
-  cursor: pointer;
-}
-
-.skill-header {
-  font-size: 20px;
-  font-weight: bold;
-}
-
-.skill-list {
-  text-align: left;
+.about-me {
+  font-size: 18px;
 }
 
 .skill-item {
@@ -67,21 +77,13 @@
   justify-content: space-between;
   margin-bottom: 10px;
 
+  // Prevent star rating from growing/shrinking as window resizes
   app-star-rating {
     flex: 0 0 auto;
   }
 }
 
-.see-more {
-
-}
-
-.panel-content {
-  margin: 30px auto 0;
-}
-
 .job {
-
   .job-img {
     height: 250px;
     border-radius: 15%;
@@ -128,6 +130,10 @@
   margin: 5px;
 }
 
+.contact-options {
+  margin-bottom: 30px
+}
+
 .contact-item {
   display: flex;
   align-items: center;
@@ -149,8 +155,4 @@
 .copyright {
   color: #7c7c8b;
   font-size: 11px;
-}
-
-.ta-center {
-  text-align: center;
 }

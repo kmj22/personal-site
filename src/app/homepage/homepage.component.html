@@ -1,7 +1,7 @@
-<div>
+<div class="homepage">
   <div class="banner" fxLayout="column nowrap" fxLayoutAlign="center center">
-    <div class="fnt-lato bold nav-bar" fxHide.xs fxLayout="row nowrap" fxLayoutAlign="flex-end" fxLayoutGap="30px"
-         style="margin-top:30px; margin-right: 30px; color: white; font-size: 14px;">
+    <div class="fnt-lato bold nav-bar"
+         fxHide.xs fxLayout="row nowrap" fxLayoutAlign="flex-end" fxLayoutGap="30px">
       <div class="nav-option clickable">HOME</div>
       <div class="nav-option clickable">RESUME</div>
       <div class="nav-option clickable">PROJECTS</div>
@@ -10,9 +10,9 @@
     </div>
 
     <div fxLayout="column nowrap" fxLayoutAlign="center center" fxFlex>
-      <div style="color: white; font-size: 8vw;" class="fnt-roboto bold">KEVYN JAREMKO</div>
+      <div class="fnt-roboto bold banner-title">KEVYN JAREMKO</div>
 
-      <div style="color: white; font-size: 24px;" class="subtitle" fxLayout="row nowrap" fxLayout.xs="column"
+      <div class="banner-subtitle" fxLayout="row nowrap" fxLayout.xs="column"
            fxLayoutAlign="center"
            fxLayoutGap="10px">
         <!--<div class="subtitle-item">Software Engineer.</div>-->
@@ -24,17 +24,17 @@
     </div>
   </div>
 
-  <div class="panel panel-gray fnt-lato" style="text-align: center;">
-    <div class="fnt-lato" style="font-size: 60px;">Who Am I?</div>
+  <div class="panel panel-gray fnt-lato">
+    <div class="fnt-lato panel-header">Who Am I?</div>
 
-    <div style="margin: 30px auto 0;">
+    <div class="panel-content">
       <div fxLayout="row" fxLayoutAlign="space-between" fxLayoutGap="20px"
            fxLayout.xs="column" fxLayoutAlign.xs="flex-start center"
       >
-        <img src="https://kmj22.github.io/portfolio-site/img/me.jpg"
-             style="border-radius: 50%; height: 200px; width: 200px; object-fit: cover;" fxFlex="0 0 auto">
+        <img class="personal-pic" src="https://kmj22.github.io/portfolio-site/img/me.jpg"
+             fxFlex="0 0 auto">
 
-        <div class="fnt-lato" style="font-size: 18px; text-align: left;">
+        <div class="fnt-lato about-me">
           <p>Hi- I'm Kevyn. I do full-stack software development. I graduated from The New Jersey Institute of
             Technology
             with a BS in Computer Science and a minor in Web & Information Systems. I'm currently leading the front-end
@@ -51,7 +51,7 @@
         </div>
       </div>
 
-      <div fxLayout="row wrap" fxLayoutAlign="space-between" fxLayoutGap.gt-xs="40px" style="text-align: left;"
+      <div fxLayout="row wrap" fxLayoutAlign="space-between" fxLayoutGap.gt-xs="40px"
            fxLayout.xs="column">
         <div fxFlex>
           <div class="skill-item">
@@ -155,14 +155,15 @@
     </div>
   </div>
 
-  <div class="panel" style="text-align: center;">
-    <div class="fnt-lato" style="font-size: 60px;">Things I've Done</div>
+  <div class="panel">
+    <div class="fnt-lato panel-header">Things I've Done</div>
 
     <div class="panel-content">
 
       <div class="job-history" fxLayout="column" fxLayoutGap="20px">
         <div class="job"
-             fxLayout="row" fxLayout.xs="column" fxLayoutAlign="space-between" fxLayoutAlign.xs="flex-start"  fxLayoutGap.gt-xs="30px"
+             fxLayout="row" fxLayout.xs="column" fxLayoutAlign="space-between" fxLayoutAlign.xs="flex-start"
+             fxLayoutGap.gt-xs="30px"
              *ngFor="let employer of EMPLOYERS">
           <img class="job-img" [src]="employer.image" fxFlex="0 1 300px">
 
@@ -182,66 +183,67 @@
   </div>
 
   <div class="panel panel-gray fnt-lato">
-      <div class="fnt-lato" style="font-size: 60px; text-align: center;">A Few Side Projects</div>
+    <div class="fnt-lato panel-header">A Few Side Projects</div>
 
-      <div class="panel-content">
-        <div class="project" *ngFor="let i of 3 | loopRange">
-          <img class="project-img" [ngClass.gt-xs]="['project-section']" src="https://kmj22.github.io/portfolio-site/img/gameplay6.gif">
-          <div class="project-section project-info" [ngClass.gt-xs]="['project-section']"  fxFlex>
-            <div class="project-title">Paper Mario - Fan-made Game</div>
-            <div class="project-description">My team works on building amazing user experiences for Google Cloud users.
-              I
-              helped
-              carry out the top-to-bottom redesign and implementation of Cloud Datastore's UI, and currently lead the
-              front-end team of Google's Cloud SQL product. March 2017, we launched our PostgreSQL offering – which
-              increased Cloud SQL's total addressable market by ~40%.
-            </div>
+    <div class="panel-content">
+      <div class="project" *ngFor="let i of 3 | loopRange">
+        <img class="project-img" [ngClass.gt-xs]="['project-section']"
+             src="https://kmj22.github.io/portfolio-site/img/gameplay6.gif">
+        <div class="project-section project-info" [ngClass.gt-xs]="['project-section']" fxFlex>
+          <div class="project-title">Paper Mario - Fan-made Game</div>
+          <div class="project-description">My team works on building amazing user experiences for Google Cloud users.
+            I
+            helped
+            carry out the top-to-bottom redesign and implementation of Cloud Datastore's UI, and currently lead the
+            front-end team of Google's Cloud SQL product. March 2017, we launched our PostgreSQL offering – which
+            increased Cloud SQL's total addressable market by ~40%.
           </div>
         </div>
+      </div>
 
-        <div fxLayout="row" fxLayoutAlign="flex-end">
-          <div class="see-more clickable">See more of my projects...</div>
-        </div>
+      <div fxLayout="row" fxLayoutAlign="flex-end">
+        <div class="see-more clickable">See more of my projects...</div>
       </div>
     </div>
+  </div>
 
   <div class="panel fnt-lato">
-      <div class="fnt-lato" style="font-size: 60px; text-align: center;">My Life</div>
+    <div class="fnt-lato panel-header">My Life</div>
 
-      <div class="panel-content">
-        <div class="my-life" fxLayout="row wrap">
-          <img class="life-photo" *ngFor="let img of SELF_PICS" [src]="img">
-        </div>
+    <div class="panel-content">
+      <div class="my-life" fxLayout="row wrap">
+        <img class="life-photo" *ngFor="let img of SELF_PICS" [src]="img">
+      </div>
 
-        <div fxLayout="row" fxLayoutAlign="flex-end">
-          <div class="see-more clickable">More about me...</div>
-        </div>
+      <div fxLayout="row" fxLayoutAlign="flex-end">
+        <div class="see-more clickable">More about me...</div>
       </div>
     </div>
+  </div>
 
   <div class="panel panel-contact fnt-lato">
-      <div class="fnt-lato" style="font-size: 40px; text-align: center; color: white;">Contact</div>
+    <div class="fnt-lato contact-header">Contact</div>
 
-      <div class="panel-content">
-        <div class="" fxLayout="row" fxLayoutAlign="center" fxLayoutGap="40px" style="margin-bottom: 30px">
-          <div class="contact-item">
-            <fa-icon [icon]="['fab', 'linkedin-in']" class="contact-icon"></fa-icon>
-            <span class="contact-info">Linkedin</span>
-          </div>
-          <div class="contact-item">
-            <fa-icon [icon]="['fab', 'github']" class="contact-icon"></fa-icon>
-            <span class="contact-info">Github</span>
-          </div>
-          <div class="contact-item">
-            <fa-icon [icon]="['fas', 'at']" class="contact-icon"></fa-icon>
-            <span class="contact-info">Email</span>
-          </div>
+    <div class="panel-content">
+      <div class="contact-options" fxLayout="row" fxLayoutAlign="center" fxLayoutGap="40px">
+        <div class="contact-item">
+          <fa-icon [icon]="['fab', 'linkedin-in']" class="contact-icon"></fa-icon>
+          <span class="contact-info">Linkedin</span>
         </div>
-
-        <div class="copyright ta-center">© 2018 Kevyn Jaremko. All rights reserved.</div>
+        <div class="contact-item">
+          <fa-icon [icon]="['fab', 'github']" class="contact-icon"></fa-icon>
+          <span class="contact-info">Github</span>
+        </div>
+        <div class="contact-item">
+          <fa-icon [icon]="['fas', 'at']" class="contact-icon"></fa-icon>
+          <span class="contact-info">Email</span>
+        </div>
       </div>
-      <!--<img class="contact-icon" src="https://mbtskoudsalg.com/images/linkedin-icon-white-png-5.png">-->
-      <!--<img class="contact-icon" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Ei-sc-github.svg/200px-Ei-sc-github.svg.png">-->
+
+      <div class="copyright ta-center">© 2018 Kevyn Jaremko. All rights reserved.</div>
     </div>
+    <!--<img class="contact-icon" src="https://mbtskoudsalg.com/images/linkedin-icon-white-png-5.png">-->
+    <!--<img class="contact-icon" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Ei-sc-github.svg/200px-Ei-sc-github.svg.png">-->
+  </div>
 
 </div>
