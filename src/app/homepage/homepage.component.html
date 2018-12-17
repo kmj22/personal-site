@@ -184,15 +184,13 @@
     </div>
   </div>
 
-  <ng-container *ngIf="false">
-
-    <div class="panel panel-gray fnt-lato">
+  <div class="panel panel-gray fnt-lato">
       <div class="fnt-lato" style="font-size: 60px; text-align: center;">A Few Side Projects</div>
 
       <div class="panel-content">
-        <div class="project" fxLayout="row" fxLayoutGap="30px" fxLayoutAlign="space-between">
-          <img class="project-img" src="https://kmj22.github.io/portfolio-site/img/gameplay6.gif">
-          <div class="project-info">
+        <div class="project" *ngFor="let i of 3 | loopRange">
+          <img class="project-img" [ngClass.gt-xs]="['project-section']" src="https://kmj22.github.io/portfolio-site/img/gameplay6.gif">
+          <div class="project-section project-info" [ngClass.gt-xs]="['project-section']"  fxFlex>
             <div class="project-title">Paper Mario - Fan-made Game</div>
             <div class="project-description">My team works on building amazing user experiences for Google Cloud users.
               I
@@ -202,20 +200,6 @@
               increased Cloud SQL's total addressable market by ~40%.
             </div>
           </div>
-        </div>
-
-        <div class="project" fxLayout="row" fxLayoutGap="30px" fxLayoutAlign="space-between">
-          <div class="project-info">
-            <div class="project-title">Paper Mario - Fan-made Game</div>
-            <div class="project-description">My team works on building amazing user experiences for Google Cloud users.
-              I
-              helped
-              carry out the top-to-bottom redesign and implementation of Cloud Datastore's UI, and currently lead the
-              front-end team of Google's Cloud SQL product. March 2017, we launched our PostgreSQL offering – which
-              increased Cloud SQL's total addressable market by ~40%.
-            </div>
-          </div>
-          <img class="project-img" src="https://kmj22.github.io/portfolio-site/img/gameplay6.gif">
         </div>
 
         <div fxLayout="row" fxLayoutAlign="flex-end">
@@ -224,7 +208,7 @@
       </div>
     </div>
 
-    <div class="panel fnt-lato">
+  <div class="panel fnt-lato">
       <div class="fnt-lato" style="font-size: 60px; text-align: center;">My Life</div>
 
       <div class="panel-content">
@@ -238,7 +222,7 @@
       </div>
     </div>
 
-    <div class="panel panel-contact fnt-lato">
+  <div class="panel panel-contact fnt-lato">
       <div class="fnt-lato" style="font-size: 40px; text-align: center; color: white;">Contact</div>
 
       <div class="panel-content">
@@ -262,6 +246,5 @@
       <!--<img class="contact-icon" src="https://mbtskoudsalg.com/images/linkedin-icon-white-png-5.png">-->
       <!--<img class="contact-icon" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Ei-sc-github.svg/200px-Ei-sc-github.svg.png">-->
     </div>
-  </ng-container>
 
 </div>

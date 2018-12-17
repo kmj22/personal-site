@@ -22,18 +22,16 @@
   //-webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
   //filter: grayscale(100%);
 
-  background:
-    /* top, transparent red, faked with gradient */
+  background: /* top, transparent red, faked with gradient */
     linear-gradient(
         rgba(#000000, 0.75),
         rgba(#000000, 0.75)
     ),
-    /* bottom image */
+      /* bottom image */
     url(https://images.pexels.com/photos/908284/pexels-photo-908284.jpeg?auto=compress&cs=tinysrgb&h=650&w=940);
   background-size: cover;
   background-position: center bottom;
 }
-
 
 .fnt-roboto {
   font-family: 'Roboto', sans-serif;
@@ -82,7 +80,6 @@
   margin: 30px auto 0;
 }
 
-
 .job {
 
   .job-img {
@@ -100,6 +97,20 @@
 
 .project {
   margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  &:nth-child(odd) {
+    flex-direction: row-reverse;
+  }
+}
+
+.project-section {
+  &:first-child {
+    margin-right: 30px;
+  }
 }
 
 .project-img {
