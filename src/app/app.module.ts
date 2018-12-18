@@ -11,7 +11,7 @@ import {FontAwesomeModule} from '@fortawesome/angular-fontawesome';
 import {library} from '@fortawesome/fontawesome-svg-core';
 import {faGithub} from '@fortawesome/free-brands-svg-icons/faGithub';
 import {faLinkedinIn} from '@fortawesome/free-brands-svg-icons/faLinkedinIn';
-import {faAt, faStar, faStarHalf} from '@fortawesome/free-solid-svg-icons';
+import {faAt, faBars, faStar, faStarHalf, faTimes} from '@fortawesome/free-solid-svg-icons';
 import { StarRatingComponent } from './star-rating/star-rating.component';
 import { LoopRangePipe } from './_pipes/loop-range.pipe';
 
@@ -36,6 +36,6 @@ import { LoopRangePipe } from './_pipes/loop-range.pipe';
 export class AppModule {
   constructor() {
 
-    library.add(faGithub, faLinkedinIn, faAt, faStar, faStarHalf);
+    library.add(faGithub, faLinkedinIn, faAt, faStar, faStarHalf, faBars, faTimes);
   }
 }
