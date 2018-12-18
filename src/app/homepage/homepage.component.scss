@@ -1,5 +1,5 @@
 .panel {
-  padding: 50px;
+  padding: 50px 50px 25px;
 }
 
 .panel-gray {
@@ -13,6 +13,10 @@
 .panel-header {
   font-size: 60px;
   text-align: center;
+
+  @media screen and (max-width: 480px) {
+    font-size: 30px;
+  }
 }
 
 .contact-header {
@@ -23,6 +27,15 @@
 
 .panel-content {
   margin: 30px auto 0;
+  max-width: 1000px;
+}
+
+.see-more {
+  margin-top: 25px;
+
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 .nav-bar {
@@ -35,6 +48,10 @@
 
 .banner {
   height: 600px;
+
+  @media screen and (max-width: 480px) {
+    height: 450px;
+  }
 
   // Makes img black and white
   //-webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
@@ -59,6 +76,12 @@
 .banner-subtitle {
   color: white;
   font-size: 24px;
+  font-style: italic;
+  font-family: 'Georgia', serif;
+
+  @media screen and (max-width: 480px) {
+    font-size: 18px;
+  }
 }
 
 .personal-pic {
@@ -76,6 +99,8 @@
   display: flex;
   justify-content: space-between;
   margin-bottom: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
 
   // Prevent star rating from growing/shrinking as window resizes
   app-star-rating {

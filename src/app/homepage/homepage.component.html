@@ -9,15 +9,16 @@
       <div class="nav-option clickable">CONTACT</div>
     </div>
 
-    <div fxLayout="column nowrap" fxLayoutAlign="center center" fxFlex>
+    <div fxLayout="column nowrap" fxLayoutAlign.gt-xs="center center" fxLayoutAlign.xs="center" fxLayoutGap.xs="20px"
+         fxFlex>
       <div class="fnt-roboto bold banner-title">KEVYN JAREMKO</div>
 
-      <div class="banner-subtitle" fxLayout="row nowrap" fxLayout.xs="column" fxLayoutAlign="center" fxLayoutGap="10px">
-        <!--<div class="subtitle-item">Software Engineer.</div>-->
-        <!--<div class="subtitle-item">Full Stack Developer.</div>-->
-        <!--<div class="subtitle-item">Game Designer.</div>-->
-        <!--<div class="subtitle-item">Problem Solver.</div>-->
-        <div class="subtitle-item" *ngFor="let x of [1,2,3,4]">Thing {{x}}</div>
+      <div class="banner-subtitle" fxLayout="row nowrap" fxLayout.xs="column" fxLayoutGap="10px">
+        <div class="subtitle-item">Software Engineer.</div>
+        <div class="subtitle-item">Full Stack Developer.</div>
+        <div class="subtitle-item">Game Designer.</div>
+        <div class="subtitle-item">Problem Solver.</div>
+        <!--<div class="subtitle-item" *ngFor="let x of [1,2,3,4]">Thing {{x}}</div>-->
       </div>
     </div>
   </div>
@@ -49,99 +50,96 @@
         </div>
       </div>
 
-      <div fxLayout="column" fxLayoutAlign="space-between" fxLayout.gt-xs="row wrap" fxLayoutGap.gt-xs="40px">
-        <div fxFlex>
-          <div class="skill-item">
-            <span class="skill-name">Java</span>
-            <app-star-rating [rating]="5"></app-star-rating>
-          </div>
-
-          <div class="skill-item">
-            <span class="skill-name">JSON</span>
-            <app-star-rating [rating]="5"></app-star-rating>
-          </div>
-
-          <div class="skill-item">
-            <span class="skill-name">AJAX / API Calls</span>
-            <app-star-rating [rating]="5"></app-star-rating>
-          </div>
-
-          <div class="skill-item">
-            <span class="skill-name">Game Maker Studio</span>
-            <app-star-rating [rating]="5"></app-star-rating>
-          </div>
-
-          <div class="skill-item">
-            <span class="skill-name">Angular (2+)</span>
-            <app-star-rating [rating]="4.5"></app-star-rating>
-          </div>
-
-          <div class="skill-item">
-            <span class="skill-name">HTML(5)</span>
-            <app-star-rating [rating]="4.5"></app-star-rating>
-          </div>
-
-          <div class="skill-item">
-            <span class="skill-name">Spring Framework (Spring Boot)</span>
-            <app-star-rating [rating]="4"></app-star-rating>
-          </div>
-
-          <div class="skill-item">
-            <span class="skill-name">SQL (Postgres)</span>
-            <app-star-rating [rating]="4"></app-star-rating>
-          </div>
-
-          <div class="skill-item">
-            <span class="skill-name">JPA / Hibernate</span>
-            <app-star-rating [rating]="4"></app-star-rating>
-          </div>
+      <div fxLayout="column wrap" [ngStyle.gt-xs]="{height: '270px'}">
+        <div class="skill-item">
+          <span class="skill-name">Java</span>
+          <app-star-rating [rating]="5"></app-star-rating>
         </div>
 
-        <div fxFlex>
-          <div class="skill-item">
-            <span class="skill-name">JavaScipt</span>
-            <app-star-rating [rating]="4"></app-star-rating>
-          </div>
+        <div class="skill-item">
+          <span class="skill-name">JSON</span>
+          <app-star-rating [rating]="5"></app-star-rating>
+        </div>
 
-          <div class="skill-item">
-            <span class="skill-name">RxJS (Observables)</span>
-            <app-star-rating [rating]="4"></app-star-rating>
-          </div>
+        <div class="skill-item">
+          <span class="skill-name">AJAX / API Calls</span>
+          <app-star-rating [rating]="5"></app-star-rating>
+        </div>
 
-          <div class="skill-item">
-            <span class="skill-name">CSS</span>
-            <app-star-rating [rating]="4"></app-star-rating>
-          </div>
+        <div class="skill-item">
+          <span class="skill-name">Game Maker Studio</span>
+          <app-star-rating [rating]="5"></app-star-rating>
+        </div>
 
-          <div class="skill-item">
-            <span class="skill-name">SASS / SCSS</span>
-            <app-star-rating [rating]="3.5"></app-star-rating>
-          </div>
+        <div class="skill-item">
+          <span class="skill-name">Angular (2+)</span>
+          <app-star-rating [rating]="4.5"></app-star-rating>
+        </div>
 
-          <div class="skill-item">
-            <span class="skill-name">Python</span>
-            <app-star-rating [rating]="3"></app-star-rating>
-          </div>
+        <div class="skill-item">
+          <span class="skill-name">HTML(5)</span>
+          <app-star-rating [rating]="4.5"></app-star-rating>
+        </div>
 
-          <div class="skill-item">
-            <span class="skill-name">MongoDB</span>
-            <app-star-rating [rating]="3"></app-star-rating>
-          </div>
+        <div class="skill-item">
+          <span class="skill-name">Spring Framework (Spring Boot)</span>
+          <app-star-rating [rating]="4"></app-star-rating>
+        </div>
 
-          <div class="skill-item">
-            <span class="skill-name">Bootstrap</span>
-            <app-star-rating [rating]="3"></app-star-rating>
-          </div>
+        <div class="skill-item">
+          <span class="skill-name">SQL (Postgres)</span>
+          <app-star-rating [rating]="4"></app-star-rating>
+        </div>
 
-          <div class="skill-item">
-            <span class="skill-name">jQuery</span>
-            <app-star-rating [rating]="2"></app-star-rating>
-          </div>
+        <div class="skill-item">
+          <span class="skill-name">JPA / Hibernate</span>
+          <app-star-rating [rating]="4"></app-star-rating>
+        </div>
 
-          <div class="skill-item">
-            <span class="skill-name">ElasticSearch</span>
-            <app-star-rating [rating]="2"></app-star-rating>
-          </div>
+
+        <div class="skill-item">
+          <span class="skill-name">JavaScipt</span>
+          <app-star-rating [rating]="4"></app-star-rating>
+        </div>
+
+        <div class="skill-item">
+          <span class="skill-name">RxJS (Observables)</span>
+          <app-star-rating [rating]="4"></app-star-rating>
+        </div>
+
+        <div class="skill-item">
+          <span class="skill-name">CSS</span>
+          <app-star-rating [rating]="4"></app-star-rating>
+        </div>
+
+        <div class="skill-item">
+          <span class="skill-name">SASS / SCSS</span>
+          <app-star-rating [rating]="3.5"></app-star-rating>
+        </div>
+
+        <div class="skill-item">
+          <span class="skill-name">Python</span>
+          <app-star-rating [rating]="3"></app-star-rating>
+        </div>
+
+        <div class="skill-item">
+          <span class="skill-name">MongoDB</span>
+          <app-star-rating [rating]="3"></app-star-rating>
+        </div>
+
+        <div class="skill-item">
+          <span class="skill-name">Bootstrap</span>
+          <app-star-rating [rating]="3"></app-star-rating>
+        </div>
+
+        <div class="skill-item">
+          <span class="skill-name">jQuery</span>
+          <app-star-rating [rating]="2"></app-star-rating>
+        </div>
+
+        <div class="skill-item">
+          <span class="skill-name">ElasticSearch</span>
+          <app-star-rating [rating]="2"></app-star-rating>
         </div>
       </div>
 
