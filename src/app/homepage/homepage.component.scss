@@ -1,3 +1,6 @@
+@import "variables";
+@import "mixins";
+
 .panel {
   padding: 50px 50px 25px;
 }
@@ -14,7 +17,7 @@
   font-size: 60px;
   text-align: center;
 
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: $xs) {
     font-size: 30px;
   }
 }
@@ -49,7 +52,7 @@
 .banner {
   height: 600px;
 
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: $xs) {
     height: 450px;
   }
 
@@ -75,13 +78,15 @@
 
 .banner-subtitle {
   color: white;
-  font-size: 24px;
   font-style: italic;
   font-family: 'Georgia', serif;
 
-  @media screen and (max-width: 480px) {
-    font-size: 18px;
-  }
+  @include fluid-type(font-size, $xs, $lg, 18px, 24px);
+
+  //font-size: 24px;
+  //@media screen and (max-width: $xs) {
+  //  font-size: 18px;
+  //}
 }
 
 .personal-pic {
