@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {PAST_EMPLOYERS} from '../_data/past-employers.data';
+import {PERSONAL_PROJECTS} from '../_data/personal-projects.data';
 
 @Component({
   selector: 'app-homepage',
@@ -17,6 +18,7 @@ export class HomepageComponent implements OnInit {
   ];
 
   readonly EMPLOYERS = PAST_EMPLOYERS;
+  readonly PROJECTS = PERSONAL_PROJECTS;
 
   constructor() { }
 

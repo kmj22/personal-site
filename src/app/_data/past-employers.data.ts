@@ -26,7 +26,7 @@ export const COLGATE: Employer = {
   image: 'https://pbs.twimg.com/profile_images/530057213667069952/sBF8Pv2r_400x400.jpeg',
 };
 
-export const PAST_EMPLOYERS = [
+export const PAST_EMPLOYERS: Employer[] = [
   GIFTAPART,
   ASTRODYNE,
   COLGATE,
