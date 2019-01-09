@@ -1,3 +1,13 @@
+@import "variables";
+
 :host {
   display: inline;
+}
+
+.star-bg {
+  color: $c-dark-gray;
+}
+
+.star-fg {
+  color: $c-main-blue;
 }

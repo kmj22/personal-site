@@ -1,7 +1,7 @@
 <span style="position: relative;">
-    <fa-icon [icon]="['fas', 'star']" *ngFor="let i of maxRating | loopRange" style="color: gray;"></fa-icon>
+    <fa-icon [icon]="['fas', 'star']" *ngFor="let i of maxRating | loopRange" class="star-bg"></fa-icon>
     <span style="width: 100%; position: absolute; left: 0;">
-      <fa-icon [icon]="['fas', 'star']" *ngFor="let i of wholeStars | loopRange" style="color: gold;"></fa-icon>
-      <fa-icon [icon]="['fas', 'star-half']" *ngIf="hasHalfStar" style="color: gold;"></fa-icon>
+      <fa-icon [icon]="['fas', 'star']" *ngFor="let i of wholeStars | loopRange" class="star-fg"></fa-icon>
+      <fa-icon [icon]="['fas', 'star-half']" *ngIf="hasHalfStar" class="star-fg"></fa-icon>
     </span>
 </span>

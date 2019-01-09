@@ -21,11 +21,11 @@
       <div class="banner" fxLayout="column nowrap" fxLayoutAlign="center center">
         <div class="bold nav-bar"
              fxHide.xs fxLayout="row nowrap" fxLayoutAlign="flex-end" fxLayoutGap="30px">
-          <div class="nav-option clickable">HOME</div>
-          <div class="nav-option clickable">RESUME</div>
-          <div class="nav-option clickable">PROJECTS</div>
-          <div class="nav-option clickable">ABOUT ME</div>
-          <div class="nav-option clickable">CONTACT</div>
+          <div class="nav-option clickable" routerLink="/">HOME</div>
+          <div class="nav-option clickable" routerLink="/resume">RESUME</div>
+          <div class="nav-option clickable" routerLink="/projects">PROJECTS</div>
+          <div class="nav-option clickable" routerLink="/about">ABOUT ME</div>
+          <div class="nav-option clickable" routerLink="/contact">CONTACT</div>
         </div>
 
         <div fxLayout="column nowrap" fxLayoutAlign.gt-xs="center center" fxLayoutAlign.xs="center"
@@ -53,7 +53,7 @@
             <img class="personal-pic" src="https://kmj22.github.io/portfolio-site/img/me.jpg"
                  fxFlex="0 0 auto">
 
-            <div class="about-me">
+            <div class="about-me body-text">
               <p>Hi- I'm Kevyn. I do full-stack software development. I graduated from The New Jersey Institute of
                 Technology
                 with a BS in Computer Science and a minor in Web & Information Systems. I'm currently leading the
@@ -188,8 +188,10 @@
 
               <div class="job-info" fxFlex>
                 <div class="job-title">{{employer.name}}</div>
-                <div class="job-position">{{employer.job_title}}</div>
-                <p class="job-description">{{employer.description}}</p>
+                <div class="job-position">{{employer.job_title}}, {{employer.start_date | date:'MMM y'}} -
+                  {{(employer.end_date | date:'MMM y') || 'Present'}}
+                </div>
+                <p class="job-description body-text">{{employer.description}}</p>
               </div>
             </div>
           </div>
@@ -205,19 +207,18 @@
         <div class="panel-header">A Few Side Projects</div>
 
         <div class="panel-content">
-          <div class="project" *ngFor="let i of 3 | loopRange">
-            <img class="project-img" [ngClass.gt-xs]="['project-section']"
+
+          <div class="project" *ngFor="let i of 2 | loopRange">
+            <img class="project-img project-section"
                  src="https://kmj22.github.io/portfolio-site/img/gameplay6.gif">
-            <div class="project-section project-info" [ngClass.gt-xs]="['project-section']" fxFlex>
-              <div class="project-title">Paper Mario - Fan-made Game</div>
-              <div class="project-description">My team works on building amazing user experiences for Google Cloud
-                users.
-                I
-                helped
+            <div class="project-section project-info" fxFlex>
+              <div class="project-title">Paper Mario - a fan-made game</div>
+              <p class="project-description body-text">My team works on building amazing user experiences for Google
+                Cloud users. I helped
                 carry out the top-to-bottom redesign and implementation of Cloud Datastore's UI, and currently lead the
                 front-end team of Google's Cloud SQL product. March 2017, we launched our PostgreSQL offering – which
                 increased Cloud SQL's total addressable market by ~40%.
-              </div>
+              </p>
             </div>
           </div>
 
@@ -245,7 +246,8 @@
         <div class="contact-header">Contact</div>
 
         <div class="panel-content">
-          <div class="contact-options" fxLayout="row" fxLayoutAlign="center" fxLayoutGap="40px">
+          <div class="contact-options" fxLayout="row" fxLayout.xs="column" fxLayoutAlign="center center"
+               fxLayoutGap.gt-xs="40px">
             <div class="contact-item">
               <fa-icon [icon]="['fab', 'linkedin-in']" class="contact-icon"></fa-icon>
               <span class="contact-info">Linkedin</span>
@@ -262,8 +264,6 @@
 
           <div class="copyright ta-center">© 2018 Kevyn Jaremko. All rights reserved.</div>
         </div>
-        <!--<img class="contact-icon" src="https://mbtskoudsalg.com/images/linkedin-icon-white-png-5.png">-->
-        <!--<img class="contact-icon" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/Ei-sc-github.svg/200px-Ei-sc-github.svg.png">-->
       </div>
 
     </div>
