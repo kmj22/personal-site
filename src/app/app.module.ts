@@ -14,13 +14,15 @@ import {faLinkedinIn} from '@fortawesome/free-brands-svg-icons/faLinkedinIn';
 import {faAt, faBars, faStar, faStarHalf, faTimes} from '@fortawesome/free-solid-svg-icons';
 import { StarRatingComponent } from './star-rating/star-rating.component';
 import { LoopRangePipe } from './_pipes/loop-range.pipe';
+import { EmploymentHistoryPageComponent } from './employment-history-page/employment-history-page.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomepageComponent,
     StarRatingComponent,
-    LoopRangePipe
+    LoopRangePipe,
+    EmploymentHistoryPageComponent
   ],
   imports: [
     BrowserModule,

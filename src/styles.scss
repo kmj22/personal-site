@@ -1,4 +1,5 @@
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
+@import "variables";
 
 body {
   margin: 0;
@@ -32,4 +33,30 @@ body {
 
 .ta-center {
   text-align: center;
+}
+
+// Employment Styles
+.job {
+  .job-img {
+    height: 250px;
+    border-radius: 15%;
+    object-fit: contain;
+
+    border: 2px solid $c-dark-gray;
+  }
+
+  .job-info {
+    text-align: left;
+
+    .job-title {
+      font-size: 28px;
+      font-weight: bold;
+      color: $c-main-blue;
+      margin: 10px 0;
+    }
+    .job-position {
+      font-size: 20px;
+      color: $c-main-pink;
+    }
+  }
 }

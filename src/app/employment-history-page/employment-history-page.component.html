@@ -1,0 +1,22 @@
+<div class="resume-page">
+  <div class="banner">
+    <div class="bold">WORK EXPERIENCE</div>
+  </div>
+
+  <div class="panel">
+    <div class="job"
+         fxLayout="row" fxLayout.xs="column" fxLayoutAlign="space-between" fxLayoutAlign.xs="flex-start"
+         fxLayoutGap.gt-xs="30px"
+         *ngFor="let employer of EMPLOYERS">
+      <img class="job-img" [src]="employer.image" fxFlex="0 1 300px">
+
+      <div class="job-info" fxFlex>
+        <div class="job-title">{{employer.name}}</div>
+        <div class="job-position">{{employer.job_title}}, {{employer.start_date | date:'MMM y'}} -
+          {{(employer.end_date | date:'MMM y') || 'Present'}}
+        </div>
+        <p class="job-description body-text">{{employer.description}}</p>
+      </div>
+    </div>
+  </div>
+</div>
