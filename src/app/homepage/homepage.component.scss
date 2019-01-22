@@ -1,38 +1,9 @@
 @import "variables";
 @import "mixins";
 
-.panel {
-  padding: 50px 50px 25px;
-  background: $c-white;
-}
 
-.panel-gray {
-  background: $c-light-gray;
-}
 
-.panel-contact {
-  background: $c-dark-gray;
-}
 
-.panel-header {
-  font-size: 60px;
-  text-align: center;
-
-  @media screen and (max-width: $xs) {
-    font-size: 30px;
-  }
-}
-
-.contact-header {
-  font-size: 40px;
-  text-align: center;
-  color: $c-white;
-}
-
-.panel-content {
-  margin: 30px auto 0;
-  max-width: 1000px;
-}
 
 .see-more {
   margin-top: 25px;
@@ -42,36 +13,8 @@
   }
 }
 
-.nav-bar {
-  width: 100%;
-  margin-top: 30px;
-  margin-right: 30px;
-  color: $c-white;
-  font-size: 14px;
-}
-
 .banner {
-  height: 600px;
-
-  @media screen and (max-width: $xs) {
-    height: 450px;
-  }
-
   @include jumbotron('https://images.pexels.com/photos/908284/pexels-photo-908284.jpeg?auto=compress&cs=tinysrgb&h=650&w=940');
-}
-
-.banner-title {
-  color: $c-white;
-
-  @include fluid-type(font-size, $xs, $lg, 30px, 100px);
-}
-
-.banner-subtitle {
-  color: $c-white;
-  font-style: italic;
-  font-family: 'Georgia', serif;
-
-  @include fluid-type(font-size, $xs, $lg, 18px, 24px);
 }
 
 .personal-pic {
@@ -139,31 +82,6 @@
   height: 250px;
   width: 100%;
   object-fit: cover;
-}
-
-.contact-options {
-  margin-bottom: 30px
-}
-
-.contact-item {
-  display: flex;
-  align-items: center;
-
-  color: $c-white;
-
-  cursor: pointer;
-
-  &:hover {
-    color: $c-light-gray;
-  }
-
-  .contact-info {
-  }
-
-  .contact-icon {
-    font-size: 28px;
-    margin-right: 10px;
-  }
 }
 
 .copyright {

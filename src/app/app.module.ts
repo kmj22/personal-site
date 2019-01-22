@@ -15,6 +15,8 @@ import {faAt, faBars, faStar, faStarHalf, faTimes} from '@fortawesome/free-solid
 import { StarRatingComponent } from './star-rating/star-rating.component';
 import { LoopRangePipe } from './_pipes/loop-range.pipe';
 import { EmploymentHistoryPageComponent } from './employment-history-page/employment-history-page.component';
+import { ContactMePanelComponent } from './contact-me-panel/contact-me-panel.component';
+import { ProjectsPageComponent } from './projects-page/projects-page.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,9 @@ import { EmploymentHistoryPageComponent } from './employment-history-page/employ
     HomepageComponent,
     StarRatingComponent,
     LoopRangePipe,
-    EmploymentHistoryPageComponent
+    EmploymentHistoryPageComponent,
+    ContactMePanelComponent,
+    ProjectsPageComponent
   ],
   imports: [
     BrowserModule,

@@ -2,7 +2,7 @@
   <mat-sidenav #sidenav>
     <div style="width: 100vw;">
       <div style="text-align: right;  padding-right: 10px;">
-        <fa-icon [icon]="['fas', 'times']" class="contact-icon" style="color: black;"
+        <fa-icon [icon]="['fas', 'times']" class="" style="color: black; font-size: 25px;"
                  (click)="sidenav.toggle()"></fa-icon>
       </div>
 
@@ -14,7 +14,7 @@
 
   <mat-sidenav-content>
     <div fxHide.gt-xs (click)="sidenav.toggle()" style="text-align: right; padding-right: 10px;">
-      <fa-icon [icon]="['fas', 'bars']" class="contact-icon" style="color: black;"></fa-icon>
+      <fa-icon [icon]="['fas', 'bars']" class="" style="color: black; font-size: 25px;"></fa-icon>
     </div>
 
     <div class="homepage">
@@ -28,7 +28,7 @@
           <div class="nav-option clickable" routerLink="/contact">CONTACT</div>
         </div>
 
-        <div fxLayout="column nowrap" fxLayoutAlign.gt-xs="center center" fxLayoutAlign.xs="center"
+        <div fxLayout="column nowrap" fxLayoutAlign.gt-xs="center center" fxLayoutAlign.xs="center center"
              fxLayoutGap.xs="20px"
              fxFlex>
           <div class="fnt-roboto bold banner-title">KEVYN JAREMKO</div>
@@ -236,29 +236,7 @@
         </div>
       </div>
 
-      <div class="panel panel-contact">
-        <div class="contact-header">Contact</div>
-
-        <div class="panel-content">
-          <div class="contact-options" fxLayout="row" fxLayout.xs="column" fxLayoutAlign="center center"
-               fxLayoutGap.gt-xs="40px">
-            <div class="contact-item">
-              <fa-icon [icon]="['fab', 'linkedin-in']" class="contact-icon"></fa-icon>
-              <span class="contact-info">Linkedin</span>
-            </div>
-            <div class="contact-item">
-              <fa-icon [icon]="['fab', 'github']" class="contact-icon"></fa-icon>
-              <span class="contact-info">Github</span>
-            </div>
-            <div class="contact-item">
-              <fa-icon [icon]="['fas', 'at']" class="contact-icon"></fa-icon>
-              <span class="contact-info">Email</span>
-            </div>
-          </div>
-
-          <div class="copyright ta-center">© 2018 Kevyn Jaremko. All rights reserved.</div>
-        </div>
-      </div>
+    <app-contact-me-panel></app-contact-me-panel>
 
     </div>
   </mat-sidenav-content>
