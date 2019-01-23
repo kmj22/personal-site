@@ -1,20 +1,12 @@
 @import "variables";
 @import "mixins";
 
-
-
-
-
 .see-more {
   margin-top: 25px;
 
   &:hover {
     text-decoration: underline;
   }
-}
-
-.banner {
-  @include jumbotron('https://images.pexels.com/photos/908284/pexels-photo-908284.jpeg?auto=compress&cs=tinysrgb&h=650&w=940');
 }
 
 .personal-pic {
@@ -38,8 +30,6 @@
     flex: 0 0 auto;
   }
 }
-
-
 
 .project {
   margin-bottom: 20px;
@@ -82,9 +72,4 @@
   height: 250px;
   width: 100%;
   object-fit: cover;
-}
-
-.copyright {
-  color: $c-medium-gray;
-  font-size: 11px;
 }

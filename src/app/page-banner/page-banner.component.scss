@@ -1,0 +1,35 @@
+@import "variables";
+@import "mixins";
+
+:host-context(.homepage) {
+  .banner{
+    @include jumbotron('https://images.pexels.com/photos/908284/pexels-photo-908284.jpeg?auto=compress&cs=tinysrgb&h=650&w=940');
+  }
+}
+
+:host-context(.resume-page) {
+  .banner {
+    @include jumbotron('https://images.pexels.com/photos/590016/pexels-photo-590016.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+  }
+}
+
+.banner {
+  height: 600px;
+
+  @include jumbotron('https://images.pexels.com/photos/590016/pexels-photo-590016.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+}
+
+.banner-title {
+  color: $c-white;
+  text-align: center;
+
+  @include fluid-type(font-size, $xs, $lg, 50px, 100px);
+}
+
+.banner-subtitle {
+  color: $c-white;
+  font-style: italic;
+  font-family: 'Georgia', serif;
+
+  @include fluid-type(font-size, $xs, $lg, 18px, 24px);
+}

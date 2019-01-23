@@ -17,6 +17,8 @@ import { LoopRangePipe } from './_pipes/loop-range.pipe';
 import { EmploymentHistoryPageComponent } from './employment-history-page/employment-history-page.component';
 import { ContactMePanelComponent } from './contact-me-panel/contact-me-panel.component';
 import { ProjectsPageComponent } from './projects-page/projects-page.component';
+import { NavBarComponent } from './nav-bar/nav-bar.component';
+import { PageBannerComponent } from './page-banner/page-banner.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +28,9 @@ import { ProjectsPageComponent } from './projects-page/projects-page.component';
     LoopRangePipe,
     EmploymentHistoryPageComponent,
     ContactMePanelComponent,
-    ProjectsPageComponent
+    ProjectsPageComponent,
+    NavBarComponent,
+    PageBannerComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,18 @@
+<div class="banner" fxLayout="column nowrap" fxLayoutAlign="center center">
+
+  <app-nav-bar></app-nav-bar>
+
+  <div fxLayout="column nowrap" fxLayoutAlign.gt-xs="center center" fxLayoutAlign.xs="center center"
+       fxLayoutGap.xs="20px"
+       fxFlex>
+    <div class="fnt-roboto bold banner-title">{{title | uppercase}}</div>
+
+    <div class="banner-subtitle">
+      <div *ngIf="subtitle">{{subtitle}}</div>
+
+      <div *ngIf="subtitleList" class="banner-subtitle" fxLayout="row nowrap" fxLayout.xs="column" fxLayoutGap="10px">
+        <div class="subtitle-item" *ngFor="let item of subtitleList">{{item}}.</div>
+      </div>
+    </div>
+  </div>
+</div>

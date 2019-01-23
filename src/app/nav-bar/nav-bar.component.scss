@@ -1,0 +1,12 @@
+@import "variables";
+
+:host {
+  width: 100%;
+  margin-top: 30px;
+  margin-right: 30px;
+}
+
+.nav-bar {
+  color: $c-white;
+  font-size: 14px;
+}

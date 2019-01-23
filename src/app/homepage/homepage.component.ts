@@ -17,6 +17,8 @@ export class HomepageComponent implements OnInit {
     'https://scontent-lga3-1.xx.fbcdn.net/v/t1.0-9/21731237_1515864788495004_7773731238212515607_n.jpg?_nc_cat=109&_nc_ht=scontent-lga3-1.xx&oh=643874557c1a8c40105dcb2262e344a0&oe=5C803350',
   ];
 
+  readonly SUBTITLES = ['Software Engineer', 'Full Stack Developer', 'Game Designer', 'Problem Solver'];
+
   readonly EMPLOYERS = PAST_EMPLOYERS;
   readonly PROJECTS = PERSONAL_PROJECTS;
 

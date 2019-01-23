@@ -18,30 +18,7 @@
     </div>
 
     <div class="homepage">
-      <div class="banner" fxLayout="column nowrap" fxLayoutAlign="center center">
-        <div class="bold nav-bar"
-             fxHide.xs fxLayout="row nowrap" fxLayoutAlign="flex-end" fxLayoutGap="30px">
-          <div class="nav-option clickable" routerLink="/">HOME</div>
-          <div class="nav-option clickable" routerLink="/resume">RESUME</div>
-          <div class="nav-option clickable" routerLink="/projects">PROJECTS</div>
-          <div class="nav-option clickable" routerLink="/about">ABOUT ME</div>
-          <div class="nav-option clickable" routerLink="/contact">CONTACT</div>
-        </div>
-
-        <div fxLayout="column nowrap" fxLayoutAlign.gt-xs="center center" fxLayoutAlign.xs="center center"
-             fxLayoutGap.xs="20px"
-             fxFlex>
-          <div class="fnt-roboto bold banner-title">KEVYN JAREMKO</div>
-
-          <div class="banner-subtitle" fxLayout="row nowrap" fxLayout.xs="column" fxLayoutGap="10px">
-            <div class="subtitle-item">Software Engineer.</div>
-            <div class="subtitle-item">Full Stack Developer.</div>
-            <div class="subtitle-item">Game Designer.</div>
-            <div class="subtitle-item">Problem Solver.</div>
-            <!--<div class="subtitle-item" *ngFor="let x of [1,2,3,4]">Thing {{x}}</div>-->
-          </div>
-        </div>
-      </div>
+      <app-page-banner title="Kevyn Jaremko" [subtitleList]="SUBTITLES"></app-page-banner>
 
       <div class="panel panel-gray">
         <div class="panel-header">Who Am I?</div>

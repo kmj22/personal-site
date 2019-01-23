@@ -42,36 +42,6 @@ body {
   text-align: center;
 }
 
-// Banner
-.banner {
-  height: 600px;
-
-  @include jumbotron('https://images.pexels.com/photos/590016/pexels-photo-590016.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
-}
-
-.banner-title {
-  color: $c-white;
-  text-align: center;
-
-  @include fluid-type(font-size, $xs, $lg, 50px, 100px);
-}
-
-.banner-subtitle {
-  color: $c-white;
-  font-style: italic;
-  font-family: 'Georgia', serif;
-
-  @include fluid-type(font-size, $xs, $lg, 18px, 24px);
-}
-
-.nav-bar {
-  width: 100%;
-  margin-top: 30px;
-  margin-right: 30px;
-  color: $c-white;
-  font-size: 14px;
-}
-
 // Panels
 .panel {
   padding: 50px 50px 25px;
