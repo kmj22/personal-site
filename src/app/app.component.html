@@ -1,1 +1,30 @@
-<router-outlet></router-outlet>
+<mat-sidenav-container>
+  <mat-sidenav #sidenav>
+    <div style="width: 100vw; height: 100vh;">
+      <div style="position: fixed">
+        <div style="text-align: right;  padding-right: 10px;">
+          <fa-icon [icon]="['fas', 'times']" class="" style="color: black; font-size: 25px;"
+                   (click)="sidenav.toggle()"></fa-icon>
+        </div>
+
+        <div style="padding: 0 10px;" (click)="sidenav.close()">
+          <button mat-button class="sidenav-option" routerLink="/">Home</button>
+          <button mat-button class="sidenav-option" routerLink="/resume">Resume</button>
+          <button mat-button class="sidenav-option" routerLink="/projects">Projects</button>
+          <button mat-button class="sidenav-option" routerLink="/about">About Me</button>
+          <button mat-button class="sidenav-option" routerLink="/contact">Contact</button>
+        </div>
+      </div>
+    </div>
+  </mat-sidenav>
+
+  <mat-sidenav-content>
+    <div fxHide.gt-xs (click)="sidenav.toggle()" style="text-align: right; padding-right: 10px;">
+      <fa-icon [icon]="['fas', 'bars']" class="" style="color: black; font-size: 25px;"></fa-icon>
+    </div>
+
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+
+</mat-sidenav-container>
+

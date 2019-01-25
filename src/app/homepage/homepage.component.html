@@ -1,21 +1,4 @@
-<mat-sidenav-container>
-  <mat-sidenav #sidenav>
-    <div style="width: 100vw;">
-      <div style="text-align: right;  padding-right: 10px;">
-        <fa-icon [icon]="['fas', 'times']" class="" style="color: black; font-size: 25px;"
-                 (click)="sidenav.toggle()"></fa-icon>
-      </div>
 
-      <div style="padding: 0 10px;">
-        Sidenav content
-      </div>
-    </div>
-  </mat-sidenav>
-
-  <mat-sidenav-content>
-    <div fxHide.gt-xs (click)="sidenav.toggle()" style="text-align: right; padding-right: 10px;">
-      <fa-icon [icon]="['fas', 'bars']" class="" style="color: black; font-size: 25px;"></fa-icon>
-    </div>
 
     <div class="homepage">
       <app-page-banner title="Kevyn Jaremko" [subtitleList]="SUBTITLES"></app-page-banner>
@@ -146,7 +129,7 @@
 
 
           <div fxLayout="row" fxLayoutAlign="flex-end">
-            <div class="see-more clickable">More about my skills...</div>
+            <div class="see-more clickable" routerLink="/resume">More about my skills...</div>
           </div>
         </div>
       </div>
@@ -174,7 +157,7 @@
           </div>
 
           <div fxLayout="row" fxLayoutAlign="flex-end">
-            <div class="see-more clickable">See my full employment history...</div>
+            <div class="see-more clickable" routerLink="/resume">See my full employment history...</div>
           </div>
 
         </div>
@@ -194,7 +177,7 @@
           </div>
 
           <div fxLayout="row" fxLayoutAlign="flex-end">
-            <div class="see-more clickable">See more of my projects...</div>
+            <div class="see-more clickable" routerLink="/projects">See more of my projects...</div>
           </div>
         </div>
       </div>
@@ -208,15 +191,11 @@
           </div>
 
           <div fxLayout="row" fxLayoutAlign="flex-end">
-            <div class="see-more clickable">More about me...</div>
+            <div class="see-more clickable" routerLink="/about">More about me...</div>
           </div>
         </div>
       </div>
 
-    <app-contact-me-panel></app-contact-me-panel>
+      <app-contact-me-panel></app-contact-me-panel>
 
     </div>
-  </mat-sidenav-content>
-
-</mat-sidenav-container>
-
