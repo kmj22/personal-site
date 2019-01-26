@@ -3,10 +3,6 @@
 
 .see-more {
   margin-top: 25px;
-
-  &:hover {
-    text-decoration: underline;
-  }
 }
 
 .personal-pic {
@@ -17,19 +13,6 @@
 }
 
 .about-me {}
-
-.skill-item {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 10px;
-  margin-left: 20px;
-  margin-right: 20px;
-
-  // Prevent star rating from growing/shrinking as window resizes
-  app-star-rating {
-    flex: 0 0 auto;
-  }
-}
 
 .project {
   margin-bottom: 20px;

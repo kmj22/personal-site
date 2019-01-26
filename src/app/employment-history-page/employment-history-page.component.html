@@ -1,7 +1,7 @@
 <div class="resume-page">
   <app-page-banner title="Employment History" subtitle="Here you'll find some of the work I've done."></app-page-banner>
 
-  <div class="panel panel-gray">
+  <div class="panel ">
     <div class="panel-header">I've Seen Some Shit</div>
 
     <div class="panel-content">
@@ -13,6 +13,54 @@
   </div>
 
   <div class="panel">
+    <div class="panel-header">My Skills</div>
+
+    <div class="panel-content">
+      <div fxLayout="row wrap" fxLayoutAlign="space-between">
+        <div fxFlex.xs="1 1 100%" fxFlex.gt-xs="1 1 45%">
+          <div class="skill-header">Backend Skills:</div>
+
+          <div class="skill-item" *ngFor="let skill of BACK_SKILLS">
+            <span class="skill-name">{{skill.name}}</span>
+            <app-star-rating [rating]="skill.rating"></app-star-rating>
+          </div>
+        </div>
+
+        <div fxFlex.xs="1 1 100%" fxFlex.gt-xs="1 1 45%">
+          <div class="skill-header">Frontend Skills:</div>
+
+          <div class="skill-item" *ngFor="let skill of FRONT_SKILLS">
+            <span class="skill-name">{{skill.name}}</span>
+            <app-star-rating [rating]="skill.rating"></app-star-rating>
+          </div>
+        </div>
+
+        <div fxFlex.xs="1 1 100%" fxFlex.gt-xs="1 1 45%">
+          <div class="skill-header">Database Skills:</div>
+
+          <div class="skill-item" *ngFor="let skill of DATABASE_SKILLS">
+            <span class="skill-name">{{skill.name}}</span>
+            <app-star-rating [rating]="skill.rating"></app-star-rating>
+          </div>
+        </div>
+
+        <div fxFlex.xs="1 1 100%" fxFlex.gt-xs="1 1 45%">
+          <div class="skill-header">Other Skills</div>
+
+          <div class="skill-item" *ngFor="let skill of OTHER_SKILLS">
+            <span class="skill-name">{{skill.name}}</span>
+            <app-star-rating [rating]="skill.rating"></app-star-rating>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="panel">
+    <div class="panel-header">
+      Past Employers
+    </div>
+
     <div class="panel-content">
       <div class="job-history" fxLayout="column" fxLayoutGap="20px">
         <div class="job"
@@ -32,6 +80,29 @@
       </div>
     </div>
   </div>
+
+  <div class="panel">
+    <div class="panel-header">Education</div>
+
+    <div class="panel-content">
+      <div class="job"
+           fxLayout="row" fxLayout.xs="column" fxLayoutAlign="space-between" fxLayoutAlign.xs="flex-start"
+           fxLayoutGap.gt-xs="30px"
+           *ngFor="let employer of [SCHOOL]">
+        <img class="job-img" [src]="employer.image" fxFlex="0 1 300px">
+
+        <div class="job-info" fxFlex>
+          <div class="job-title">{{employer.name}}</div>
+          <div class="job-position">{{employer.job_title}}, {{employer.start_date | date:'MMM y'}} -
+            {{(employer.end_date | date:'MMM y') || 'Present'}}
+          </div>
+          <p class="job-description body-text">{{employer.description}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
 
   <app-contact-me-panel></app-contact-me-panel>
 </div>

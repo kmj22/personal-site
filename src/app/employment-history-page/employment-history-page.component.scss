@@ -4,3 +4,14 @@
 .page-description {
   @include fluid-type(font-size, $xs, $lg, 20px, 28px);
 }
+
+.skill-header {
+  font-size: 28px;
+  font-weight: bold;
+  color: $c-main-blue;
+  margin: 10px 0;
+}
+.skill-header {
+  font-size: 20px;
+  color: $c-main-pink;
+}

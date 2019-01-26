@@ -1,2 +1,44 @@
 @import "variables";
 @import "mixins";
+
+//.projects {
+//  display: flex;
+//  flex-wrap: wrap;
+//  justify-content: space-evenly;
+//}
+//
+//.project {
+//  margin-bottom: 10px;
+//  flex-grow: 0;
+//  flex-shrink: 0;
+//  @include fluid-type(width, $xs, $lg, 200px, 480px)
+//}
+
+.panel {
+  //height: 100vh;
+
+  //color: white !important;
+  //background: $c-main-pink;
+  //
+  //&:nth-child(even) {
+  //  background: $c-main-blue;
+  //}
+}
+
+.app-btn {
+}
+
+.project-image {
+  text-align: center;
+
+  img {
+    width: 100%;
+    max-width: 520px;
+    object-fit: contain
+  }
+}
+
+.project-description {
+  @include fluid-type(font-size, $xs, $lg, 16px, 25px);
+  line-height: 1.4;
+}

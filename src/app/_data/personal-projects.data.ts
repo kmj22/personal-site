@@ -9,5 +9,8 @@ export const PAPER_MARIO: Project = {
 export const PERSONAL_PROJECTS: Project[] = [
   PAPER_MARIO,
   PAPER_MARIO,
+  PAPER_MARIO,
+  PAPER_MARIO,
+  PAPER_MARIO,
 ];
 

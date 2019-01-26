@@ -19,6 +19,8 @@ import { ContactMePanelComponent } from './contact-me-panel/contact-me-panel.com
 import { ProjectsPageComponent } from './projects-page/projects-page.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { PageBannerComponent } from './page-banner/page-banner.component';
+import { AboutPageComponent } from './about-page/about-page.component';
+import { ContactPageComponent } from './contact-page/contact-page.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +32,9 @@ import { PageBannerComponent } from './page-banner/page-banner.component';
     ContactMePanelComponent,
     ProjectsPageComponent,
     NavBarComponent,
-    PageBannerComponent
+    PageBannerComponent,
+    AboutPageComponent,
+    ContactPageComponent
   ],
   imports: [
     BrowserModule,

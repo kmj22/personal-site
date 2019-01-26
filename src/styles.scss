@@ -43,10 +43,36 @@ body {
   text-align: center;
 }
 
+.app-btn {
+  $height: 40px;
+  $color: $c-main-pink;
+
+  display: inline-block;
+  height: $height;
+  line-height: $height;
+
+  color: $color;
+  font-weight: bold;
+  border: 2px solid $color;
+  padding: 5px 20px;
+
+  text-transform: uppercase;
+  cursor: pointer;
+
+  &:hover {
+    background: $color;
+    color: white;
+  }
+}
+
 // Panels
 .panel {
   padding: 50px 50px 25px;
   background: $c-white;
+
+  &:nth-child(even) {
+    background: $c-light-gray;
+  }
 }
 
 .panel-gray {
@@ -65,6 +91,19 @@ body {
 .panel-content {
   margin: 30px auto 0;
   max-width: 1000px;
+}
+
+.skill-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+
+  // Prevent star rating from growing/shrinking as window resizes
+  app-star-rating {
+    flex: 0 0 auto;
+  }
 }
 
 // Employment Styles

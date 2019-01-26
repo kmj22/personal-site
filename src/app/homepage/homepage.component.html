@@ -1,201 +1,199 @@
+<div class="homepage">
+  <app-page-banner title="Kevyn Jaremko" [subtitleList]="SUBTITLES"></app-page-banner>
+
+  <div class="panel panel-gray">
+    <div class="panel-header">Who Am I?</div>
+
+    <div class="panel-content">
+      <div fxLayout.gt-xs="row" fxLayoutAlign.gt-xs="space-between" fxLayoutGap="20px"
+           fxLayout="column" fxLayoutAlign="flex-start center"
+      >
+        <img class="personal-pic" src="https://kmj22.github.io/portfolio-site/img/me.jpg"
+             fxFlex="0 0 auto">
+
+        <div class="about-me body-text">
+          <p>Hi- I'm Kevyn. I do full-stack software development. I graduated from The New Jersey Institute of
+            Technology
+            with a BS in Computer Science and a minor in Web & Information Systems. I'm currently leading the
+            front-end
+            development of an upcoming ecommerce platform, <a href="www.giftapart.com"
+                                                              target="_blank">Giftapart!</a>
+          </p>
+
+          <p>Throughout my degree and early career, my focus was on
+            server-side development in languages such as Java, Python, and C++.
+            I've since extended my front-end skills after becoming fluent with the Angular Framework. Because much
+            of my
+            knowledge (and enjoyment of programming) lies within concepts such as Data Structures, Algorithms, and
+            OOP,
+            I believe that I offer a unique and valuable perspective to full-stack development.</p>
+
+          <p>Here are some of the skills I've been using recently:</p>
+        </div>
+      </div>
+
+      <div fxLayout="column wrap" [ngStyle.gt-xs]="{height: '270px'}">
+        <div class="skill-item">
+          <span class="skill-name">Java</span>
+          <app-star-rating [rating]="5"></app-star-rating>
+        </div>
+
+        <div class="skill-item">
+          <span class="skill-name">JSON</span>
+          <app-star-rating [rating]="5"></app-star-rating>
+        </div>
+
+        <div class="skill-item">
+          <span class="skill-name">AJAX / API Calls</span>
+          <app-star-rating [rating]="5"></app-star-rating>
+        </div>
+
+        <div class="skill-item">
+          <span class="skill-name">Game Maker Studio</span>
+          <app-star-rating [rating]="5"></app-star-rating>
+        </div>
+
+        <div class="skill-item">
+          <span class="skill-name">Angular (2+)</span>
+          <app-star-rating [rating]="4.5"></app-star-rating>
+        </div>
+
+        <div class="skill-item">
+          <span class="skill-name">HTML(5)</span>
+          <app-star-rating [rating]="4.5"></app-star-rating>
+        </div>
+
+        <div class="skill-item">
+          <span class="skill-name">Spring Framework (Spring Boot)</span>
+          <app-star-rating [rating]="4"></app-star-rating>
+        </div>
+
+        <div class="skill-item">
+          <span class="skill-name">SQL (Postgres)</span>
+          <app-star-rating [rating]="4"></app-star-rating>
+        </div>
+
+        <div class="skill-item">
+          <span class="skill-name">JPA / Hibernate</span>
+          <app-star-rating [rating]="4"></app-star-rating>
+        </div>
 
 
-    <div class="homepage">
-      <app-page-banner title="Kevyn Jaremko" [subtitleList]="SUBTITLES"></app-page-banner>
+        <div class="skill-item">
+          <span class="skill-name">JavaScipt</span>
+          <app-star-rating [rating]="4"></app-star-rating>
+        </div>
 
-      <div class="panel panel-gray">
-        <div class="panel-header">Who Am I?</div>
+        <div class="skill-item">
+          <span class="skill-name">RxJS (Observables)</span>
+          <app-star-rating [rating]="4"></app-star-rating>
+        </div>
 
-        <div class="panel-content">
-          <div fxLayout.gt-xs="row" fxLayoutAlign.gt-xs="space-between" fxLayoutGap="20px"
-               fxLayout="column" fxLayoutAlign="flex-start center"
-          >
-            <img class="personal-pic" src="https://kmj22.github.io/portfolio-site/img/me.jpg"
-                 fxFlex="0 0 auto">
+        <div class="skill-item">
+          <span class="skill-name">CSS</span>
+          <app-star-rating [rating]="4"></app-star-rating>
+        </div>
 
-            <div class="about-me body-text">
-              <p>Hi- I'm Kevyn. I do full-stack software development. I graduated from The New Jersey Institute of
-                Technology
-                with a BS in Computer Science and a minor in Web & Information Systems. I'm currently leading the
-                front-end
-                development of an upcoming ecommerce platform, <a href="www.giftapart.com"
-                                                                  target="_blank">Giftapart!</a>
-              </p>
+        <div class="skill-item">
+          <span class="skill-name">SASS / SCSS</span>
+          <app-star-rating [rating]="3.5"></app-star-rating>
+        </div>
 
-              <p>Throughout my degree and early career, my focus was on
-                server-side development in languages such as Java, Python, and C++.
-                I've since extended my front-end skills after becoming fluent with the Angular Framework. Because much
-                of my
-                knowledge (and enjoyment of programming) lies within concepts such as Data Structures, Algorithms, and
-                OOP,
-                I believe that I offer a unique and valuable perspective to full-stack development.</p>
+        <div class="skill-item">
+          <span class="skill-name">Python</span>
+          <app-star-rating [rating]="3"></app-star-rating>
+        </div>
 
-              <p>Here are some of the skills I've been using recently:</p>
+        <div class="skill-item">
+          <span class="skill-name">MongoDB</span>
+          <app-star-rating [rating]="3"></app-star-rating>
+        </div>
+
+        <div class="skill-item">
+          <span class="skill-name">Bootstrap</span>
+          <app-star-rating [rating]="3"></app-star-rating>
+        </div>
+
+        <div class="skill-item">
+          <span class="skill-name">jQuery</span>
+          <app-star-rating [rating]="2"></app-star-rating>
+        </div>
+
+        <div class="skill-item">
+          <span class="skill-name">ElasticSearch</span>
+          <app-star-rating [rating]="2"></app-star-rating>
+        </div>
+      </div>
+
+
+      <div fxLayout="row" fxLayoutAlign="flex-end">
+        <div class="app-btn" routerLink="/resume">More about my skills...</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="panel">
+    <div class="panel-header">Things I've Done</div>
+
+    <div class="panel-content">
+
+      <div class="job-history" fxLayout="column" fxLayoutGap="20px">
+        <div class="job"
+             fxLayout="row" fxLayout.xs="column" fxLayoutAlign="space-between" fxLayoutAlign.xs="flex-start"
+             fxLayoutGap.gt-xs="30px"
+             *ngFor="let employer of EMPLOYERS">
+          <img class="job-img" [src]="employer.image" fxFlex="0 1 300px">
+
+          <div class="job-info" fxFlex>
+            <div class="job-title">{{employer.name}}</div>
+            <div class="job-position">{{employer.job_title}}, {{employer.start_date | date:'MMM y'}} -
+              {{(employer.end_date | date:'MMM y') || 'Present'}}
             </div>
-          </div>
-
-          <div fxLayout="column wrap" [ngStyle.gt-xs]="{height: '270px'}">
-            <div class="skill-item">
-              <span class="skill-name">Java</span>
-              <app-star-rating [rating]="5"></app-star-rating>
-            </div>
-
-            <div class="skill-item">
-              <span class="skill-name">JSON</span>
-              <app-star-rating [rating]="5"></app-star-rating>
-            </div>
-
-            <div class="skill-item">
-              <span class="skill-name">AJAX / API Calls</span>
-              <app-star-rating [rating]="5"></app-star-rating>
-            </div>
-
-            <div class="skill-item">
-              <span class="skill-name">Game Maker Studio</span>
-              <app-star-rating [rating]="5"></app-star-rating>
-            </div>
-
-            <div class="skill-item">
-              <span class="skill-name">Angular (2+)</span>
-              <app-star-rating [rating]="4.5"></app-star-rating>
-            </div>
-
-            <div class="skill-item">
-              <span class="skill-name">HTML(5)</span>
-              <app-star-rating [rating]="4.5"></app-star-rating>
-            </div>
-
-            <div class="skill-item">
-              <span class="skill-name">Spring Framework (Spring Boot)</span>
-              <app-star-rating [rating]="4"></app-star-rating>
-            </div>
-
-            <div class="skill-item">
-              <span class="skill-name">SQL (Postgres)</span>
-              <app-star-rating [rating]="4"></app-star-rating>
-            </div>
-
-            <div class="skill-item">
-              <span class="skill-name">JPA / Hibernate</span>
-              <app-star-rating [rating]="4"></app-star-rating>
-            </div>
-
-
-            <div class="skill-item">
-              <span class="skill-name">JavaScipt</span>
-              <app-star-rating [rating]="4"></app-star-rating>
-            </div>
-
-            <div class="skill-item">
-              <span class="skill-name">RxJS (Observables)</span>
-              <app-star-rating [rating]="4"></app-star-rating>
-            </div>
-
-            <div class="skill-item">
-              <span class="skill-name">CSS</span>
-              <app-star-rating [rating]="4"></app-star-rating>
-            </div>
-
-            <div class="skill-item">
-              <span class="skill-name">SASS / SCSS</span>
-              <app-star-rating [rating]="3.5"></app-star-rating>
-            </div>
-
-            <div class="skill-item">
-              <span class="skill-name">Python</span>
-              <app-star-rating [rating]="3"></app-star-rating>
-            </div>
-
-            <div class="skill-item">
-              <span class="skill-name">MongoDB</span>
-              <app-star-rating [rating]="3"></app-star-rating>
-            </div>
-
-            <div class="skill-item">
-              <span class="skill-name">Bootstrap</span>
-              <app-star-rating [rating]="3"></app-star-rating>
-            </div>
-
-            <div class="skill-item">
-              <span class="skill-name">jQuery</span>
-              <app-star-rating [rating]="2"></app-star-rating>
-            </div>
-
-            <div class="skill-item">
-              <span class="skill-name">ElasticSearch</span>
-              <app-star-rating [rating]="2"></app-star-rating>
-            </div>
-          </div>
-
-
-          <div fxLayout="row" fxLayoutAlign="flex-end">
-            <div class="see-more clickable" routerLink="/resume">More about my skills...</div>
+            <p class="job-description body-text">{{employer.description}}</p>
           </div>
         </div>
       </div>
 
-      <div class="panel">
-        <div class="panel-header">Things I've Done</div>
-
-        <div class="panel-content">
-
-          <div class="job-history" fxLayout="column" fxLayoutGap="20px">
-            <div class="job"
-                 fxLayout="row" fxLayout.xs="column" fxLayoutAlign="space-between" fxLayoutAlign.xs="flex-start"
-                 fxLayoutGap.gt-xs="30px"
-                 *ngFor="let employer of EMPLOYERS">
-              <img class="job-img" [src]="employer.image" fxFlex="0 1 300px">
-
-              <div class="job-info" fxFlex>
-                <div class="job-title">{{employer.name}}</div>
-                <div class="job-position">{{employer.job_title}}, {{employer.start_date | date:'MMM y'}} -
-                  {{(employer.end_date | date:'MMM y') || 'Present'}}
-                </div>
-                <p class="job-description body-text">{{employer.description}}</p>
-              </div>
-            </div>
-          </div>
-
-          <div fxLayout="row" fxLayoutAlign="flex-end">
-            <div class="see-more clickable" routerLink="/resume">See my full employment history...</div>
-          </div>
-
-        </div>
+      <div fxLayout="row" fxLayoutAlign="flex-end">
+        <div class="app-btn" routerLink="/resume">See my full employment history...</div>
       </div>
-
-      <div class="panel panel-gray">
-        <div class="panel-header">A Few Side Projects</div>
-
-        <div class="panel-content">
-
-          <div class="project" *ngFor="let project of PROJECTS">
-            <img class="project-img project-section" [src]="project.image">
-            <div class="project-section project-info" fxFlex>
-              <div class="project-title">{{project.name}}</div>
-              <p class="project-description body-text">{{project.description}}</p>
-            </div>
-          </div>
-
-          <div fxLayout="row" fxLayoutAlign="flex-end">
-            <div class="see-more clickable" routerLink="/projects">See more of my projects...</div>
-          </div>
-        </div>
-      </div>
-
-      <div class="panel">
-        <div class="panel-header">My Life</div>
-
-        <div class="panel-content">
-          <div class="my-life">
-            <img class="life-photo" *ngFor="let img of SELF_PICS" [src]="img">
-          </div>
-
-          <div fxLayout="row" fxLayoutAlign="flex-end">
-            <div class="see-more clickable" routerLink="/about">More about me...</div>
-          </div>
-        </div>
-      </div>
-
-      <app-contact-me-panel></app-contact-me-panel>
 
     </div>
+  </div>
+
+  <div class="panel panel-gray">
+    <div class="panel-header">A Few Side Projects</div>
+
+    <div class="panel-content">
+
+      <div class="project" *ngFor="let project of PROJECTS">
+        <img class="project-img project-section" [src]="project.image">
+        <div class="project-section project-info" fxFlex>
+          <div class="project-title">{{project.name}}</div>
+          <p class="project-description body-text">{{project.description}}</p>
+        </div>
+      </div>
+
+      <div fxLayout="row" fxLayoutAlign="flex-end">
+        <div class="app-btn" routerLink="/projects">See more of my projects...</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="panel">
+    <div class="panel-header">My Life</div>
+
+    <div class="panel-content">
+      <div class="my-life">
+        <img class="life-photo" *ngFor="let img of SELF_PICS" [src]="img">
+      </div>
+
+      <div fxLayout="row" fxLayoutAlign="flex-end">
+        <div class="app-btn" routerLink="/about">More about me...</div>
+      </div>
+    </div>
+  </div>
+
+  <app-contact-me-panel></app-contact-me-panel>
+
+</div>
