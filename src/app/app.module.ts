@@ -21,6 +21,8 @@ import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { PageBannerComponent } from './page-banner/page-banner.component';
 import { AboutPageComponent } from './about-page/about-page.component';
 import { ContactPageComponent } from './contact-page/contact-page.component';
+import { ImageThumbnailDirective } from './_directives/image-thumbnail.directive';
+import { MediaModalComponent } from './media-modal/media-modal.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +36,9 @@ import { ContactPageComponent } from './contact-page/contact-page.component';
     NavBarComponent,
     PageBannerComponent,
     AboutPageComponent,
-    ContactPageComponent
+    ContactPageComponent,
+    ImageThumbnailDirective,
+    MediaModalComponent
   ],
   imports: [
     BrowserModule,
@@ -43,6 +47,9 @@ import { ContactPageComponent } from './contact-page/contact-page.component';
     FlexLayoutModule,
     MaterialModule,
     FontAwesomeModule,
+  ],
+  entryComponents: [
+    MediaModalComponent,
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,19 @@
+@import "variables";
+@import "mixins";
+
+.summary {
+  //@include fluid-type(font-size, $xs, $lg, 20px, 28px);
+}
+
+.my-life {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 10px;
+  align-items: stretch;
+}
+
+.life-photo {
+  height: 250px;
+  width: 100%;
+  object-fit: cover;
+}

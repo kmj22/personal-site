@@ -2,5 +2,46 @@
 
   <app-page-banner title="About Me" subtitle="Read on to learn a little more about my life."></app-page-banner>
 
+  <div class="panel">
+    <div class="panel-header">My Story</div>
+    <div class="panel-content">
+      <div class="summary body-text">
+        <p>
+          I've been a programmer since I was in 8th grade- but I didn't realize that until much later.
+        </p>
+        <p>
+          When I was in middle school, I became fascinated with the idea of creating my own video game. I had no
+          programming experience, but I found a tool online called Game Maker. The program had a drag-and-drop interface
+          to help non-programmers get started, but every command had a "Game Maker Language" equivalent. Once the user
+          was
+          comfortable, they could shift the project entirely to code. This is how I began to inadvertently learn some of
+          the fundamentals of programming.
+        </p>
+
+        <p>
+          In high school, I took a Computer Science elective and found that I recognized a lot of the core concepts. I
+          enjoyed applying the knowledge I had gained on my own, and I soon fell in love with the problem-solving,
+          puzzle-like nature of programming. This is what ultimately led to my decision to major in Computer Science.
+        </p>
+      </div>
+
+      <div *ngIf="false">
+        Hi! I'm Kevyn Jaremko- a 22 year old, recent college graduate with a Bachelor's in Computer Science and a minor
+        in Web and Information Systems. I've created this site as a portfolio to showcase my experience and the projects
+        I've worked on. A big hobby of mine is game design, which is what originally fostered my interest in
+        programming.
+      </div>
+    </div>
+  </div>
+
+  <div class="panel">
+    <div class="panel-header">My Pictures</div>
+    <div class="panel-content">
+      <div class="my-life">
+        <img class="life-photo" *ngFor="let img of SELF_PICS" [src]="img" appImageThumbnail>
+      </div>
+    </div>
+  </div>
+
   <app-contact-me-panel></app-contact-me-panel>
 </div>
