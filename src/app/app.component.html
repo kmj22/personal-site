@@ -3,7 +3,7 @@
     <div style="width: 100vw; height: 100vh;">
       <div style="position: fixed">
         <div style="text-align: right;  padding-right: 10px;">
-          <fa-icon [icon]="['fas', 'times']" class="" style="color: black; font-size: 25px;"
+          <fa-icon [icon]="['fas', 'times']" class="app-icon"
                    (click)="sidenav.toggle()"></fa-icon>
         </div>
 
@@ -20,7 +20,12 @@
 
   <mat-sidenav-content>
     <div fxHide.gt-xs (click)="sidenav.toggle()" style="text-align: right; padding-right: 10px;">
-      <fa-icon [icon]="['fas', 'bars']" class="" style="color: black; font-size: 25px;"></fa-icon>
+      <fa-icon [icon]="['fas', 'bars']" class="app-icon"></fa-icon>
+    </div>
+
+    <div *ngIf="showScrollButton" class="app-icon scroll-to-top" (click)="scrollToTop()">
+      <fa-icon [icon]="['fas', 'angle-double-up']"></fa-icon>
+      <!--<span>Back to Top</span>-->
     </div>
 
     <router-outlet></router-outlet>

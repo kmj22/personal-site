@@ -127,7 +127,7 @@
 
 
       <div fxLayout="row" fxLayoutAlign="flex-end">
-        <div class="app-btn" routerLink="/resume">More about my skills...</div>
+        <div class="app-btn" routerLink="/resume">More about my skills</div>
       </div>
     </div>
   </div>
@@ -155,7 +155,7 @@
       </div>
 
       <div fxLayout="row" fxLayoutAlign="flex-end">
-        <div class="app-btn" routerLink="/resume">See my full employment history...</div>
+        <div class="app-btn" routerLink="/resume">See my full resume</div>
       </div>
 
     </div>
@@ -175,7 +175,7 @@
       </div>
 
       <div fxLayout="row" fxLayoutAlign="flex-end">
-        <div class="app-btn" routerLink="/projects">See more of my projects...</div>
+        <div class="app-btn" routerLink="/projects">More of my projects</div>
       </div>
     </div>
   </div>
@@ -185,11 +185,11 @@
 
     <div class="panel-content">
       <div class="my-life">
-        <img class="life-photo" *ngFor="let img of SELF_PICS" [src]="img">
+        <img class="life-photo" *ngFor="let img of SELF_PICS; let idx = index" [src]="img" appImageThumbnail [album]="SELF_PICS" [index]="idx">
       </div>
 
       <div fxLayout="row" fxLayoutAlign="flex-end">
-        <div class="app-btn" routerLink="/about">More about me...</div>
+        <div class="app-btn" routerLink="/about">More about me</div>
       </div>
     </div>
   </div>

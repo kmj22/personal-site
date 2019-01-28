@@ -1,0 +1,19 @@
+@import "variables";
+
+.modal {
+
+  img {
+    object-fit: contain;
+    max-height: 90vh;
+    width: 50vw;
+  }
+
+  @media screen and (max-width: $xs) {
+    width: 100%;
+    max-height: 50vh;
+
+    img {
+      width: 100%;
+    }
+  }
+}

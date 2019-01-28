@@ -9,4 +9,15 @@
 .nav-bar {
   color: $c-white;
   font-size: 14px;
+  &:hover {
+    color: $c-medium-gray;
+  }
+}
+.nav-option {
+  &:hover {
+    color: $c-white;
+  }
+}
+.nav-active {
+  font-style: italic;
 }

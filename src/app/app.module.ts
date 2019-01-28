@@ -12,17 +12,20 @@ import {library} from '@fortawesome/fontawesome-svg-core';
 import {faGithub} from '@fortawesome/free-brands-svg-icons/faGithub';
 import {faLinkedinIn} from '@fortawesome/free-brands-svg-icons/faLinkedinIn';
 import {faAt, faBars, faStar, faStarHalf, faTimes} from '@fortawesome/free-solid-svg-icons';
-import { StarRatingComponent } from './star-rating/star-rating.component';
-import { LoopRangePipe } from './_pipes/loop-range.pipe';
-import { EmploymentHistoryPageComponent } from './employment-history-page/employment-history-page.component';
-import { ContactMePanelComponent } from './contact-me-panel/contact-me-panel.component';
-import { ProjectsPageComponent } from './projects-page/projects-page.component';
-import { NavBarComponent } from './nav-bar/nav-bar.component';
-import { PageBannerComponent } from './page-banner/page-banner.component';
-import { AboutPageComponent } from './about-page/about-page.component';
-import { ContactPageComponent } from './contact-page/contact-page.component';
-import { ImageThumbnailDirective } from './_directives/image-thumbnail.directive';
-import { MediaModalComponent } from './media-modal/media-modal.component';
+import {StarRatingComponent} from './star-rating/star-rating.component';
+import {LoopRangePipe} from './_pipes/loop-range.pipe';
+import {EmploymentHistoryPageComponent} from './employment-history-page/employment-history-page.component';
+import {ContactMePanelComponent} from './contact-me-panel/contact-me-panel.component';
+import {ProjectsPageComponent} from './projects-page/projects-page.component';
+import {NavBarComponent} from './nav-bar/nav-bar.component';
+import {PageBannerComponent} from './page-banner/page-banner.component';
+import {AboutPageComponent} from './about-page/about-page.component';
+import {ContactPageComponent} from './contact-page/contact-page.component';
+import {ImageThumbnailDirective} from './_directives/image-thumbnail.directive';
+import {MediaModalComponent} from './media-modal/media-modal.component';
+import {faChevronCircleLeft} from '@fortawesome/free-solid-svg-icons/faChevronCircleLeft';
+import {faChevronCircleRight} from '@fortawesome/free-solid-svg-icons/faChevronCircleRight';
+import {faAngleDoubleUp} from '@fortawesome/free-solid-svg-icons/faAngleDoubleUp';
 
 @NgModule({
   declarations: [
@@ -57,6 +60,17 @@ import { MediaModalComponent } from './media-modal/media-modal.component';
 export class AppModule {
   constructor() {
 
-    library.add(faGithub, faLinkedinIn, faAt, faStar, faStarHalf, faBars, faTimes);
+    library.add(
+      faGithub,
+      faLinkedinIn,
+      faAt, // email
+      faStar,
+      faStarHalf,
+      faBars, // hamburger menu
+      faTimes, // x button, times is a weird name
+      faChevronCircleLeft,
+      faChevronCircleRight,
+      faAngleDoubleUp, // scroll to top
+    );
   }
 }

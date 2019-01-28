@@ -1,0 +1,11 @@
+@import "variables";
+@import "mixins";
+
+.contact-icon {
+  font-size: 22px;
+  margin-right: 10px;
+}
+
+.linkedin-btn {
+  @include button(#0077B5);
+}

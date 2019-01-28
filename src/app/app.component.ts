@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component, HostListener} from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +6,16 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'personal-site';
+  showScrollButton = false;
+
+  scrollToTop() {
+    window.scrollTo(0, 0);
+  }
+
+  @HostListener('window:scroll', ['$event'])
+  showNavbar(event): void {
+    const scrollHeight = document.body.scrollTop || document.documentElement.scrollTop;
+
+    this.showScrollButton = scrollHeight > 80;
+  }
 }

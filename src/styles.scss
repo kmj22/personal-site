@@ -44,24 +44,15 @@ body {
 }
 
 .app-btn {
-  $height: 40px;
-  $color: $c-main-pink;
-
-  display: inline-block;
-  height: $height;
-  line-height: $height;
-
-  color: $color;
-  font-weight: bold;
-  border: 2px solid $color;
-  padding: 5px 20px;
-
-  text-transform: uppercase;
+  @include button($c-main-pink);
+}
+.app-icon {
+  color: $c-medium-gray;
   cursor: pointer;
+  font-size: 22px;
 
   &:hover {
-    background: $color;
-    color: white;
+    color: $c-main-pink;
   }
 }
 
@@ -131,4 +122,23 @@ body {
       color: $c-main-pink;
     }
   }
+}
+
+// Prevent ugly selection/highlighting of images
+img {
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  draggable: false;
+}
+img::-moz-selection {
+  background-color: transparent;
+  color: #000;
+}
+
+img::selection {
+  background-color: transparent;
+  color: #000;
 }

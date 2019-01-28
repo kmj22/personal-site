@@ -7,7 +7,8 @@ import {MediaModalComponent} from '../media-modal/media-modal.component';
 })
 export class ImageThumbnailDirective implements AfterContentInit {
 
-  @Input() image: string;
+  @Input() album: string[];
+  @Input() index: number;
 
   constructor(private elRef: ElementRef,
               private renderer: Renderer2,
@@ -22,17 +23,13 @@ export class ImageThumbnailDirective implements AfterContentInit {
 
   @HostListener('click')
   onClick() {
-    // Default the image to display in popup to the src of the host element
-    // unless another image is specified
-    if (!this.image) {
-      this.image = this.elRef.nativeElement.src;
-    }
-
-    console.log(this.image);
 
     const dialogRef = this.dialog.open(MediaModalComponent, {
       // width: '250px',
-      data: {image: this.image}
+      data: {
+        album: this.album,
+        index: this.index,
+      }
     });
   }
 }

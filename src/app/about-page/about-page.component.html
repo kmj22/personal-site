@@ -38,7 +38,7 @@
     <div class="panel-header">My Pictures</div>
     <div class="panel-content">
       <div class="my-life">
-        <img class="life-photo" *ngFor="let img of SELF_PICS" [src]="img" appImageThumbnail>
+        <img class="life-photo" *ngFor="let img of SELF_PICS; let idx = index" [src]="img" appImageThumbnail [album]="SELF_PICS" [index]="idx">
       </div>
     </div>
   </div>
