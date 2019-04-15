@@ -14,14 +14,13 @@ export const BACK_SKILLS: Skill[] = [
 export const DATABASE_SKILLS: Skill[] = [
   {name: 'SQL (Postgres, MySQL)', rating: 4},
   {name: 'Relational Database Design', rating: 4},
-  {name: 'MongoDB', rating: 2},
+  {name: 'MongoDB', rating: 2.5},
   {name: 'ElasticSearch', rating: 3},
 ];
 
 export const FRONT_SKILLS: Skill[] = [
-  {name: 'AJAX/API Calls', rating: 5},
   {name: 'Angular(2+)', rating: 4.5},
-  {name: 'JavaScript', rating: 4},
+  {name: 'JavaScript / TypeScript', rating: 4},
   {name: 'RxJS (Observables)', rating: 4},
   {name: 'CSS', rating: 4},
   {name: 'SASS/SCSS', rating: 3.5},
@@ -32,11 +31,33 @@ export const FRONT_SKILLS: Skill[] = [
 
 export const OTHER_SKILLS: Skill[] = [
   {name: 'Game Maker Studio', rating: 5},
+  {name: 'AJAX/API Calls', rating: 5},
   {name: 'JSON', rating: 5},
   {name: 'Git (Version Control)', rating: 4},
   {name: 'IntelliJ', rating: 4},
   {name: 'Webstorm', rating: 4},
   {name: 'Adobe Creative Suite', rating: 3.5},
+];
+
+export const SKILL_SUMMARY = [
+  BACK_SKILLS[0],
+  BACK_SKILLS[1],
+  BACK_SKILLS[2],
+  BACK_SKILLS[3],
+  DATABASE_SKILLS[0],
+  DATABASE_SKILLS[1],
+  DATABASE_SKILLS[2],
+  DATABASE_SKILLS[3],
+  FRONT_SKILLS[0],
+  FRONT_SKILLS[1],
+  FRONT_SKILLS[2],
+  FRONT_SKILLS[3],
+  FRONT_SKILLS[4],
+  FRONT_SKILLS[5],
+  FRONT_SKILLS[6],
+  OTHER_SKILLS[0],
+  OTHER_SKILLS[1],
+  OTHER_SKILLS[3],
 ];
 
 const SKILL_COMPARATOR = (s1: Skill, s2: Skill) => s2.rating - s1.rating;

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {PAST_EMPLOYERS} from '../_data/past-employers.data';
+import {EMAIL_URL, LINKEDIN_URL} from '../_data/links.data';
 
 @Component({
   selector: 'app-contact-page',
@@ -9,10 +10,18 @@ import {PAST_EMPLOYERS} from '../_data/past-employers.data';
 export class ContactPageComponent implements OnInit {
 
   readonly CURRENT_JOB = PAST_EMPLOYERS.find(employer => !employer.end_date);
+  readonly EMAIL = EMAIL_URL;
+  readonly LINKEDIN = LINKEDIN_URL;
 
   constructor() { }
 
   ngOnInit() {
   }
 
+  navigateTo(url: string) {
+    const win = window.open(url, '_blank');
+    if (win) {
+      win.focus();
+    }
+  }
 }

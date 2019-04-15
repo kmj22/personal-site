@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import {PAST_EMPLOYERS} from '../_data/past-employers.data';
+import {EDUCATION, PAST_EMPLOYERS} from '../_data/past-employers.data';
 import {BACK_SKILLS, DATABASE_SKILLS, FRONT_SKILLS, OTHER_SKILLS} from '../_data/skills.data';
 import {Employer} from '../_interfaces/employer.interface';
+import {RESUME_URL} from '../_data/links.data';
 
 @Component({
   selector: 'app-employment-history-page',
@@ -16,15 +17,9 @@ export class EmploymentHistoryPageComponent implements OnInit {
   readonly OTHER_SKILLS = OTHER_SKILLS;
 
   readonly EMPLOYERS = PAST_EMPLOYERS;
-  readonly SCHOOL: Employer = {
-    name: 'New Jersey Institute of Technology',
-    job_title: '',
-    image: '',
-    description: 'A school',
-    start_date: new Date(2013, 9),
-    end_date: new Date(2017, 5)
-  };
+  readonly SCHOOL = EDUCATION;
 
+  readonly RESUME = RESUME_URL;
 
   constructor() { }
 

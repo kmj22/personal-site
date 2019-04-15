@@ -2,9 +2,8 @@
 
   <app-page-banner title="Contact Me" subtitle="Reach out anytime. Let's see how I can help."></app-page-banner>
 
-  <div class="panel">
+  <div class="panel" appFadeInOnScroll>
     <div class="panel-header">I can help.</div>
-
     <div class="panel-content body-text">
       <p>I love new challenges. I'm currently working full-time at {{CURRENT_JOB?.name}}, but I'm happy to help your
         vision come to
@@ -13,21 +12,21 @@
 
       <p>For server-side development, I am most proficient with Java (specifically the Spring Framework) and Postgres.
         For front-end development, I specialize in the Angular Framework. Of course, I am always open to working with
-        new technologies. You can learn more about my skills and experience <a>here</a>.</p>
+        new technologies. You can learn more about my skills and experience <a href="">here</a>.</p>
 
       <p>Whether it's a new website, a server-side API, or something in between, I'm confident that I can help.</p>
 
     </div>
 
     <div fxLayout="column" fxLayout.gt-xs="row wrap" fxLayoutAlign="center" fxLayoutGap="20px">
-      <div class="app-btn">
+      <div class="app-btn" (click)="navigateTo(EMAIL)">
         <div fxLayout="row" fxLayoutAlign="center center">
           <span><fa-icon [icon]="['fas', 'at']" class="contact-icon"></fa-icon></span>
           <span>EMAIL ME</span>
         </div>
       </div>
 
-      <div class="linkedin-btn">
+      <div class="linkedin-btn" (click)="navigateTo(LINKEDIN)">
         <div fxLayout="row" fxLayoutAlign="center center">
           <span><fa-icon [icon]="['fab', 'linkedin-in']" class="contact-icon"></fa-icon></span>
           <span>CONNECT ON LINKEDIN</span>

@@ -3,6 +3,6 @@ export interface Employer {
   start_date: Date;
   end_date?: Date;
   job_title: string;
-  description: string;
+  description: string[] | string;
   image: string;
 }

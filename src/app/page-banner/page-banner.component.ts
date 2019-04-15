@@ -10,7 +10,6 @@ export class PageBannerComponent implements OnInit {
   @Input() title: string;
   @Input() subtitle: string;
   @Input() subtitleList: string[];
-  @Input() image: string;
 
   constructor() { }
 

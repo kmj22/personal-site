@@ -1,20 +1,19 @@
 <div class="resume-page">
-  <app-page-banner title="Employment History" subtitle="Here you'll find some of the work I've done."></app-page-banner>
+  <app-page-banner title="Employment History" subtitle="Learn more about where I've been."></app-page-banner>
 
-  <div class="panel ">
-    <div class="panel-header">I've Seen Some Shit</div>
+  <div class="panel" appFadeInOnScroll>
+    <div class="panel-header">A More "Fun" Resume</div>
 
     <div class="panel-content">
       <p class="body-text fnt-georgia page-description">
         I've listed my previous work experience below, as well as any noteworthy challenges, accomplishments, or takeaways that came with them.
-        For a more formal resume, <a href="" target="_blank">click here</a>.
+        For a more formal resume, <a [href]="RESUME" target="_blank">click here</a>.
       </p>
     </div>
   </div>
 
-  <div class="panel">
+  <div class="panel" appFadeInOnScroll>
     <div class="panel-header">My Skills</div>
-
     <div class="panel-content">
       <div fxLayout="row wrap" fxLayoutAlign="space-between">
         <div fxFlex.xs="1 1 100%" fxFlex.gt-xs="1 1 45%">
@@ -56,11 +55,8 @@
     </div>
   </div>
 
-  <div class="panel">
-    <div class="panel-header">
-      Past Employers
-    </div>
-
+  <div class="panel" appFadeInOnScroll>
+    <div class="panel-header">Employers</div>
     <div class="panel-content">
       <div class="job-history" fxLayout="column" fxLayoutGap="20px">
         <div class="job"
@@ -74,35 +70,31 @@
             <div class="job-position">{{employer.job_title}}, {{employer.start_date | date:'MMM y'}} -
               {{(employer.end_date | date:'MMM y') || 'Present'}}
             </div>
-            <p class="job-description body-text">{{employer.description}}</p>
+            <p class="job-description body-text" *ngFor="let paragraph of employer.description">{{paragraph}}</p>
           </div>
         </div>
       </div>
     </div>
   </div>
 
-  <div class="panel">
+  <div class="panel" appFadeInOnScroll>
     <div class="panel-header">Education</div>
-
     <div class="panel-content">
       <div class="job"
            fxLayout="row" fxLayout.xs="column" fxLayoutAlign="space-between" fxLayoutAlign.xs="flex-start"
-           fxLayoutGap.gt-xs="30px"
-           *ngFor="let employer of [SCHOOL]">
-        <img class="job-img" [src]="employer.image" fxFlex="0 1 300px">
+           fxLayoutGap.gt-xs="30px">
+        <img class="job-img" [src]="SCHOOL.image" fxFlex="0 1 300px">
 
         <div class="job-info" fxFlex>
-          <div class="job-title">{{employer.name}}</div>
-          <div class="job-position">{{employer.job_title}}, {{employer.start_date | date:'MMM y'}} -
-            {{(employer.end_date | date:'MMM y') || 'Present'}}
+          <div class="job-title">{{SCHOOL.name}}</div>
+          <div class="job-position">{{SCHOOL.job_title}}, {{SCHOOL.start_date | date:'MMM y'}} -
+            {{(SCHOOL.end_date | date:'MMM y') || 'Present'}}
           </div>
-          <p class="job-description body-text">{{employer.description}}</p>
+          <p class="job-description body-text" *ngFor="let paragraph of SCHOOL.description">{{paragraph}}</p>
         </div>
       </div>
     </div>
   </div>
-
-
 
   <app-contact-me-panel></app-contact-me-panel>
 </div>

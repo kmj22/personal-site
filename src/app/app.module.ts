@@ -26,6 +26,7 @@ import {MediaModalComponent} from './media-modal/media-modal.component';
 import {faChevronCircleLeft} from '@fortawesome/free-solid-svg-icons/faChevronCircleLeft';
 import {faChevronCircleRight} from '@fortawesome/free-solid-svg-icons/faChevronCircleRight';
 import {faAngleDoubleUp} from '@fortawesome/free-solid-svg-icons/faAngleDoubleUp';
+import { FadeInOnScrollDirective } from './_directives/fade-in-on-scroll.directive';
 
 @NgModule({
   declarations: [
@@ -41,7 +42,8 @@ import {faAngleDoubleUp} from '@fortawesome/free-solid-svg-icons/faAngleDoubleUp
     AboutPageComponent,
     ContactPageComponent,
     ImageThumbnailDirective,
-    MediaModalComponent
+    MediaModalComponent,
+    FadeInOnScrollDirective
   ],
   imports: [
     BrowserModule,

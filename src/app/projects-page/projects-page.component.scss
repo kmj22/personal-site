@@ -39,6 +39,6 @@
 }
 
 .project-description {
-  @include fluid-type(font-size, $xs, $lg, 16px, 25px);
+  @include fluid-type(font-size, $xs, $lg, 16px, 20px);
   line-height: 1.4;
 }
