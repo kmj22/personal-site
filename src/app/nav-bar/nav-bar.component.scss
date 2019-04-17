@@ -7,13 +7,17 @@
 }
 
 .nav-bar {
-  color: $c-white;
   font-size: 14px;
+  color: $c-white;
+  transition: .2s color ease-in-out;
+
   &:hover {
     color: $c-medium-gray;
   }
 }
 .nav-option {
+  transition: .2s color ease-in-out;
+
   &:hover {
     color: $c-white;
   }

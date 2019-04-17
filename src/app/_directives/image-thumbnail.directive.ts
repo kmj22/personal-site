@@ -29,7 +29,11 @@ export class ImageThumbnailDirective implements AfterContentInit {
       data: {
         album: this.album,
         index: this.index,
-      }
+      },
+      panelClass: 'media-modal',
+      maxWidth: '100vw',
+      maxHeight: '100vh',
+
     });
   }
 }

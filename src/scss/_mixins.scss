@@ -13,6 +13,8 @@
   text-transform: uppercase;
   cursor: pointer;
 
+  transition: .2s background ease-in-out;
+
   &:hover {
     background: $color;
     color: white;

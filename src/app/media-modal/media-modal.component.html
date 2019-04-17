@@ -1,9 +1,10 @@
-<div fxLayoutAlign="flex-end">
+
+<div class="modal-header" fxLayoutAlign="flex-end">
   <fa-icon [icon]="['fas', 'times']" class="app-icon" (click)="close()"></fa-icon>
 </div>
 
 <div class="modal" fxLayout="row" fxLayoutAlign="space-between center" fxLayoutGap="10px">
-  <fa-icon fxHide.xs class="app-icon" [icon]="['fa', 'chevron-circle-left']" (click)="cycleAlbumLeft()"></fa-icon>
-  <img [src]="album[index]">
-  <fa-icon fxHide.xs class="app-icon" [icon]="['fas', 'chevron-circle-right']" (click)="cycleAlbumRight()"></fa-icon>
+  <fa-icon class="app-icon image-nav" [icon]="['fa', 'chevron-circle-left']" (click)="cycleAlbumLeft()"></fa-icon>
+  <img [src]="album[index]" fxFlex="0 1 80%">
+  <fa-icon class="app-icon image-nav" [icon]="['fas', 'chevron-circle-right']" (click)="cycleAlbumRight()"></fa-icon>
 </div>
