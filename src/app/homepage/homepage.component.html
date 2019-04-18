@@ -63,7 +63,7 @@
             <div class="job-position">{{employer.job_title}}, {{employer.start_date | date:'MMM y'}} -
               {{(employer.end_date | date:'MMM y') || 'Present'}}
             </div>
-            <p class="job-description body-text" *ngFor="let paragraph of employer.description">{{paragraph}}</p>
+            <p class="job-description body-text" *ngFor="let paragraph of employer.description | slice:0:3">{{paragraph}}</p>
           </div>
         </div>
       </div>
