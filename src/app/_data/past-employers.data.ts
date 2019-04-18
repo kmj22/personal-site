@@ -18,7 +18,7 @@ export const RESEARCH_ASSISTANT: Employer = {
   start_date: new Date(2016, 8),
   end_date: new Date(2017, 0),
   description: [
-    'During my senior year at NJIT, my Data Structures and Algorithms professor offered me an opportunity to assist him in building a Java application to build an abstraction network from complex ontologies of medical data.  These ontologies consisted of enormous graphs of hierarchical medical data, and the application\'s goal was to abstract these graphs into a more condensed, more readily understandable graph.  I was tasked with modifying this application to work with the newest version of the OWL API, as well as building a feature to compare current versions of the ontology with previous versions to spot changes.',
+    'During my senior year at NJIT, my Data Structures & Algorithms professor offered me an opportunity to assist him in building a Java application to create an abstraction network from complex ontologies of medical data.  These ontologies consisted of enormous graphs of hierarchical medical data, and the application\'s goal was to abstract these graphs into something more condensed and readily understandable.  I was tasked with modifying this application to work with the newest version of the OWL API, as well as building a feature to compare current versions of the ontology with previous versions- pointing out any significant changes.',
     'This project gave me an opportunity to learn how to build off of someone else\'s code in a large codebase that I had no prior knowledge of.  Furthermore, I was able to overcome the challenge of building something about a topic I knew little about- medical ontologies.',
   ],
   job_title: 'Research Assistant for Independent Study',
@@ -41,7 +41,7 @@ export const TEACHING_ASSISTANT: Employer = {
   start_date: new Date(2016, 0),
   end_date: new Date(2016, 4),
   description: [
-    'During my junior year at NJIT, my Foundations of Computer Science II professor offered me a position as a teaching assistant for the very same class.  My primary responsibilities were to evaluate students\' models of computations projects, in which they designed and implemented DFAs (Deterministic Finite Automata) and PDAs (Pushdown Automata).  This offered the very unique challenge of evaluating others\' work and giving feedback that is both fair and constructive, something that has especially come in handy with my recent responsibilities.  I also had to analyze others\' code for correctness in various other languages (C, Java, and Python), which gave me great exposure to reading/understanding code that does not belong to me.'
+    'During my junior year at NJIT, my "Foundations of Computer Science II" professor offered me a position as a teaching assistant for the very same class.  My primary responsibilities were to evaluate students\' "models of computation" projects, in which they designed and implemented DFAs (Deterministic Finite Automata) and PDAs (Pushdown Automata).  This offered the very unique challenge of evaluating others\' work and giving feedback that is both fair and constructive, something that has especially come in handy with my recent responsibilities.  I also had to analyze others\' code for correctness in various other languages (C, Java, and Python), which gave me great exposure to reading/understanding code that does not belong to me.'
   ],
   job_title: 'Teaching Assistant for Foundations of Computer Science II',
   image: NJIT_LOGO,
@@ -52,7 +52,7 @@ export const COLGATE: Employer = {
   start_date: new Date(2015, 5),
   end_date: new Date(2016, 0),
   description: [
-    'They need no introduction- Colgate brings smiles to people across the globe with their healthcare products.  At Colgate Palmolive, I helped screw the lids onto toothpaste bottles.',  'Just kidding.',
+    'They need no introduction- Colgate brings smiles to people across the globe with their healthcare products.  At Colgate Palmolive, I worked on an assembly line screwing caps onto toothpaste tubes.',  'Just kidding.',
     'I was a part of their Global Information Technology team, specifically in the finance division.  I primarily worked with SAP, using their quirky, high-level programming language called ABAP.  The language was learned entirely on the job, and it was mostly used to query Colgate\'s databases to generate business reports.  Looking back at it now, it was very similar to using SQL queries, but at the time of this internship, I still hadn\'t taken any database courses at NJIT yet.  Needless to say, this gave me a great opportunity to learn how to query for data in a unique way.',
     'I also helped to create a program that greatly increased productivity.  Large spreadsheets of data needed to be formatted properly in order to be uploaded to Colgate\'s system, and the transformation had been previously done by hand.  After being subjected to this task myself, my mentor gave me an opportunity to create a solution to this problem.  As I worked part-time throughout the semester, this became my side project.  By the end of my internship, in addition to my other responsibilities, I was able to create an ABAP application to automate this process, saving my coworkers many hours of tedious work.',
   ],
@@ -65,8 +65,8 @@ export const LSEA: Employer = {
   start_date: new Date(2014, 5),
   end_date: new Date(2014, 8),
   description: [
-    'LS Engineering Associates Corporation is a civil engineering consulting firm.  It was my first internship, and it was during a time when I had very little programming experience (and no engineering experience, of course). Still, I did my best to learn everything I could in order to lend a hand.  I learned to use AutoCAD to trace drawings/blueprints, helped with a few site inspections, and made modifications to the company website.  At the time, the website was done in PHP, which I was entirely unfamiliar with.',
-    'Despite this, I was able to grasp enough from the existing code in order to build off if it- things like additional menu options or extra pages.  In the end, I learned that being a good problem-solver isn\'t about having all the necessary skills right from the getgo, but rather having the willingness and persistence to learn on the job and master the skills needed to succeed.\n',
+    'LS Engineering Associates Corporation is a civil engineering consulting firm.  It was my first internship, and it was during a time when I had very little programming experience (and no engineering experience). Still, I did my best to learn everything I could in order to lend a hand.  I learned to use AutoCAD to trace drawings/blueprints, helped with a few site inspections, and made modifications to the company website.  At the time, the website was done in PHP, which I was entirely unfamiliar with.',
+    'Despite this, I was able to grasp enough from the existing code to build off of it- things like additional menu options or extra pages were easy enough to figure out.  In the end, I learned that being a good problem-solver isn\'t about having all the necessary skills right from the getgo, but rather having the willingness and persistence to learn on the job and master the skills needed to succeed.\n',
   ],
   job_title: 'Intern',
   image: 'http://www.lseacorp.com/assets/logo/logo-white.png'

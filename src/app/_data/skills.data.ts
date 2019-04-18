@@ -27,6 +27,7 @@ export const FRONT_SKILLS: Skill[] = [
   {name: 'HTML(5)', rating: 4.5},
   {name: 'Bootstrap', rating: 3},
   {name: 'jQuery', rating: 2},
+  {name: 'Swift', rating: 1},
 ];
 
 export const OTHER_SKILLS: Skill[] = [

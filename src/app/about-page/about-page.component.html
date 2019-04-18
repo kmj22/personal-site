@@ -23,19 +23,18 @@
           enjoyed applying the knowledge I had gained on my own, and I soon fell in love with the problem-solving,
           puzzle-like nature of programming. This is what ultimately led to my decision to major in Computer Science.
         </p>
-      </div>
 
-      <div *ngIf="false">
-        Hi! I'm Kevyn Jaremko- a 22 year old, recent college graduate with a Bachelor's in Computer Science and a minor
-        in Web and Information Systems. I've created this site as a portfolio to showcase my experience and the projects
-        I've worked on. A big hobby of mine is game design, which is what originally fostered my interest in
-        programming.
+        <p>
+          Fast forward to now, I've graduated with a degree in Computer Science.  I've created this site as a portfolio to showcase my experience,
+          with the hopes that I can continue to grow my list of projects to show off.  Coming full circle, I've once again taken up game design on the side with the hopes of eventually releasing my own game.
+          So if I'm not kicking someone's butt at Mario Kart or Super Smash Bros., or eating good food, or hiking, (or at Giftapart), that's probably what I'm working on.
+        </p>
       </div>
     </div>
   </div>
 
   <div class="panel" appFadeInOnScroll>
-    <div class="panel-header">My Pictures</div>
+    <div class="panel-header">Assorted Pictures</div>
     <div class="panel-content">
       <div class="my-life">
         <img class="life-photo" *ngFor="let img of SELF_PICS; let idx = index" [src]="img" appImageThumbnail [album]="SELF_PICS" [index]="idx">
