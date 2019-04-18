@@ -23,7 +23,7 @@
       <fa-icon [icon]="['fas', 'bars']" class="app-icon"></fa-icon>
     </div>
 
-    <div *ngIf="showScrollButton" class="app-icon scroll-to-top" (click)="scrollToTop()">
+    <div [ngClass]="{'hidden': !showScrollButton}" class="app-icon scroll-to-top" (click)="scrollToTop()">
       <fa-icon [icon]="['fas', 'angle-double-up']"></fa-icon>
       <!--<span>Back to Top</span>-->
     </div>

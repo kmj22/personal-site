@@ -3,11 +3,20 @@ const BASE_ROUTE = './assets/images/';
 export const LOCAL_IMAGES = {
   personal_site_v1: 'personal-site-v1.PNG',
   personal_site_v2: 'personal-site-v2.PNG',
-  personal_pic_1: 'food.jpg',
-  personal_pic_2: 'broadway.jpg',
-  personal_pic_3: 'boat.jpg',
-  personal_pic_4: 'prague.jpg',
-  personal_pic_5: 'munich.jpg',
+  food: 'food.jpg',
+  broadway: 'broadway.jpg',
+  boat: 'boat.jpg',
+  prague: 'prague.jpg',
+  munich: 'munich.jpg',
+  appalachian: 'appalachian.jpg',
+  etail: 'etaileast.jpg',
+  gap_banner: 'gapbanner.jpg',
+  hike: 'hike.jpg',
+  crepe: 'crepe.jpg',
+  junk_art: 'junkart.jpg',
+  paint: 'paint.jpg',
+  plane: 'plane.jpg',
+  triumph: 'triumph.jpg',
 };
 
 // This is pure laziness- add the base route to each url
