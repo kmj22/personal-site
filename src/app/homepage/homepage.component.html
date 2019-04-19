@@ -84,7 +84,8 @@
         <div class="project-section project-info" fxFlex>
           <div class="project-title">{{project.name}}</div>
           <p class="project-description body-text" *ngFor="let paragraph of project.description | slice:0:1">
-            {{paragraph}} <a routerLink="/projects">read more...</a>
+            {{paragraph}}
+            <!--<a routerLink="/projects">read more...</a>-->
           </p>
         </div>
       </div>
