@@ -9,7 +9,7 @@ import {MAT_DIALOG_DATA, MatDialogRef} from '@angular/material';
 export class MediaModalComponent implements OnInit {
 
   @Input() image: string;
-  @Input() album: string[];
+  @Input() album: string[] = [];
 
   private _index: number;
   @Input() set index(val: number) {

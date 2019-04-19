@@ -4,7 +4,7 @@
 </div>
 
 <div class="modal" fxLayout="row" fxLayoutAlign="space-between center" fxLayoutGap="10px">
-  <fa-icon class="app-icon image-nav" [icon]="['fa', 'chevron-circle-left']" (click)="cycleAlbumLeft()"></fa-icon>
-  <img [src]="album[index]" fxFlex="0 1 80%">
-  <fa-icon class="app-icon image-nav" [icon]="['fas', 'chevron-circle-right']" (click)="cycleAlbumRight()"></fa-icon>
+  <fa-icon *ngIf="album.length > 1" class="app-icon image-nav" [icon]="['fa', 'chevron-circle-left']" (click)="cycleAlbumLeft()"></fa-icon>
+  <div class="image-wrapper" fxFlex="1 1 0"><img [src]="album[index]"></div>
+  <fa-icon *ngIf="album.length > 1" class="app-icon image-nav" [icon]="['fas', 'chevron-circle-right']" (click)="cycleAlbumRight()"></fa-icon>
 </div>

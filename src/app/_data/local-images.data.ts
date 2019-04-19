@@ -17,6 +17,7 @@ export const LOCAL_IMAGES = {
   paint: 'paint.jpg',
   plane: 'plane.jpg',
   triumph: 'triumph.jpg',
+  gameplay: 'ehd-gameplay.gif',
 };
 
 // This is pure laziness- add the base route to each url

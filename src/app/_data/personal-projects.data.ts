@@ -13,8 +13,9 @@ export const PAPER_MARIO: Project = {
 export const CURRENT_SITE: Project = {
   name: 'Personal Site - Version 2',
   description: [
-    'This is inception!  I needed to start somewhere.  I made my last personal site about two years ago, before I had even really worked with JavaScript or CSS.  It was a good first try, but after taking the lead on Giftapart\'s front end Angular development for over a year, it was starting to look a little dated.  This project served as a great way to keep my skills sharp, and I think I\'ve achieved something a lot more modern-looking.  The site was built fully in Angular 7, with a little help from Angular Material for the mobile side-nav and fxLayout for its very useful responsive API and flexbox directives.  The site is fully responsive- no Bootstrap required!',
-    'With a strong Computer Science / Programming background, I\'ve always wanted to improve on my design skills.  Given a design and enough time, I could recreate it.  But to create a design from nothing- and THEN replicate it- was a unique challenge that I struggled with.  The need for a design and utter lack of direction were my biggest hurdles, but I was able to surmount them and I\'m pleased with the result.',
+    '"It\'s like, website inception."',
+    'I made my last personal site about two years ago, before I had even really worked with JavaScript or CSS.  It was a good first try, but after taking the lead on Giftapart\'s front end Angular development for over a year, it was starting to look a little dated.  This project served as a great way to keep my skills sharp, and I think I\'ve achieved something a lot more modern-looking.  The site was built fully in Angular 7, with a little help from Angular Material for the mobile side-nav and fxLayout for its very useful responsive API and flexbox directives.  The site is fully responsive- no Bootstrap required!',
+    'With a strong Computer Science / programming background, I\'ve always wanted to improve on my design skills.  Given a design and enough time, I could recreate it.  But to create a design from nothing- and THEN replicate it- was a unique challenge that I struggled with.  The need for a design and utter lack of direction were my biggest hurdles, but I was able to surmount them and I\'m pleased with the result.',
     'My design isn\'t truly unique or groundbreaking, but it stands as a proud personal accomplishment.  My skills used to be limited to server side development: data structures, databases, and algorithms.  And while those are all still my favorite to work with, I can confidently say I\'ve grown.  I\'ve broadened my horizons and become a programmer that can develop with confidence on any part of the development stack.',
     'Also, I own kevynjaremko.com now.  That\'s pretty cool too.',
   ],
@@ -28,7 +29,8 @@ export const EVEN_HEROES_DIE: Project = {
     'At the time, we had hoped to build the demo into a fully fledged game, but unfortunately, the team parted ways after graduation.  That was the end of Even Heroes Die- until recently.  Now, with a stable career and some more experience under my belt, I\'ve started to rebuild the core engine for Even Heroes Die from the ground up.  Though it inherits many concepts from the original demo, this version is my own independent take on the project.',
     'Even Heroes Die is a 2D platforming video game in which the player starts off with a wide range of abilities, but slowly loses them over time due to illness.  The player can find ways to cope with this- maybe a jetpack will help with their waning jump ability, etc. This turns the typical rate of progression in video games on its head, and creates a unique kind of difficulty curve that stems from the player\'s ability to cope with their approaching demise.  Before they succumb to illness, the player must trek across a vast kingdom and venture into procedurally generated dungeons, budgeting their time between preparation and adventure in order to survive.',
   ],
-  image: 'https://kmj22.github.io/portfolio-site/img/gameplay2-1.gif',
+  // image: 'https://kmj22.github.io/portfolio-site/img/gameplay2-1.gif',
+  image: LOCAL_IMAGES.gameplay,
 };
 
 export const OLD_PORTFOLIO: Project = {

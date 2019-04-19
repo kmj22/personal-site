@@ -1,12 +1,12 @@
 <div class="projects-page">
-  <app-page-banner title="Projects" subtitle="Side stuff I've done."></app-page-banner>
+  <app-page-banner title="Projects" subtitle="Other things I've worked on."></app-page-banner>
 
   <div class="panel" *ngFor="let project of PROJECTS; let i = index" appFadeInOnScroll>
     <div class="panel-header">{{project.name}}</div>
     <div class="panel-content">
       <div class="project">
         <div class="project-image">
-          <img [src]="project.image">
+          <img [src]="project.image" appImageThumbnail [album]="[project.image]" [index]="0">
         </div>
         <p class="project-description" *ngFor="let paragraph of project.description">{{paragraph}}</p>
       </div>

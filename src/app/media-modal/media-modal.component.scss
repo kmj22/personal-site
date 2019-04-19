@@ -2,14 +2,9 @@
 
 :host {
   display: block;
-  width: 66vw;
-  height: 66vh;
+  width: 90vw;
+  height: 90vh;
   background: black;
-
-  @media screen and (max-width: $xs) {
-    height: 100%;
-    width: 100%;
-  }
 }
 
 .modal-header {
@@ -19,13 +14,15 @@
 .modal {
   height: calc(100% - 35px);
   width: 100%;
+}
+
+.image-wrapper {
+
+  height: 100%;
 
   img {
     object-fit: contain;
     width: 100%;
     height: 100%;
-  }
-
-  @media screen and (max-width: $xs) {
   }
 }
