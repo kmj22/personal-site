@@ -15,6 +15,8 @@ export class HomepageComponent implements OnInit {
   readonly SUBTITLES = ['Software Engineer', 'Full Stack Developer', 'Game Designer', 'Problem Solver'];
 
   readonly EMPLOYERS = PAST_EMPLOYERS_SUMMARY;
+
+
   readonly PROJECTS = PROJECT_SUMMARY;
   readonly SELF_PICS = [
     LOCAL_IMAGES.food,

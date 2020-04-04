@@ -12,7 +12,8 @@
   object-fit: cover;
 }
 
-.about-me {}
+.about-me {
+}
 
 .project {
   margin-bottom: 20px;
@@ -56,4 +57,46 @@
   height: 250px;
   width: 100%;
   object-fit: cover;
+}
+
+
+.current-job-title {
+  font-size: 28px;
+  font-weight: bold;
+  color: $c-main-blue;
+  margin: 10px 0;
+}
+
+.employers-preview {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  margin-top: 15px;
+  margin-bottom: -5px;
+
+  .employer-preview {
+    margin-right: 15px;
+    margin-bottom: 15px;
+  }
+}
+
+.employer-preview {
+  box-shadow: 6px 3px 9px 1px #eaeaea;
+  border-radius: 30px;
+  padding: 20px 20px 15px;
+
+  flex: 1;
+  text-align: center;
+
+  cursor: pointer;
+  transition: box-shadow .3s;
+  &:hover {
+    box-shadow: 6px 3px 9px 4px #eaeaea;
+  }
+
+  img {
+    mix-blend-mode: darken;
+    @include fluid-type(height, $xs, $md, 50px, 75px);
+  }
 }

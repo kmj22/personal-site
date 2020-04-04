@@ -1,5 +1,6 @@
 @mixin button($color) {
   $height: 40px;
+  border-radius: 45px;
 
   display: inline-block;
   height: $height;

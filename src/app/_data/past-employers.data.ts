@@ -6,6 +6,8 @@ export const GIFTAPART: Employer = {
   name: 'Giftapart',
   start_date: new Date(2017, 8),
   description: [
+
+
     'Giftapart is an ecommerce startup that hopes to change the way we gift.  I\'ve been on the Giftapart team from the very first line of code, and my experiences there have helped me grow immensely as a developer.  Originally hired as a backend Java/Spring developer, my responsibilities have evolved into so much more.  In addition to overseeing server-side development, I learned the Angular Framework on the job and took the lead in developing our web frontend.',
     'It\'s a dynamic and fast-paced work environment, where every day brings a new development challenge to overcome.  But the job wouldn\'t be any fun if it were too easy.',
   ],
@@ -57,7 +59,7 @@ export const COLGATE: Employer = {
     'I also helped to create a program that greatly increased productivity.  Large spreadsheets of data needed to be formatted properly in order to be uploaded to Colgate\'s system, and the transformation had been previously done by hand.  After being subjected to this task myself, my mentor gave me an opportunity to create a solution to this problem.  As I worked part-time throughout the semester, this became my side project.  By the end of my internship, in addition to my other responsibilities, I was able to create an ABAP application to automate this process, saving my coworkers many hours of tedious work.',
   ],
   job_title: 'Global IT Intern',
-  image: 'https://pbs.twimg.com/profile_images/530057213667069952/sBF8Pv2r_400x400.jpeg',
+  image: 'https://logo.stocklight.com/NYSE/CL.png',
 };
 
 export const LSEA: Employer = {
@@ -93,5 +95,7 @@ export const PAST_EMPLOYERS: Employer[] = [
 export const PAST_EMPLOYERS_SUMMARY: Employer[] = [
   GIFTAPART,
   ASTRODYNE,
+  RESEARCH_ASSISTANT,
   COLGATE,
+  LSEA
 ];

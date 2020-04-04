@@ -9,8 +9,8 @@ body {
 }
 
 .body-text {
-  font-size: 19px;
-  line-height: 1.4;
+  @include fluid-type(font-size, $xs, $md, 19px, 24px);
+  line-height: 1.45;
 }
 
 .fnt-roboto {
@@ -60,7 +60,8 @@ body {
 
 // Panels
 .panel {
-  padding: 50px 50px 25px;
+  padding: 10vh 5vw;
+  //padding: 50px 50px 25px;
   background: $c-white;
 
   &:nth-child(even) {
@@ -69,12 +70,8 @@ body {
 }
 
 .panel-header {
-  font-size: 60px;
+  @include fluid-type(font-size, $xs, $md, 30px, 60px);
   text-align: center;
-
-  @media screen and (max-width: $xs) {
-    font-size: 30px;
-  }
 }
 
 .panel-content {
