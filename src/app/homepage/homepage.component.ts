@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {PAST_EMPLOYERS, PAST_EMPLOYERS_SUMMARY} from '../_data/past-employers.data';
-import {PERSONAL_PROJECTS, PROJECT_SUMMARY} from '../_data/personal-projects.data';
+import {EVEN_HEROES_DIE, PERSONAL_PROJECTS, PROJECT_SUMMARY} from '../_data/personal-projects.data';
 import {PICTURES_OF_ME} from '../_data/self.data';
 import {SKILL_SUMMARY} from '../_data/skills.data';
 import {LOCAL_IMAGES} from '../_data/local-images.data';
@@ -12,10 +12,11 @@ import {LOCAL_IMAGES} from '../_data/local-images.data';
 })
 export class HomepageComponent implements OnInit {
 
+  readonly project = EVEN_HEROES_DIE;
+
   readonly SUBTITLES = ['Software Engineer', 'Full Stack Developer', 'Game Designer', 'Problem Solver'];
 
   readonly EMPLOYERS = PAST_EMPLOYERS_SUMMARY;
-
 
   readonly PROJECTS = PROJECT_SUMMARY;
   readonly SELF_PICS = [

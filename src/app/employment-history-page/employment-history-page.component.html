@@ -62,7 +62,7 @@
         <div class="job"
              fxLayout="row" fxLayout.xs="column" fxLayoutAlign="space-between" fxLayoutAlign.xs="flex-start"
              fxLayoutGap.gt-xs="30px"
-             *ngFor="let employer of EMPLOYERS">
+             *ngFor="let employer of EMPLOYERS" [id]="employer.url_slug">
           <img class="job-img" [src]="employer.image" fxFlex="0 1 300px">
 
           <div class="job-info" fxFlex>

@@ -13,6 +13,7 @@ export const GIFTAPART: Employer = {
   ],
   job_title: 'Director of Software Development / Software Engineer',
   image: 'https://cdn.newswire.com/files/x/f2/dd/7f2033d2f512149579942f3b5441.png',
+  url_slug: 'giftapart'
 };
 
 export const RESEARCH_ASSISTANT: Employer = {
@@ -25,6 +26,7 @@ export const RESEARCH_ASSISTANT: Employer = {
   ],
   job_title: 'Research Assistant for Independent Study',
   image: NJIT_LOGO,
+  url_slug: 'research-assistant'
 };
 
 export const ASTRODYNE: Employer = {
@@ -35,7 +37,8 @@ export const ASTRODYNE: Employer = {
     'Astrodyne TDI is a power-supply company- I worked for their IT Team to build software to support other Astrodyne employees.  For example, I built an inventory management system that acted as an interface between other employees and the company database.  I also rebuilt a lot of the company\'s legacy software from the ground up, bringing the applications into the "modern age" by recreating them in C#.  This internship gave me the important responsibility of developing software to be used by others to perform real business tasks- one of my first times doing so in my career.  It tought me to interface with my clients, gather information about their needs for the project, and work with them when something doesn\'t go as expected.',
   ],
   job_title: 'Software Developer Intern',
-  image: 'https://www.astrodynetdi.com/images/default-source/default-album/astrodyne-tdi---large-logoff40bdb052456b66b263ff0000e044c6.png?sfvrsn=5505d610_0'
+  image: 'https://www.astrodynetdi.com/images/default-source/default-album/astrodyne-tdi---large-logoff40bdb052456b66b263ff0000e044c6.png?sfvrsn=5505d610_0',
+  url_slug: 'astrodyne'
 };
 
 export const TEACHING_ASSISTANT: Employer = {
@@ -47,6 +50,7 @@ export const TEACHING_ASSISTANT: Employer = {
   ],
   job_title: 'Teaching Assistant for Foundations of Computer Science II',
   image: NJIT_LOGO,
+  url_slug: 'teaching-assistant'
 };
 
 export const COLGATE: Employer = {
@@ -60,6 +64,7 @@ export const COLGATE: Employer = {
   ],
   job_title: 'Global IT Intern',
   image: 'https://logo.stocklight.com/NYSE/CL.png',
+  url_slug: 'colgate'
 };
 
 export const LSEA: Employer = {
@@ -71,7 +76,8 @@ export const LSEA: Employer = {
     'Despite this, I was able to grasp enough from the existing code to build off of it- things like additional menu options or extra pages were easy enough to figure out.  In the end, I learned that being a good problem-solver isn\'t about having all the necessary skills right from the getgo, but rather having the willingness and persistence to learn on the job and master the skills needed to succeed.\n',
   ],
   job_title: 'Intern',
-  image: 'http://www.lseacorp.com/assets/logo/logo-white.png'
+  image: 'http://www.lseacorp.com/assets/logo/logo-white.png',
+  url_slug: 'lsea'
 };
 
 export const EDUCATION: Employer = {
@@ -81,6 +87,7 @@ export const EDUCATION: Employer = {
   start_date: new Date(2013, 8),
   end_date: new Date(2017, 4),
   image: NJIT_LOGO,
+  url_slug: 'njit'
 };
 
 export const PAST_EMPLOYERS: Employer[] = [

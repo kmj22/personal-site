@@ -5,4 +5,5 @@ export interface Employer {
   job_title: string;
   description: string[] | string;
   image: string;
+  url_slug: string;
 }

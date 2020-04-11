@@ -4,7 +4,9 @@ import {LOCAL_IMAGES} from './local-images.data';
 export const PAPER_MARIO: Project = {
   name: 'Paper Mario - Fan Game',
   description: [
-    'This is the project that got me into Computer Science.  Built in Game Maker 8.0 (now known as Game Maker Studio), this game has been a side project of mine since middle school. I was a big gamer as a child (still am!), but eventually it wasn\'t enough to just play games.  I wanted to MAKE one.  And my desire to learn to design my own game led me to Game Maker, where I wrote my first lines of code.  Little did I know, I was becoming a programmer.',
+    'This is the project that got me into Computer Science.  Built in Game Maker 8.0 (now known as Game Maker Studio), this game has been a side project of mine since middle school. I was a big gamer as a child (still am!), but eventually it wasn\'t enough to just play games.',
+    'I wanted to MAKE one.',
+    'My desire to learn to design my own game led me to Game Maker, where I wrote my first lines of code.  Little did I know, I was becoming a programmer.',
     'Over the years, I continued to add to it, refactor it, and apply what I learned in my studies to improve upon it. I also learned many things about graphic design, animation, level design, and user experience along the way. I\'ve spent so much time changing and improving upon it over the years, it seems like I may never finish it.  Sadly, I\'ve mostly moved my focus onto other projects.  In particular, I\'ve shifted most of my game development focus to Even Heroes Die, the beginnings of which are outlined above.  If this project was about recreating the games of my childhood, Even Heroes Die is about building upon them and the lessons they\'ve taught me to create something unique.',
   ],
   image: 'https://kmj22.github.io/portfolio-site/img/gameplay6.gif',

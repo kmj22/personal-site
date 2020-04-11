@@ -51,10 +51,7 @@
     <div class="panel-content">
       <!--<div class="current-job-title">Current Employment- Giftapart, Director of Software Development</div>-->
 
-      <img src="http://localhost:4200/assets/images/gapbanner.jpg" style="display: block;
-    margin: 0 auto;
-    border-radius: 50px;
-    max-width: 50%;">
+      <img class="main-img" src="http://localhost:4200/assets/images/gapbanner.jpg">
 
       <div class="current-job-desc body-text">
         <p *ngFor="let paragraph of EMPLOYERS[0].description">{{paragraph}}</p>
@@ -63,7 +60,7 @@
       <div style="margin-top: 5vh" class="current-job-title">I've also worked with...</div>
 
       <div class="employers-preview">
-        <a *ngFor="let employer of EMPLOYERS | slice:1" routerLink="'/resume'" [fragment]="employer.name">
+        <a *ngFor="let employer of EMPLOYERS | slice:1" routerLink="/resume" [fragment]="employer.url_slug">
           <div class="employer-preview"><img [src]="employer.image"></div>
         </a>
       </div>
@@ -100,15 +97,14 @@
   </div>
 
   <div class="panel" appFadeInOnScroll>
-    <div class="panel-header">A Few Side Projects</div>
+    <div class="panel-header">Side Project- Video Game Design</div>
 
     <div class="panel-content">
-
-      <div class="project" *ngFor="let project of PROJECTS">
-        <img class="project-img project-section" [src]="project.image">
-        <div class="project-section project-info" fxFlex>
-          <div class="project-title">{{project.name}}</div>
-          <p class="project-description body-text" *ngFor="let paragraph of project.description | slice:0:1">
+      <div class="project">
+        <img class="project-img" [src]="project.image">
+        <div class="project-title">{{project.name}}</div>
+        <div class="">
+          <p class="body-text" *ngFor="let paragraph of project.description | slice:0:3">
             {{paragraph}}
             <!--<a routerLink="/projects">read more...</a>-->
           </p>

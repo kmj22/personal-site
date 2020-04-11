@@ -16,19 +16,9 @@
 }
 
 .project {
-  margin-bottom: 20px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  flex-wrap: wrap;
-
-  &:nth-child(odd) {
-    flex-direction: row-reverse;
-  }
 }
 
 .project-section {
-  margin: 0 10px;
 }
 
 .project-title {
@@ -36,13 +26,21 @@
   font-weight: bold;
   color: $c-main-blue;
   margin: 10px 0;
+
+  grid-area: title;
 }
 
 .project-img {
-  width: 250px;
-  height: 250px;
-  object-fit: cover;
-  border-radius: 15%;
+}
+
+.project-description {
+}
+
+.project-img {
+  display: block;
+  margin: 0 auto;
+  border-radius: 50px;
+  width: 100%;
 }
 
 .my-life {
@@ -58,7 +56,6 @@
   width: 100%;
   object-fit: cover;
 }
-
 
 .current-job-title {
   font-size: 28px;
@@ -99,4 +96,12 @@
     mix-blend-mode: darken;
     @include fluid-type(height, $xs, $md, 50px, 75px);
   }
+}
+
+.main-img {
+  display: block;
+  margin: 0 auto;
+  border-radius: 50px;
+  max-width: 100%;
+  width: 450px;
 }
