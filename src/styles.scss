@@ -4,6 +4,7 @@
 
 body {
   margin: 0;
+  color: $c-dark-gray;
   font-family: 'Lato', sans-serif;
   overflow: scroll;
 }
@@ -62,21 +63,30 @@ body {
 .panel {
   padding: 10vh 5vw;
   //padding: 50px 50px 25px;
-  background: $c-white;
+  background: $c-light-gray;
 
   &:nth-child(even) {
-    background: $c-light-gray;
+    background: $c-white;
   }
 }
 
 .panel-header {
   @include fluid-type(font-size, $xs, $md, 30px, 60px);
   text-align: center;
+  font-weight: bold;
 }
 
 .panel-content {
   margin: 30px auto 0;
   max-width: 1000px;
+}
+
+.skill-items {
+  margin-top: 1em;
+  font-size: 19px;
+  display: flex;
+  flex-flow: column wrap;
+  height: 300px;
 }
 
 .skill-item {

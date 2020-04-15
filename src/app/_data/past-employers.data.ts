@@ -63,7 +63,7 @@ export const COLGATE: Employer = {
     'I also helped to create a program that greatly increased productivity.  Large spreadsheets of data needed to be formatted properly in order to be uploaded to Colgate\'s system, and the transformation had been previously done by hand.  After being subjected to this task myself, my mentor gave me an opportunity to create a solution to this problem.  As I worked part-time throughout the semester, this became my side project.  By the end of my internship, in addition to my other responsibilities, I was able to create an ABAP application to automate this process, saving my coworkers many hours of tedious work.',
   ],
   job_title: 'Global IT Intern',
-  image: 'https://logo.stocklight.com/NYSE/CL.png',
+  image: 'https://edgeconsultinginc.net/wp-content/uploads/2018/08/COLGATE-PALMOLIVE-CL-logo.png',
   url_slug: 'colgate'
 };
 

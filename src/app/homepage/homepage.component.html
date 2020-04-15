@@ -16,7 +16,7 @@
             Technology
             with a BS in Computer Science and a minor in Web & Information Systems. I'm currently leading the
             development of an upcoming social ecommerce platform, <a href="https://www.giftapart.com"
-                                                              target="_blank">Giftapart!</a>
+                                                                     target="_blank">Giftapart!</a>
           </p>
 
           <p>Throughout my degree and early career, my focus was on
@@ -27,11 +27,11 @@
             OOP,
             I believe that I offer a unique and valuable perspective to full-stack development.</p>
 
-          <p>Here are some of the skills I've been using recently:</p>
+          <p class="skills-header">Here are some of the skills I've been using recently:</p>
         </div>
       </div>
 
-      <div fxLayout="column wrap" [ngStyle.gt-xs]="{height: '270px'}">
+      <div class="skill-items">
         <div class="skill-item" *ngFor="let skill of SKILLS">
           <span class="skill-name">{{skill.name}}</span>
           <app-star-rating [rating]="skill.rating"></app-star-rating>
@@ -39,7 +39,7 @@
       </div>
 
 
-      <div fxLayout="row" fxLayoutAlign="flex-end">
+      <div fxLayout="row" fxLayoutAlign="flex-end" style="margin-top: 5vh;">
         <div class="app-btn" routerLink="/resume">More about my skills</div>
       </div>
     </div>
@@ -84,7 +84,8 @@
             <div class="job-position">{{employer.job_title}}, {{employer.start_date | date:'MMM y'}} -
               {{(employer.end_date | date:'MMM y') || 'Present'}}
             </div>
-            <p class="job-description body-text" *ngFor="let paragraph of employer.description | slice:0:3">{{paragraph}}</p>
+            <p class="job-description body-text" *ngFor="let paragraph of employer.description | slice:0:3">
+              {{paragraph}}</p>
           </div>
         </div>
       </div>
@@ -102,30 +103,59 @@
     <div class="panel-content">
       <div class="project">
         <img class="project-img" [src]="project.image">
-        <div class="project-title">{{project.name}}</div>
-        <div class="">
-          <p class="body-text" *ngFor="let paragraph of project.description | slice:0:3">
-            {{paragraph}}
-            <!--<a routerLink="/projects">read more...</a>-->
+        <!--<div class="project-title">{{project.name}}</div>-->
+        <!--<div class="">-->
+        <!--<p class="body-text" *ngFor="let paragraph of project.description | slice:0:3">-->
+        <!--{{paragraph}}-->
+        <!--&lt;!&ndash;<a routerLink="/projects">read more...</a>&ndash;&gt;-->
+        <!--</p>-->
+        <!--</div>-->
+
+        <div class="body-text">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore
+            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+            commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+            est laborum.
+          </p>
+
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore
+            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+            commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+            est laborum.
           </p>
         </div>
       </div>
 
-      <div fxLayout="row" fxLayoutAlign="flex-end">
+      <div fxLayout fxLayoutGap="10px">
+        <div>more</div>
+        <div>pics</div>
+        <div>here</div>
+      </div>
+
+      <div fxLayout="row" fxLayoutAlign="flex-end" style="margin-top: 5vh;">
         <div class="app-btn" routerLink="/projects">More of my projects</div>
       </div>
     </div>
   </div>
 
   <div class="panel" appFadeInOnScroll>
-    <div class="panel-header">My Life</div>
+    <div class="panel-header">Outside of the Office</div>
 
     <div class="panel-content">
       <div class="my-life">
-        <img class="life-photo" *ngFor="let img of SELF_PICS; let idx = index" [src]="img" appImageThumbnail [album]="SELF_PICS" [index]="idx">
+        <img class="life-photo" *ngFor="let img of SELF_PICS; let idx = index"
+             [src]="img" appImageThumbnail [album]="SELF_PICS" [index]="idx">
       </div>
 
-      <div fxLayout="row" fxLayoutAlign="flex-end">
+      <div fxLayout="row" fxLayoutAlign="flex-end" style="margin-top: 5vh;">
         <div class="app-btn" routerLink="/about">Learn about me</div>
       </div>
     </div>
