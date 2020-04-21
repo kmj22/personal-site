@@ -52,13 +52,22 @@
   grid-gap: 20px;
   align-items: stretch;
   margin-bottom: 10px;
+
+  &.xs {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+  }
 }
 
 .life-photo {
-  height: 250px;
-  width: 100%;
-  object-fit: cover;
+  //height: 250px;
+  //width: 100%;
+  //object-fit: cover;
+
+  // Maintain height equal to container's width
+  padding-top: 100%;
   border-radius: 50px;
+  background-size: cover;
 }
 
 .current-job-title {

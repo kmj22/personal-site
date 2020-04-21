@@ -150,9 +150,12 @@
     <div class="panel-header">Outside of the Office</div>
 
     <div class="panel-content">
-      <div class="my-life">
-        <img class="life-photo" *ngFor="let img of SELF_PICS; let idx = index"
-             [src]="img" appImageThumbnail [album]="SELF_PICS" [index]="idx">
+      <div class="my-life" [ngClass.xs]="'xs'">
+        <div class="life-photo"
+             *ngFor="let img of SELF_PICS; let idx = index"
+             [style.background-image]="'url(' + img + ')'"
+             appImageThumbnail [album]="SELF_PICS" [index]="idx">
+        </div>
       </div>
 
       <div fxLayout="row" fxLayoutAlign="flex-end" style="margin-top: 5vh;">
