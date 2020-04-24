@@ -12,6 +12,8 @@ import {LOCAL_IMAGES} from '../_data/local-images.data';
 })
 export class HomepageComponent implements OnInit {
 
+  readonly SELF_PORTRAIT = LOCAL_IMAGES.me;
+
   readonly project = EVEN_HEROES_DIE;
 
   readonly SUBTITLES = ['Software Engineer', 'Full Stack Developer', 'Game Designer', 'Problem Solver'];

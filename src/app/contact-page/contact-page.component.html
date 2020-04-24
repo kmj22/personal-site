@@ -12,26 +12,26 @@
 
       <p>For server-side development, I am most proficient with Java (specifically the Spring Framework) and Postgres.
         For front-end development, I specialize in the Angular Framework. Of course, I am always open to working with
-        new technologies. You can learn more about my skills and experience <a href="">here</a>.</p>
+        new technologies. You can learn more about my skills and experience <a routerLink="/resume">here</a>.</p>
 
       <p>Whether it's a new website, a server-side API, or something in between, I'm confident that I can help.</p>
 
     </div>
 
     <div fxLayout="column" fxLayout.gt-xs="row wrap" fxLayoutAlign="center" fxLayoutGap="20px">
-      <div class="app-btn" (click)="navigateTo(EMAIL)">
+      <a class="app-btn" [href]="EMAIL" target="_blank">
         <div fxLayout="row" fxLayoutAlign="center center">
           <span><fa-icon [icon]="['fas', 'at']" class="contact-icon"></fa-icon></span>
           <span>EMAIL ME</span>
         </div>
-      </div>
+      </a>
 
-      <div class="linkedin-btn" (click)="navigateTo(LINKEDIN)">
+      <a class="linkedin-btn" [href]="LINKEDIN" target="_blank">
         <div fxLayout="row" fxLayoutAlign="center center">
           <span><fa-icon [icon]="['fab', 'linkedin-in']" class="contact-icon"></fa-icon></span>
           <span>CONNECT ON LINKEDIN</span>
         </div>
-      </div>
+      </a>
     </div>
   </div>
 

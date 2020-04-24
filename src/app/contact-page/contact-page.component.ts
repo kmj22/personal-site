@@ -17,11 +17,4 @@ export class ContactPageComponent implements OnInit {
 
   ngOnInit() {
   }
-
-  navigateTo(url: string) {
-    const win = window.open(url, '_blank');
-    if (win) {
-      win.focus();
-    }
-  }
 }

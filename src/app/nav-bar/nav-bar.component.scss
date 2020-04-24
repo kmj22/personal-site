@@ -8,20 +8,23 @@
 
 .nav-bar {
   font-size: 14px;
-  color: $c-white;
   transition: .2s color ease-in-out;
 
-  &:hover {
+  &:hover a.nav-option {
     color: $c-medium-gray;
   }
-}
-.nav-option {
-  transition: .2s color ease-in-out;
 
-  &:hover {
+  a.nav-option {
     color: $c-white;
+    text-decoration: none;
+    transition: .2s color ease-in-out;
+
+    &:hover {
+      color: $c-white;
+    }
   }
 }
+
 .nav-active {
   font-style: italic;
 }

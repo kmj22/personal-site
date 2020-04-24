@@ -1,10 +1,6 @@
 @import "variables";
 @import "mixins";
 
-.see-more {
-  margin-top: 25px;
-}
-
 .personal-pic {
   border-radius: 50%;
   height: 200px;
@@ -12,10 +8,17 @@
   object-fit: cover;
 }
 
-.about-me .skills-header {
+.about-me {
+  p:first-child {
+    margin-top: 0;
+  }
+}
+
+.skills-header {
   font-size: larger;
   font-weight: bold;
   color: $c-main-blue;
+  margin-top: 1.5em;
 }
 
 .project {
@@ -42,7 +45,7 @@
 .project-img {
   display: block;
   margin: 0 auto;
-  border-radius: 50px;
+  border-radius: 40px;
   width: 100%;
 }
 
@@ -66,7 +69,7 @@
 
   // Maintain height equal to container's width
   padding-top: 100%;
-  border-radius: 50px;
+  border-radius: 15%;
   background-size: cover;
 }
 
@@ -118,7 +121,12 @@
 .main-img {
   display: block;
   margin: 0 auto;
-  border-radius: 50px;
+  border-radius: 40px;
   max-width: 100%;
   width: 450px;
+}
+
+.see-more-wrapper {
+  margin-top: 5vh;
+  text-align: right;
 }

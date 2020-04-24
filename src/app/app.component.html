@@ -1,21 +1,17 @@
 <mat-sidenav-container>
   <mat-sidenav #sidenav>
-    <div style="width: 100vw; height: 100vh;">
-      <div style="position: fixed">
-        <div class="mobile-header">
-          <fa-icon [icon]="['fas', 'times']" class="app-icon"
-                   (click)="sidenav.toggle()"></fa-icon>
-        </div>
-
-        <div style="padding: 0 10px;" (click)="sidenav.close()">
-          <button mat-button class="sidenav-option" routerLink="/">Home</button>
-          <button mat-button class="sidenav-option" routerLink="/resume">Resume</button>
-          <button mat-button class="sidenav-option" routerLink="/projects">Projects</button>
-          <button mat-button class="sidenav-option" routerLink="/about">About Me</button>
-          <button mat-button class="sidenav-option" routerLink="/contact">Contact</button>
-        </div>
+      <div class="mobile-header">
+        <fa-icon [icon]="['fas', 'times']" class="app-icon"
+                 (click)="sidenav.toggle()"></fa-icon>
       </div>
-    </div>
+
+      <div class="sidenav-options" (click)="sidenav.close()">
+       <a routerLink="/"><button mat-button class="sidenav-option">Home</button></a>
+       <a routerLink="/resume"><button mat-button class="sidenav-option">Resume</button></a>
+       <a routerLink="/projects"><button mat-button class="sidenav-option">Projects</button></a>
+       <a routerLink="/about"><button mat-button class="sidenav-option">About Me</button></a>
+       <a routerLink="/contact"><button mat-button class="sidenav-option">Contact</button></a>
+      </div>
   </mat-sidenav>
 
   <mat-sidenav-content>
@@ -25,7 +21,6 @@
 
     <div [ngClass]="{'hidden': !showScrollButton}" class="app-icon scroll-to-top" (click)="scrollToTop()">
       <fa-icon [icon]="['fas', 'angle-double-up']"></fa-icon>
-      <!--<span>Back to Top</span>-->
     </div>
 
     <router-outlet></router-outlet>

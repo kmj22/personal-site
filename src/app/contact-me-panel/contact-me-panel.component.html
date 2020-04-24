@@ -4,18 +4,18 @@
   <div class="panel-content">
     <div class="contact-options" fxLayout="row" fxLayout.xs="column" fxLayoutAlign="center center"
          fxLayoutGap.gt-xs="40px">
-      <div class="contact-item" (click)="navigateTo(LINKEDIN)">
+      <a class="contact-item" [href]="LINKEDIN">
         <fa-icon [icon]="['fab', 'linkedin-in']" class="contact-icon"></fa-icon>
         <span class="contact-info">Linkedin</span>
-      </div>
-      <div class="contact-item" (click)="navigateTo(GITHUB)">
+      </a>
+      <a class="contact-item" [href]="GITHUB">
         <fa-icon [icon]="['fab', 'github']" class="contact-icon"></fa-icon>
         <span class="contact-info">Github</span>
-      </div>
-      <div class="contact-item" (click)="navigateTo(EMAIL)">
+      </a>
+      <a class="contact-item" [href]="EMAIL">
         <fa-icon [icon]="['fas', 'at']" class="contact-icon"></fa-icon>
         <span class="contact-info">Email</span>
-      </div>
+      </a>
     </div>
 
     <div class="copyright ta-center">© {{START_DATE.getFullYear()}}-{{END_DATE.getFullYear()}} Kevyn Jaremko. All rights reserved.</div>

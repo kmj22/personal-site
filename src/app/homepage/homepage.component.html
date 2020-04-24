@@ -5,23 +5,27 @@
     <div class="panel-header">Who Am I?</div>
 
     <div class="panel-content">
-      <div fxLayout.gt-xs="row" fxLayoutAlign.gt-xs="space-between" fxLayoutGap="20px"
+      <div fxLayout.gt-xs="row" fxLayoutAlign.gt-xs="space-between" fxLayoutGap="30px"
            fxLayout="column" fxLayoutAlign="flex-start center"
       >
-        <img class="personal-pic" src="https://kmj22.github.io/portfolio-site/img/me.jpg"
+        <img class="personal-pic" [src]="SELF_PORTRAIT"
              fxFlex="0 0 auto">
 
         <div class="about-me body-text">
-          <p>Hi- I'm Kevyn. I do full-stack software development. I graduated from The New Jersey Institute of
-            Technology
-            with a BS in Computer Science and a minor in Web & Information Systems. I'm currently leading the
+          <p>Hi- I'm Kevyn. I do full-stack software development.</p>
+          <!---->
+          <!--<p>I graduated from The New Jersey Institute of-->
+            <!--Technology-->
+            <!--with a BS in Computer Science and a minor in Web & Information Systems. </p>-->
+
+          <p>I'm currently leading the
             development of an upcoming social ecommerce platform, <a href="https://www.giftapart.com"
                                                                      target="_blank">Giftapart!</a>
           </p>
 
           <p>Throughout my degree and early career, my focus was on
             server-side development in languages such as Java, Python, and C++.
-            I've since extended my front-end skills after becoming fluent with the Angular Framework. Because much
+            I've since extended my front-end skills after becoming fluent with the Angular Framework.</p> <p>Because much
             of my
             knowledge (and enjoyment of programming) lies within concepts such as Data Structures, Algorithms, and
             OOP,
@@ -31,16 +35,15 @@
         </div>
       </div>
 
-      <div class="skill-items">
+      <div class="skill-items" ngClass.gt-xs="lg">
         <div class="skill-item" *ngFor="let skill of SKILLS">
           <span class="skill-name">{{skill.name}}</span>
           <app-star-rating [rating]="skill.rating"></app-star-rating>
         </div>
       </div>
 
-
-      <div fxLayout="row" fxLayoutAlign="flex-end" style="margin-top: 5vh;">
-        <div class="app-btn" routerLink="/resume">More about my skills</div>
+      <div class="see-more-wrapper">
+        <a class="app-btn" routerLink="/resume">More about my skills</a>
       </div>
     </div>
   </div>
@@ -65,35 +68,9 @@
         </a>
       </div>
 
-      <div style="text-align: right; margin-top: 5vh">
-        <div class="app-btn" routerLink="/resume">See my full resume</div>
+      <div class="see-more-wrapper">
+        <a class="app-btn" routerLink="/resume">See my full resume</a>
       </div>
-    </div>
-
-    <div class="panel-content" *ngIf="false">
-
-      <div class="job-history" fxLayout="column" fxLayoutGap="20px">
-        <div class="job"
-             fxLayout="row" fxLayout.xs="column" fxLayoutAlign="space-between" fxLayoutAlign.xs="flex-start"
-             fxLayoutGap.gt-xs="30px"
-             *ngFor="let employer of EMPLOYERS">
-          <img class="job-img" [src]="employer.image" fxFlex="0 1 300px">
-
-          <div class="job-info" fxFlex>
-            <div class="job-title">{{employer.name}}</div>
-            <div class="job-position">{{employer.job_title}}, {{employer.start_date | date:'MMM y'}} -
-              {{(employer.end_date | date:'MMM y') || 'Present'}}
-            </div>
-            <p class="job-description body-text" *ngFor="let paragraph of employer.description | slice:0:3">
-              {{paragraph}}</p>
-          </div>
-        </div>
-      </div>
-
-      <div fxLayout="row" fxLayoutAlign="flex-end">
-        <div class="app-btn" routerLink="/resume">See my full resume</div>
-      </div>
-
     </div>
   </div>
 
@@ -140,8 +117,8 @@
         <div>here</div>
       </div>
 
-      <div fxLayout="row" fxLayoutAlign="flex-end" style="margin-top: 5vh;">
-        <div class="app-btn" routerLink="/projects">More of my projects</div>
+      <div class="see-more-wrapper">
+        <a class="app-btn" routerLink="/projects">More of my projects</a>
       </div>
     </div>
   </div>
@@ -158,8 +135,8 @@
         </div>
       </div>
 
-      <div fxLayout="row" fxLayoutAlign="flex-end" style="margin-top: 5vh;">
-        <div class="app-btn" routerLink="/about">Learn about me</div>
+      <div class="see-more-wrapper">
+        <a class="app-btn" routerLink="/about">Learn about me</a>
       </div>
     </div>
   </div>

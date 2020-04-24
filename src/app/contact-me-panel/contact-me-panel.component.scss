@@ -15,11 +15,12 @@
   margin-bottom: 30px
 }
 
-.contact-item {
+a.contact-item {
   display: flex;
   align-items: center;
 
   color: $c-white;
+  text-decoration: none;
   transition: .2s color ease-in-out;
 
   cursor: pointer;
