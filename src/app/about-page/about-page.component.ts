@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {PICTURES_OF_ME} from '../_data/self.data';
+import {Meta, Title} from '@angular/platform-browser';
 
 @Component({
   selector: 'app-about-page',
@@ -10,9 +11,18 @@ export class AboutPageComponent implements OnInit {
 
   readonly SELF_PICS = PICTURES_OF_ME;
 
-  constructor() { }
+  constructor(private titleService: Title,
+              private metaService: Meta,) {
+  }
 
   ngOnInit() {
+    this.titleService.setTitle(`About Me`);
+    this.metaService.addTags([
+      {
+        name: `description`,
+        content: `A little more about my life.`
+      },
+    ]);
   }
 
 }

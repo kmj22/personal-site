@@ -6,6 +6,7 @@ import {RESUME_URL} from '../_data/links.data';
 import {ActivateRoutes} from '@angular/router/src/operators/activate_routes';
 import {ActivatedRoute} from '@angular/router';
 import {filter, map} from 'rxjs/internal/operators';
+import {Meta, Title} from '@angular/platform-browser';
 
 @Component({
   selector: 'app-employment-history-page',
@@ -24,10 +25,19 @@ export class EmploymentHistoryPageComponent implements OnInit, AfterViewInit {
 
   readonly RESUME = RESUME_URL;
 
-  constructor(private route: ActivatedRoute) {
+  constructor(private titleService: Title,
+              private metaService: Meta,
+              private route: ActivatedRoute) {
   }
 
   ngOnInit() {
+    this.titleService.setTitle(`Resume`);
+    this.metaService.addTags([
+      {
+        name: `description`,
+        content: `This page outlines my education and work experience, as well as any noteworthy challenges, accomplishments, and takeaways that came with them.`
+      },
+    ]);
   }
 
   ngAfterViewInit() {
