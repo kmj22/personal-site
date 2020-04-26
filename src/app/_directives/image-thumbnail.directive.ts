@@ -31,6 +31,7 @@ export class ImageThumbnailDirective implements AfterContentInit {
         index: this.index,
       },
       panelClass: 'media-modal',
+      backdropClass: 'media-modal-backdrop',
       maxWidth: '100vw',
       maxHeight: '100vh',
 

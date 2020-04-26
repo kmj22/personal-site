@@ -7,13 +7,19 @@
 
 .my-life {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-template-columns: 1fr 1fr;
   grid-gap: 10px;
   align-items: stretch;
+  margin-bottom: 10px;
+
+  &.lg {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 20px;
+  }
 }
 
 .life-photo {
-  height: 250px;
-  width: 100%;
-  object-fit: cover;
+  padding-top: 100%;
+  border-radius: 15%;
+  background-size: cover;
 }

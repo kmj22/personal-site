@@ -164,10 +164,12 @@ img::selection {
 }
 
 // Media modal styling
-.media-modal {
-  background: black;
-
-  .mat-dialog-container {
-    background: transparent;
-  }
+//.media-modal {
+//  background: black;
+//}
+.mat-dialog-container {
+  background: transparent;
+}
+.media-modal-backdrop {
+  background: rgba(black, .9);
 }

@@ -23,8 +23,6 @@ import {AboutPageComponent} from './about-page/about-page.component';
 import {ContactPageComponent} from './contact-page/contact-page.component';
 import {ImageThumbnailDirective} from './_directives/image-thumbnail.directive';
 import {MediaModalComponent} from './media-modal/media-modal.component';
-import {faChevronCircleLeft} from '@fortawesome/free-solid-svg-icons/faChevronCircleLeft';
-import {faChevronCircleRight} from '@fortawesome/free-solid-svg-icons/faChevronCircleRight';
 import {faAngleDoubleUp} from '@fortawesome/free-solid-svg-icons/faAngleDoubleUp';
 import { FadeInOnScrollDirective } from './_directives/fade-in-on-scroll.directive';
 
@@ -70,8 +68,6 @@ export class AppModule {
       faStarHalf,
       faBars, // hamburger menu
       faTimes, // x button, times is a weird name
-      faChevronCircleLeft,
-      faChevronCircleRight,
       faAngleDoubleUp, // scroll to top
     );
   }

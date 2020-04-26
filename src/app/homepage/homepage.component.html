@@ -127,7 +127,7 @@
     <div class="panel-header">Outside of the Office</div>
 
     <div class="panel-content">
-      <div class="my-life" [ngClass.xs]="'xs'">
+      <div class="my-life" [ngClass.gt-xs]="'lg'">
         <div class="life-photo"
              *ngFor="let img of SELF_PICS; let idx = index"
              [style.background-image]="'url(' + img + ')'"

@@ -1,10 +1,7 @@
-
 <div class="modal-header" fxLayoutAlign="flex-end">
-  <fa-icon [icon]="['fas', 'times']" class="app-icon" (click)="close()"></fa-icon>
+  <fa-icon [icon]="['fas', 'times']" class="app-icon close-btn" (click)="close()"></fa-icon>
 </div>
 
 <div class="modal" fxLayout="row" fxLayoutAlign="space-between center" fxLayoutGap="10px">
-  <fa-icon *ngIf="album.length > 1" class="app-icon image-nav" [icon]="['fa', 'chevron-circle-left']" (click)="cycleAlbumLeft()"></fa-icon>
-  <div class="image-wrapper" fxFlex="1 1 0"><img [src]="album[index]"></div>
-  <fa-icon *ngIf="album.length > 1" class="app-icon image-nav" [icon]="['fas', 'chevron-circle-right']" (click)="cycleAlbumRight()"></fa-icon>
+  <img class="image-wrapper" [src]="album[index]" (click)="cycleAlbumRight()">
 </div>

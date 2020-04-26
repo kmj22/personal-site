@@ -36,8 +36,12 @@
   <div class="panel" appFadeInOnScroll>
     <div class="panel-header">Assorted Pictures</div>
     <div class="panel-content">
-      <div class="my-life">
-        <img class="life-photo" *ngFor="let img of SELF_PICS; let idx = index" [src]="img" appImageThumbnail [album]="SELF_PICS" [index]="idx">
+      <div class="my-life" [ngClass.gt-xs]="'lg'">
+        <div class="life-photo"
+             *ngFor="let img of SELF_PICS; let idx = index"
+             [style.background-image]="'url(' + img + ')'"
+             appImageThumbnail [album]="SELF_PICS" [index]="idx">
+        </div>
       </div>
     </div>
   </div>
