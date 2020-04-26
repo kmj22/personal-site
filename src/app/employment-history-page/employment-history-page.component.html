@@ -16,7 +16,7 @@
     <div class="panel-header">My Skills</div>
     <div class="panel-content">
       <div fxLayout="row wrap" fxLayoutAlign="space-between">
-        <div fxFlex.xs="1 1 100%" fxFlex.gt-xs="1 1 45%">
+        <div class="skill-section" fxFlex.xs="1 1 100%" fxFlex.gt-xs="1 1 45%">
           <div class="skill-header">Backend Skills:</div>
 
           <div class="skill-item" *ngFor="let skill of BACK_SKILLS">
@@ -25,7 +25,7 @@
           </div>
         </div>
 
-        <div fxFlex.xs="1 1 100%" fxFlex.gt-xs="1 1 45%">
+        <div class="skill-section" fxFlex.xs="1 1 100%" fxFlex.gt-xs="1 1 45%">
           <div class="skill-header">Frontend Skills:</div>
 
           <div class="skill-item" *ngFor="let skill of FRONT_SKILLS">
@@ -34,7 +34,7 @@
           </div>
         </div>
 
-        <div fxFlex.xs="1 1 100%" fxFlex.gt-xs="1 1 45%">
+        <div class="skill-section" fxFlex.xs="1 1 100%" fxFlex.gt-xs="1 1 45%">
           <div class="skill-header">Database Skills:</div>
 
           <div class="skill-item" *ngFor="let skill of DATABASE_SKILLS">
@@ -43,7 +43,7 @@
           </div>
         </div>
 
-        <div fxFlex.xs="1 1 100%" fxFlex.gt-xs="1 1 45%">
+        <div class="skill-section" fxFlex.xs="1 1 100%" fxFlex.gt-xs="1 1 45%">
           <div class="skill-header">Other Skills</div>
 
           <div class="skill-item" *ngFor="let skill of OTHER_SKILLS">
@@ -58,19 +58,39 @@
   <div class="panel" appFadeInOnScroll>
     <div class="panel-header">Employers</div>
     <div class="panel-content">
-      <div class="job-history" fxLayout="column" fxLayoutGap="20px">
-        <div class="job"
-             fxLayout="row" fxLayout.xs="column" fxLayoutAlign="space-between" fxLayoutAlign.xs="flex-start"
-             fxLayoutGap.gt-xs="30px"
-             *ngFor="let employer of EMPLOYERS" [id]="employer.url_slug">
-          <img class="job-img" [src]="employer.image" fxFlex="0 1 300px">
+      <div class="job-history" fxLayout="column" fxLayoutGap="9vh">
 
-          <div class="job-info" fxFlex>
-            <div class="job-title">{{employer.name}}</div>
-            <div class="job-position">{{employer.job_title}}, {{employer.start_date | date:'MMM y'}} -
-              {{(employer.end_date | date:'MMM y') || 'Present'}}
-            </div>
-            <p class="job-description body-text" *ngFor="let paragraph of employer.description">{{paragraph}}</p>
+        <div class="job"
+             *ngFor="let employer of EMPLOYERS" [id]="employer.url_slug"
+             gdAreas="img title | img subtitle | img desc"
+             gdAreas.xs="img | title | subtitle | desc"
+             gdColumns="1fr 2fr" gdColumns.xs="1fr"
+             gdGap="18px 40px"
+        >
+          <img gdArea="img" class="job-img" ngClass.gt-xs="lg" [src]="employer.image">
+
+          <div gdArea="title" class="job-title">{{employer.name}}</div>
+          <div gdArea="subtitle" class="job-position">{{employer.job_title}}, <i>{{employer.start_date | date:'MMM y'}} -
+            {{(employer.end_date | date:'MMM y') || 'Present'}}</i>
+          </div>
+          <div gdArea="desc" class="job-description">
+            <p>            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore
+              magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+              commodo
+              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+              pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+              est laborum.</p>
+
+            <p>            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore
+              magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+              commodo
+              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+              pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+              est laborum.</p>
+
+            <!--<p *ngFor="let paragraph of employer.description">{{paragraph}}</p>-->
           </div>
         </div>
       </div>
@@ -81,16 +101,18 @@
     <div class="panel-header">Education</div>
     <div class="panel-content">
       <div class="job"
-           fxLayout="row" fxLayout.xs="column" fxLayoutAlign="space-between" fxLayoutAlign.xs="flex-start"
-           fxLayoutGap.gt-xs="30px">
-        <img class="job-img" [src]="SCHOOL.image" fxFlex="0 1 300px">
+           gdAreas="img title | img subtitle | img desc" gdAreas.xs="img | title | subtitle | desc"
+           gdColumns="1fr 2fr" gdColumns.xs="1fr"
+           gdGap="18px 40px"
+      >
+        <img gdArea="img" class="job-img" [src]="SCHOOL.image">
 
-        <div class="job-info" fxFlex>
-          <div class="job-title">{{SCHOOL.name}}</div>
-          <div class="job-position">{{SCHOOL.job_title}}, {{SCHOOL.start_date | date:'MMM y'}} -
-            {{(SCHOOL.end_date | date:'MMM y') || 'Present'}}
-          </div>
-          <p class="job-description body-text" *ngFor="let paragraph of SCHOOL.description">{{paragraph}}</p>
+        <div gdArea="title" class="job-title">{{SCHOOL.name}}</div>
+        <div gdArea="subtitle" class="job-position">{{SCHOOL.job_title}}, <i>{{SCHOOL.start_date | date:'MMM y'}} -
+          {{(SCHOOL.end_date | date:'MMM y') || 'Present'}}</i>
+        </div>
+        <div gdArea="desc" class="job-description">
+          <p *ngFor="let paragraph of SCHOOL.description">{{paragraph}}</p>
         </div>
       </div>
     </div>

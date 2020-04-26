@@ -27,16 +27,15 @@ export const FRONT_SKILLS: Skill[] = [
   {name: 'HTML(5)', rating: 4.5},
   {name: 'Bootstrap', rating: 3},
   {name: 'jQuery', rating: 2},
-  {name: 'Swift', rating: 1},
 ];
 
 export const OTHER_SKILLS: Skill[] = [
   {name: 'Game Maker Studio', rating: 5},
-  {name: 'AJAX/API Calls', rating: 5},
-  {name: 'JSON', rating: 5},
+  {name: 'AJAX/API Calls & JSON', rating: 5},
+  // {name: 'JSON', rating: 5},
   {name: 'Git (Version Control)', rating: 4},
-  {name: 'IntelliJ', rating: 4},
-  {name: 'Webstorm', rating: 4},
+  {name: 'IntelliJ/Webstorm/Pycharm', rating: 4},
+  // {name: 'Webstorm', rating: 4},
   {name: 'Adobe Creative Suite', rating: 3.5},
 ];
 

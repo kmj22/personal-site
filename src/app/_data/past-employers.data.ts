@@ -17,7 +17,7 @@ export const GIFTAPART: Employer = {
 };
 
 export const RESEARCH_ASSISTANT: Employer = {
-  name: 'Professor Chris Ochs, New Jersey Institute of Technology',
+  name: 'Professor Chris Ochs, NJIT',
   start_date: new Date(2016, 8),
   end_date: new Date(2017, 0),
   description: [
@@ -42,7 +42,7 @@ export const ASTRODYNE: Employer = {
 };
 
 export const TEACHING_ASSISTANT: Employer = {
-  name: 'Professor Marvin Nakayama, New Jeresey Institute of Technology',
+  name: 'Professor Marvin Nakayama, NJIT',
   start_date: new Date(2016, 0),
   end_date: new Date(2016, 4),
   description: [

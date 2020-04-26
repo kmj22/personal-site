@@ -6,12 +6,12 @@
 }
 
 .skill-header {
-  font-size: 28px;
-  font-weight: bold;
-  color: $c-main-blue;
-  margin: 10px 0;
-}
-.skill-header {
   font-size: 20px;
   color: $c-main-pink;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.skill-section {
+  margin-bottom: 2vh;
 }
