@@ -32,12 +32,12 @@ export const EVEN_HEROES_DIE: Project = {
   description: [
     'For my senior project at NJIT, I created a demo for a video game with a group of four friends.  When we showcased our project, people were lingering at our booth for so long that the evaluators could barely find a moment to grade it!',
     'Sadly, after graduation, the demo never evolved into anything more.  Not until recently, that is.',
-    'In my spare time,, I\'ve been working on a revised take of the project.  Though it inherits a lot of the "soul" of the original demo, this version has evolved into something brand new.',
-    'Even Heroes Die is a 2D platforming game about a powerful hero who is slowly dying.  Unlike most other games, difficulty will increase because of the player weakening, as opposed to the levels becoming harder or the enemies stronger.',
-    'The hero will come across various cures to extend his life, but each cure comes with its own adverse side effects.', 'Players must balance these stacking side effects and budget their time between preparation and exploration in order to survive.',
+    'In my spare time, I\'ve been working on a revised take of the project.  Though it inherits a lot of the "soul" of the original demo, this version has evolved into something brand new.',
+    'Even Heroes Die is a 2D platforming game about a hero who is slowly dying.  Unlike most other games, the difficulty will increase because of the player weakening, as opposed to the levels becoming harder or the enemies stronger.',
+    'The hero will come across various cures to extend his life, but each cure comes with its own adverse side effects. Players must balance these stacking side effects and budget their time between preparation and exploration in order to survive.',
   ],
   // image: 'https://kmj22.github.io/portfolio-site/img/gameplay2-1.gif',
-  image: LOCAL_IMAGES['gameplay'],
+  image: LOCAL_IMAGES.gameplay,
 };
 
 export const OLD_PORTFOLIO: Project = {

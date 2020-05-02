@@ -8,28 +8,29 @@
       <div fxLayout.gt-xs="row" fxLayoutAlign.gt-xs="space-between" fxLayoutGap="30px"
            fxLayout="column" fxLayoutAlign="flex-start center"
       >
-        <img class="personal-pic" [src]="SELF_PORTRAIT"
-             fxFlex="0 0 auto">
+        <img class="personal-pic" [src]="SELF_PORTRAIT" fxFlex="0 0 auto">
 
         <div class="about-me body-text">
-          <p>Hi- I'm Kevyn. I do full-stack software development.</p>
-          <!---->
-          <!--<p>I graduated from The New Jersey Institute of-->
-            <!--Technology-->
-            <!--with a BS in Computer Science and a minor in Web & Information Systems. </p>-->
+          <p>Hi- I'm Kevyn. I do full stack software development.</p>
 
-          <p>I'm currently leading the
-            development of an upcoming social ecommerce platform, <a href="https://www.giftapart.com"
-                                                                     target="_blank">Giftapart!</a>
+          <p>I'm currently the lead software engineer of an upcoming social e-commerce platform,
+            <a href="https://www.giftapart.com" target="_blank">Giftapart</a>!
           </p>
 
-          <p>Throughout my degree and early career, my focus was on
-            server-side development in languages such as Java, Python, and C++.
-            I've since extended my front-end skills after becoming fluent with the Angular Framework.</p> <p>Because much
-            of my
-            knowledge (and enjoyment of programming) lies within concepts such as Data Structures, Algorithms, and
-            OOP,
-            I believe that I offer a unique and valuable perspective to full-stack development.</p>
+          <p>
+            My greatest strength is server side development (particularly with Java/Spring/Hibernate), but more recently
+            I've become proficient with front-end development through extensive use of the Angular Framework. Now I'm
+            comfortable working just about anywhere on the development stack.
+          </p>
+
+          <p>I'm also an avid gamer and an enthusiast game developer. I go outside sometimes too- I especially enjoy
+            hiking in the warmer months.</p>
+
+          <p>
+            I love new challenges. Feel free to <a href="mailto:kevynjaremko@gmail.com" target="_blank">get in touch</a>,
+            and we can discuss your project needs. Whether it's a new website, a server-side API, or something in
+            between, I'm confident that I can help.
+          </p>
 
           <p class="skills-header">Here are some of the skills I've been using recently:</p>
         </div>
@@ -52,15 +53,28 @@
     <div class="panel-header">Giftapart, Lead Software Engineer</div>
 
     <div class="panel-content">
-      <!--<div class="current-job-title">Current Employment- Giftapart, Director of Software Development</div>-->
+      <img class="current-employer-img" src="http://localhost:4200/assets/images/gapbanner.jpg">
 
-      <img class="main-img" src="http://localhost:4200/assets/images/gapbanner.jpg">
+      <div class="body-text">
+        <p>
+          <a href="https://giftapart.com" target="_blank">Giftapart</a> is an ecommerce startup that hopes to transform
+          the way we gift. I’ve been part of the team from the first line of code, originally hired as a backend
+          Java/Spring developer. Since then, I’ve taken on many different roles and challenges.
+        </p>
 
-      <div class="current-job-desc body-text">
-        <p *ngFor="let paragraph of EMPLOYERS[0].description">{{paragraph}}</p>
+        <p>
+          I’m currently leading development of the frontend website and our backend APIs. I’m also in charge of ensuring
+          our users can search for products from over 100 different retailers, as well as keeping our servers up and
+          running.
+        </p>
+
+        <p>
+          There’s no shortage of things that can go wrong, which means every day has a new challenge to overcome. I’d be
+          lying if I said it was easy, but I’m learning a ton.
+        </p>
       </div>
 
-      <div style="margin-top: 5vh" class="current-job-title">I've also worked with...</div>
+      <div class="subtitle">I've also worked with...</div>
 
       <div class="employers-preview">
         <a *ngFor="let employer of EMPLOYERS | slice:1" routerLink="/resume" [fragment]="employer.url_slug">
@@ -79,43 +93,27 @@
 
     <div class="panel-content">
       <div class="project">
-        <img class="project-img" [src]="project.image">
-        <!--<div class="project-title">{{project.name}}</div>-->
-        <!--<div class="">-->
-        <!--<p class="body-text" *ngFor="let paragraph of project.description | slice:0:3">-->
-        <!--{{paragraph}}-->
-        <!--&lt;!&ndash;<a routerLink="/projects">read more...</a>&ndash;&gt;-->
-        <!--</p>-->
-        <!--</div>-->
+        <img class="project-img" [src]="GAMEPLAY_IMG">
 
         <div class="body-text">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore
-            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-            commodo
-            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-            est laborum.
+            Even Heroes Die is a 2D platforming game about a hero who is slowly dying. The hero will come across various
+            cures to extend his life, but each comes with its own adverse side effects. Players must balance these
+            stacking side effects and budget their time between preparation and exploration in order to survive.
           </p>
 
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore
-            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-            commodo
-            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-            est laborum.
-          </p>
+          <p>This is my own independent project I've been working on in my spare time. I'm developing it with Game Maker
+            Studio.</p>
         </div>
+
+
       </div>
 
-      <div fxLayout fxLayoutGap="10px">
-        <div>more</div>
-        <div>pics</div>
-        <div>here</div>
-      </div>
+      <!--<div fxLayout fxLayoutGap="10px">-->
+      <!--<div>more</div>-->
+      <!--<div>pics</div>-->
+      <!--<div>here</div>-->
+      <!--</div>-->
 
       <div class="see-more-wrapper">
         <a class="app-btn" routerLink="/projects">More of my projects</a>
@@ -142,5 +140,4 @@
   </div>
 
   <app-contact-me-panel></app-contact-me-panel>
-
 </div>

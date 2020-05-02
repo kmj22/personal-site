@@ -1,13 +1,9 @@
-const BASE_ROUTE = 'assets/images/';
-
-export const LOCAL = {
-  gameplay: 'ehd-gameplay.gif'
-};
-
-// This is pure laziness- add the base route to each url
-Object.keys(LOCAL).forEach(key => {
-  LOCAL[key] = BASE_ROUTE + LOCAL[key];
-});
+// const BASE_ROUTE = 'assets/images/';
+//
+// // This is pure laziness- add the base route to each url
+// Object.keys(LOCAL).forEach(key => {
+//   LOCAL[key] = BASE_ROUTE + LOCAL[key];
+// });
 
 export const LOCAL_IMAGES = {
   personal_site_v1: 'https://i.imgur.com/iFRM4p5.png',
@@ -27,5 +23,5 @@ export const LOCAL_IMAGES = {
   paint: 'https://i.imgur.com/PJrGcuR.jpg',
   plane: 'https://i.imgur.com/TBdk0V9.jpg',
   triumph: 'https://i.imgur.com/qSc9zVR.jpg',
-  ...LOCAL
+  gameplay: 'assets/images/ehd-gameplay.gif'
 };

@@ -34,7 +34,7 @@
           </div>
         </div>
 
-        <div class="skill-section" fxFlex.xs="1 1 100%" fxFlex.gt-xs="1 1 45%">
+        <div fxFlex.xs="1 1 100%" fxFlex.gt-xs="1 1 45%">
           <div class="skill-header">Database Skills:</div>
 
           <div class="skill-item" *ngFor="let skill of DATABASE_SKILLS">
@@ -43,7 +43,7 @@
           </div>
         </div>
 
-        <div class="skill-section" fxFlex.xs="1 1 100%" fxFlex.gt-xs="1 1 45%">
+        <div fxFlex.xs="1 1 100%" fxFlex.gt-xs="1 1 45%">
           <div class="skill-header">Other Skills</div>
 
           <div class="skill-item" *ngFor="let skill of OTHER_SKILLS">
@@ -74,23 +74,7 @@
             {{(employer.end_date | date:'MMM y') || 'Present'}}</i>
           </div>
           <div gdArea="desc" class="job-description">
-            <p>            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore
-              magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-              commodo
-              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-              pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-              est laborum.</p>
-
-            <p>            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore
-              magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-              commodo
-              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-              pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-              est laborum.</p>
-
-            <!--<p *ngFor="let paragraph of employer.description">{{paragraph}}</p>-->
+            <p *ngFor="let paragraph of employer.description">{{paragraph}}</p>
           </div>
         </div>
       </div>

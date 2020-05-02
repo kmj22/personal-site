@@ -6,10 +6,12 @@ export const GIFTAPART: Employer = {
   name: 'Giftapart',
   start_date: new Date(2017, 8),
   description: [
-
-
-    'Giftapart is an ecommerce startup that hopes to change the way we gift.  I\'ve been on the Giftapart team from the very first line of code, and my experiences there have helped me grow immensely as a developer.  Originally hired as a backend Java/Spring developer, my responsibilities have evolved into so much more.  In addition to overseeing server-side development, I learned the Angular Framework on the job and took the lead in developing our web frontend.',
-    'It\'s a dynamic and fast-paced work environment, where every day brings a new development challenge to overcome.  But the job wouldn\'t be any fun if it were too easy.',
+    'If there’s one constant in software development (or, more profoundly, life), it’s change.  Nothing has proven this sentiment to me more than my time at Giftapart.',
+    'Giftapart is an ecommerce startup that hopes to transform the way we gift.  I’ve been part of the team from the first line of code, originally hired as a backend Java/Spring developer.  Since then, I’ve taken on many different roles and challenges.',
+    'Once the core of our application was coming along, I took the lead in developing our web frontend.  Most of what I know about CSS and JavaScript was learned on the job, not to mention the Angular Framework. ',
+    'Each time I’ve gotten comfortable with the UI we’ve built, there has been a redesign.  Each time I look back, I know we’ve improved.  The revisions never stop, but they’re always for the better.',
+    'I’m currently leading development of the frontend website and our backend APIs.  I’m also in charge of ensuring our users can search for products from over 100 different retailers, as well as keeping our servers up and running.',
+    'There’s no shortage of things that can go wrong, which means every day has a new challenge to overcome.  I’d be lying if I said it was easy, but I’m learning a ton.'
   ],
   job_title: 'Director of Software Development / Software Engineer',
   image: 'https://cdn.newswire.com/files/x/f2/dd/7f2033d2f512149579942f3b5441.png',
@@ -21,8 +23,12 @@ export const RESEARCH_ASSISTANT: Employer = {
   start_date: new Date(2016, 8),
   end_date: new Date(2017, 0),
   description: [
-    'During my senior year at NJIT, my Data Structures & Algorithms professor offered me an opportunity to assist him in building a Java application to create an abstraction network from complex ontologies of medical data.  These ontologies consisted of enormous graphs of hierarchical medical data, and the application\'s goal was to abstract these graphs into something more condensed and readily understandable.  I was tasked with modifying this application to work with the newest version of the OWL API, as well as building a feature to compare current versions of the ontology with previous versions- pointing out any significant changes.',
-    'This project gave me an opportunity to learn how to build off of someone else\'s code in a large codebase that I had no prior knowledge of.  Furthermore, I was able to overcome the challenge of building something about a topic I knew little about- medical ontologies.',
+    'During my senior year at NJIT, my Data Structures & Algorithms professor gave me the opportunity to work on a Java application that creates abstraction networks from complex ontologies of medical data. ',
+    'Following so far?  Me neither.',
+    'I worked on a program that takes in big, scary graphs of medical data and outputs smaller, more readable graphs.',
+    'I was tasked with updating this application to work with the newest version of the OWL API.  OWL is just a language for representing ontologies, or big hierarchies of data.',
+    'I also helped build a feature to compare current versions of the ontology with previous versions- indicating any significant changes.',
+    'This project gave me the opportunity to learn how to build off of someone else\'s code on a large, foreign project.  I also had to overcome the challenge of building something about a topic I knew very little about- medical ontologies.',
   ],
   job_title: 'Research Assistant for Independent Study',
   image: NJIT_LOGO,
@@ -34,7 +40,9 @@ export const ASTRODYNE: Employer = {
   start_date: new Date(2016, 5),
   end_date: new Date(2016, 8),
   description: [
-    'Astrodyne TDI is a power-supply company- I worked for their IT Team to build software to support other Astrodyne employees.  For example, I built an inventory management system that acted as an interface between other employees and the company database.  I also rebuilt a lot of the company\'s legacy software from the ground up, bringing the applications into the "modern age" by recreating them in C#.  This internship gave me the important responsibility of developing software to be used by others to perform real business tasks- one of my first times doing so in my career.  It tought me to interface with my clients, gather information about their needs for the project, and work with them when something doesn\'t go as expected.',
+    'Astrodyne TDI is a power-supply company- I worked for their IT Team to build software to support other Astrodyne employees.',
+    'For example, I built an inventory management system that acted as an interface between other employees and the company database. I also rebuilt a lot of the company\'s legacy software from the ground up, bringing the applications into the "modern age" by recreating them in C#. ',
+    'This internship gave me the important responsibility of developing software to be used by others to perform real business tasks- one of my first times doing so in my career. It taught me to interface with clients, gather information about their needs for the project, and work with them when something doesn\'t go as expected.',
   ],
   job_title: 'Software Developer Intern',
   image: 'https://www.astrodynetdi.com/images/default-source/default-album/astrodyne-tdi---large-logoff40bdb052456b66b263ff0000e044c6.png?sfvrsn=5505d610_0',
@@ -46,7 +54,9 @@ export const TEACHING_ASSISTANT: Employer = {
   start_date: new Date(2016, 0),
   end_date: new Date(2016, 4),
   description: [
-    'During my junior year at NJIT, my "Foundations of Computer Science II" professor offered me a position as a teaching assistant for the very same class.  My primary responsibilities were to evaluate students\' "models of computation" projects, in which they designed and implemented DFAs (Deterministic Finite Automata) and PDAs (Pushdown Automata).  This offered the very unique challenge of evaluating others\' work and giving feedback that is both fair and constructive, something that has especially come in handy with my recent responsibilities.  I also had to analyze others\' code for correctness in various other languages (C, Java, and Python), which gave me great exposure to reading/understanding code that does not belong to me.'
+    'In my junior year at NJIT, after finishing Foundations of Computer Science II, my professor asked me to be the class’ teaching assistant in the following semester.',
+    'Aside from answering questions and offering assistance, my main responsibility was to grade students\' "models of computation" projects.  These included designing and implementing DFAs (Deterministic Finite Automata) and PDAs (Pushdown Automata).',
+    'My greatest challenge was evaluating these projects and providing feedback that was fair, constructive, and consistent - an experience that has been particularly helpful with my recent leadership responsibilities. I also had to parse students’ code for correctness in C, Java, and Python, which gave me experience in reading and understanding foreign code.'
   ],
   job_title: 'Teaching Assistant for Foundations of Computer Science II',
   image: NJIT_LOGO,
@@ -58,9 +68,11 @@ export const COLGATE: Employer = {
   start_date: new Date(2015, 5),
   end_date: new Date(2016, 0),
   description: [
-    'They need no introduction- Colgate brings smiles to people across the globe with their healthcare products.  At Colgate Palmolive, I worked on an assembly line screwing caps onto toothpaste tubes.',  'Just kidding.',
-    'I was a part of their Global Information Technology team, specifically in the finance division.  I primarily worked with SAP, using their quirky, high-level programming language called ABAP.  The language was learned entirely on the job, and it was mostly used to query Colgate\'s databases to generate business reports.  Looking back at it now, it was very similar to using SQL queries, but at the time of this internship, I still hadn\'t taken any database courses at NJIT yet.  Needless to say, this gave me a great opportunity to learn how to query for data in a unique way.',
-    'I also helped to create a program that greatly increased productivity.  Large spreadsheets of data needed to be formatted properly in order to be uploaded to Colgate\'s system, and the transformation had been previously done by hand.  After being subjected to this task myself, my mentor gave me an opportunity to create a solution to this problem.  As I worked part-time throughout the semester, this became my side project.  By the end of my internship, in addition to my other responsibilities, I was able to create an ABAP application to automate this process, saving my coworkers many hours of tedious work.',
+    'I was a part of the finance division of Colgate’s Global Information Technology team.  I primarily worked with SAP, using a quirky, high-level programming language called ABAP.',
+    'I learned the language entirely on the job, mostly using it to query Colgate\'s databases to generate business reports. Looking back at it now, it was very similar to using SQL queries, but at the time of this internship, I still hadn\'t taken any database courses at NJIT.  This gave me a great opportunity to learn how to express data queries.',
+    'I also helped write a program that greatly increased productivity. Large spreadsheets of data needed to be formatted properly in order to be uploaded to SAP, and this translation was being done by hand. ',
+    'Once I went through this process firsthand, I knew there had to be a better way.',
+    'My mentor gave me the chance to make this process better as a side project.  By the end of my internship, in addition to my other responsibilities, I created an ABAP application to automate this process, saving my coworkers many hours of tedious work.',
   ],
   job_title: 'Global IT Intern',
   image: 'https://edgeconsultinginc.net/wp-content/uploads/2018/08/COLGATE-PALMOLIVE-CL-logo.png',
@@ -72,8 +84,10 @@ export const LSEA: Employer = {
   start_date: new Date(2014, 5),
   end_date: new Date(2014, 8),
   description: [
-    'LS Engineering Associates Corporation is a civil engineering consulting firm.  It was my first internship, and it was during a time when I had very little programming experience (and no engineering experience). Still, I did my best to learn everything I could in order to lend a hand.  I learned to use AutoCAD to trace drawings/blueprints, helped with a few site inspections, and made modifications to the company website.  At the time, the website was done in PHP, which I was entirely unfamiliar with.',
-    'Despite this, I was able to grasp enough from the existing code to build off of it- things like additional menu options or extra pages were easy enough to figure out.  In the end, I learned that being a good problem-solver isn\'t about having all the necessary skills right from the getgo, but rather having the willingness and persistence to learn on the job and master the skills needed to succeed.\n',
+    'LS Engineering Associates Corporation is a civil engineering consulting firm. It was my first internship, during a time when I had very little programming experience- and no engineering experience.  So that was fun.',
+    'Even so, I did my best to learn everything I could to lend a hand. I learned to use AutoCAD to trace drawings/blueprints, helped with a few site inspections, and made changes to the company website. At the time, the website was done in PHP, which- you guessed it- I knew nothing about.',
+    'Luckily, I was able to grasp enough from the existing code to build off of it; things like additional menu options or extra pages were easy enough to figure out. ',
+    'My takeaway lesson here was one of my most valuable ones.  I learned that being a good problem-solver isn’t about knowing how to do everything, but rather having the persistence and flexibility to master the skills needed for success.',
   ],
   job_title: 'Intern',
   image: 'http://www.lseacorp.com/assets/logo/logo-white.png',

@@ -21,63 +21,11 @@
   margin-top: 1.5em;
 }
 
-.project {
-}
-
-.project-section {
-}
-
-.project-title {
+.subtitle {
   font-size: 28px;
   font-weight: bold;
   color: $c-main-blue;
-  margin: 10px 0;
-
-  grid-area: title;
-}
-
-.project-img {
-}
-
-.project-description {
-}
-
-.project-img {
-  display: block;
-  margin: 0 auto;
-  border-radius: 40px;
-  width: 100%;
-}
-
-.my-life {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 10px;
-  align-items: stretch;
-  margin-bottom: 10px;
-
-  &.lg {
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    grid-gap: 20px;
-  }
-}
-
-.life-photo {
-  //height: 250px;
-  //width: 100%;
-  //object-fit: cover;
-
-  // Maintain height equal to container's width
-  padding-top: 100%;
-  border-radius: 15%;
-  background-size: cover;
-}
-
-.current-job-title {
-  font-size: 28px;
-  font-weight: bold;
-  color: $c-main-blue;
-  margin: 10px 0;
+  margin: 5vh 0 10px;
 }
 
 .employers-preview {
@@ -118,7 +66,7 @@
   }
 }
 
-.main-img {
+.current-employer-img {
   display: block;
   margin: 0 auto;
   border-radius: 40px;
@@ -130,3 +78,31 @@
   margin-top: 5vh;
   text-align: right;
 }
+
+.project-img {
+  display: block;
+  margin: 0 auto;
+  border-radius: 40px;
+  width: 100%;
+}
+
+.my-life {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+  align-items: stretch;
+  margin-bottom: 10px;
+
+  &.lg {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 20px;
+  }
+}
+
+.life-photo {
+  // Maintain height equal to container's width
+  padding-top: 100%;
+  border-radius: 15%;
+  background-size: cover;
+}
+

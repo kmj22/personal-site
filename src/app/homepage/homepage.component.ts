@@ -13,22 +13,19 @@ import {Meta, Title} from '@angular/platform-browser';
 })
 export class HomepageComponent implements OnInit {
 
-  readonly SELF_PORTRAIT = LOCAL_IMAGES.me;
-
-  readonly project = EVEN_HEROES_DIE;
-
   readonly SUBTITLES = ['Software Engineer', 'Full Stack Developer', 'Game Designer', 'Problem Solver'];
 
+  readonly SELF_PORTRAIT = LOCAL_IMAGES.me;
+  readonly SKILLS = SKILL_SUMMARY;
+  readonly GAMEPLAY_IMG = LOCAL_IMAGES.gameplay;
   readonly EMPLOYERS = PAST_EMPLOYERS_SUMMARY;
 
-  readonly PROJECTS = PROJECT_SUMMARY;
   readonly SELF_PICS = [
     LOCAL_IMAGES.food,
     LOCAL_IMAGES.broadway,
     LOCAL_IMAGES.boat,
     LOCAL_IMAGES.munich
   ];
-  readonly SKILLS = SKILL_SUMMARY;
 
   constructor(private titleService: Title,
               private metaService: Meta,) {

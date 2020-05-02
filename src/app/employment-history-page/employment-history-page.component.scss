@@ -15,3 +15,52 @@
 .skill-section {
   margin-bottom: 2vh;
 }
+
+.job {
+  max-width: 100vw;
+
+  .job-img {
+    max-height: 250px;
+    width: 100%;
+    box-sizing: border-box;
+    object-fit: contain;
+
+    box-shadow: 0 0 9px 1px rgba(#eaeaea, .5);
+    border-radius: 30px;
+    padding: 20px 20px 15px;
+
+    mix-blend-mode: multiply; // removes white background for non-transparent images (in most browsers)
+
+    &.lg {
+      height: 250px;
+    }
+  }
+
+  .job-info {
+    text-align: left;
+  }
+
+  .job-title {
+    @include fluid-type(font-size, $xs, $md, 20px, 25px);
+    line-height: 1;
+    font-weight: bold;
+    color: $c-main-blue;
+  }
+  .job-position {
+    @include fluid-type(font-size, $xs, $md, 18px, 20px);
+    line-height: 1;
+    color: $c-main-pink;
+  }
+  .job-description {
+    @include fluid-type(font-size, $xs, $md, 16px, 18px);
+    line-height: 1.5;
+
+    p:first-child {
+      margin-top: 0;
+    }
+
+    p:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
