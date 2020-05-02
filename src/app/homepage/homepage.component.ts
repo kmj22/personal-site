@@ -5,6 +5,7 @@ import {PICTURES_OF_ME} from '../_data/self.data';
 import {SKILL_SUMMARY} from '../_data/skills.data';
 import {LOCAL_IMAGES} from '../_data/local-images.data';
 import {Meta, Title} from '@angular/platform-browser';
+import {GIFTAPART_URL} from '../_data/links.data';
 
 @Component({
   selector: 'app-homepage',
@@ -19,6 +20,8 @@ export class HomepageComponent implements OnInit {
   readonly SKILLS = SKILL_SUMMARY;
   readonly GAMEPLAY_IMG = LOCAL_IMAGES.gameplay;
   readonly EMPLOYERS = PAST_EMPLOYERS_SUMMARY;
+
+  readonly GIFTAPART_URL = GIFTAPART_URL;
 
   readonly SELF_PICS = [
     LOCAL_IMAGES.food,
