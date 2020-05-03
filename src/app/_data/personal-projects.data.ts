@@ -49,7 +49,7 @@ export const OLD_PORTFOLIO: Project = {
     'Dumb question.  Everything changes.',
     'The solution was my first practical use of JavaScript.  I was able to create a reusable script that each page would call to generate the navbar.  This would later make me appreciate Angular components that much more, but I\'m glad I was able to find my own solution without using a framework.',
     'Although it\'s not the most impressive site to look at, this project was an important first step in my web development career.  Aside from smaller assignments in school, it was the first time I could get my hands dirty with HTML, CSS, and even a little JavaScript.  It was also my first time designing a mobile-friendly site.',
-    'If nothing else, my old portfolio site stands as a benchmark that I can use to measure my professional growth.  And comparing it to this website, I can confidently say that I\'ve grown a lot.'
+    // 'If nothing else, my old portfolio site stands as a benchmark that I can use to measure my professional growth.  And looking at it now, I can confidently say that I\'ve grown a lot.'
   ],
   image: LOCAL_IMAGES.personal_site_v1,
 };

@@ -1,12 +1,12 @@
 import {Employer} from '../_interfaces/employer.interface';
 
-export const NJIT_LOGO = 'https://parcoffice.com/wp-content/uploads/2017/10/njit-logo-red-fullres.png';
+const NJIT_LOGO = 'https://parcoffice.com/wp-content/uploads/2017/10/njit-logo-red-fullres.png';
 
 export const GIFTAPART: Employer = {
   name: 'Giftapart',
   start_date: new Date(2017, 8),
   description: [
-    'If there’s one constant in software development (or, more profoundly, life), it’s change.  Nothing has proven this sentiment to me more than my time at Giftapart.',
+    'If there’s one constant in software development (or life), it’s change.  Nothing has proven this sentiment to me more than my time at Giftapart.',
     'Giftapart is an ecommerce startup that hopes to transform the way we gift.  I’ve been part of the team from the first line of code, originally hired as a backend Java/Spring developer.  Since then, I’ve taken on many different roles and challenges.',
     'Once the core of our application was coming along, I took the lead in developing our web frontend.  Most of what I know about CSS and JavaScript was learned on the job, not to mention the Angular Framework. ',
     'Each time I’ve gotten comfortable with the UI we’ve built, there has been a redesign.  Each time I look back, I know we’ve improved.  The revisions never stop, but they’re always for the better.',

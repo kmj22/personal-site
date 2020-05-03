@@ -47,7 +47,7 @@ $banner-contact: 'https://images.pexels.com/photos/163064/play-stone-network-net
 }
 :host-context(.about-page) {
   .banner {
-    @include jumbotron($banner-about, .65);
+    @include jumbotron($banner-about, .5);
     background-position: center right;
     filter: unset;
   }
