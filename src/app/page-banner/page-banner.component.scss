@@ -3,9 +3,11 @@
 
 $banner-home: 'https://images.pexels.com/photos/908284/pexels-photo-908284.jpeg?auto=compress&cs=tinysrgb&h=650&w=940';
 $banner-resume: 'https://images.pexels.com/photos/590016/pexels-photo-590016.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260';
-$banner-projects: 'https://images.pexels.com/photos/159657/paint-notebook-brush-pencil-159657.jpeg?auto=compress&cs=tinysrgb&h=650&w=940';
-$banner-about: 'https://images.pexels.com/photos/196660/pexels-photo-196660.jpeg?auto=compress&cs=tinysrgb&h=650&w=940';
-$banner-contact: 'https://images.pexels.com/photos/459653/pexels-photo-459653.jpeg?auto=compress&cs=tinysrgb&h=650&w=940';
+$banner-projects: 'https://images.pexels.com/photos/270348/pexels-photo-270348.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260';
+$banner-about: '/assets/images/about-me.JPG';
+//$banner-about: 'https://images.pexels.com/photos/196660/pexels-photo-196660.jpeg?auto=compress&cs=tinysrgb&h=650&w=940';
+//https://images.pexels.com/photos/776092/pexels-photo-776092.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260
+$banner-contact: 'https://images.pexels.com/photos/163064/play-stone-network-networked-interactive-163064.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260';
 
 .banner {
   height: 600px;
@@ -30,26 +32,28 @@ $banner-contact: 'https://images.pexels.com/photos/459653/pexels-photo-459653.jp
 // Show different banner based on page
 :host-context(.homepage) {
   .banner{
-    @include jumbotron($banner-home);
+    @include jumbotron($banner-home, .75);
   }
 }
 :host-context(.resume-page) {
   .banner {
-    @include jumbotron($banner-resume);
+    @include jumbotron($banner-resume, .75);
   }
 }
 :host-context(.projects-page) {
   .banner {
-    @include jumbotron($banner-projects);
+    @include jumbotron($banner-projects, .75);
   }
 }
 :host-context(.about-page) {
   .banner {
-    @include jumbotron($banner-about);
+    @include jumbotron($banner-about, .65);
+    background-position: center right;
+    filter: unset;
   }
 }
 :host-context(.contact-page) {
   .banner {
-    @include jumbotron($banner-contact);
+    @include jumbotron($banner-contact, .75);
   }
 }

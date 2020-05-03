@@ -55,12 +55,12 @@
     </div>
   </div>
 
-  <div class="panel" appFadeInOnScroll>
+  <div class="panel" >
     <div class="panel-header">Employers</div>
     <div class="panel-content">
       <div class="job-history" fxLayout="column" fxLayoutGap="9vh">
 
-        <div class="job"
+        <div class="job" appFadeInOnScroll
              *ngFor="let employer of EMPLOYERS" [id]="employer.url_slug"
              gdAreas="img title | img subtitle | img desc"
              gdAreas.xs="img | title | subtitle | desc"

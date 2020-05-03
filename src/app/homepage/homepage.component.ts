@@ -18,8 +18,10 @@ export class HomepageComponent implements OnInit {
 
   readonly SELF_PORTRAIT = LOCAL_IMAGES.me;
   readonly SKILLS = SKILL_SUMMARY;
-  readonly GAMEPLAY_IMG = LOCAL_IMAGES.gameplay;
   readonly EMPLOYERS = PAST_EMPLOYERS_SUMMARY;
+
+  readonly GIFTAPART_IMG = LOCAL_IMAGES.gap_banner;
+  readonly GAMEPLAY_IMG = LOCAL_IMAGES.gameplay;
 
   readonly GIFTAPART_URL = GIFTAPART_URL;
 

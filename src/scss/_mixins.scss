@@ -23,15 +23,14 @@
   }
 }
 
-@mixin jumbotron($img) {
+@mixin jumbotron($img, $opacity) {
   // Makes img black and white
-  -webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
-  filter: grayscale(100%);
+  filter: grayscale(80%);
 
   background: /* top, transparent red, faked with gradient */
     linear-gradient(
-        rgba(#000000, 0.75),
-        rgba(#000000, 0.75)
+        rgba(#000000, $opacity),
+        rgba(#000000, $opacity)
     ),
       /* bottom image */
     url($img);

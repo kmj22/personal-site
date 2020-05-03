@@ -53,11 +53,12 @@
     <div class="panel-header">Giftapart, Lead Software Engineer</div>
 
     <div class="panel-content">
-      <img class="current-employer-img" src="http://localhost:4200/assets/images/gapbanner.jpg">
-
+      <img class="current-employer-img" [src]="GIFTAPART_IMG"
+           appImageThumbnail [album]="GIFTAPART_IMG"
+      >
       <div class="body-text">
         <p>
-          <a [href]="GIFTAPART_URL" target="_blank">Giftapart</a> is an ecommerce startup that hopes to transform
+          <a [href]="GIFTAPART_URL" target="_blank">Giftapart</a> is an e-commerce startup that hopes to transform
           the way we gift. I’ve been part of the team from the first line of code, originally hired as a backend
           Java/Spring developer. Since then, I’ve taken on many different roles and challenges.
         </p>
@@ -93,8 +94,9 @@
 
     <div class="panel-content">
       <div class="project">
-        <img class="project-img" [src]="GAMEPLAY_IMG">
-
+        <img class="project-img" [src]="GAMEPLAY_IMG"
+             appImageThumbnail [album]="GAMEPLAY_IMG"
+        >
         <div class="body-text">
           <p>
             Even Heroes Die is a 2D platforming game about a hero who is slowly dying. The hero will come across various

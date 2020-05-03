@@ -67,7 +67,7 @@ body {
   //padding: 50px 50px 25px;
   background: $c-light-gray;
 
-  &:nth-child(even) {
+  &:nth-child(odd) {
     background: $c-white;
   }
 }

@@ -7,8 +7,8 @@ import {MediaModalComponent} from '../media-modal/media-modal.component';
 })
 export class ImageThumbnailDirective implements AfterContentInit {
 
-  @Input() album: string[];
-  @Input() index: number;
+  @Input() album: string | string[];
+  @Input() index = 0;
 
   constructor(private elRef: ElementRef,
               private renderer: Renderer2,
@@ -16,8 +16,6 @@ export class ImageThumbnailDirective implements AfterContentInit {
   }
 
   ngAfterContentInit() {
-
-
     this.renderer.setStyle(this.elRef.nativeElement, 'cursor', 'pointer');
   }
 
@@ -27,14 +25,13 @@ export class ImageThumbnailDirective implements AfterContentInit {
     const dialogRef = this.dialog.open(MediaModalComponent, {
       // width: '250px',
       data: {
-        album: this.album,
+        album: Array.isArray(this.album) ? this.album : [this.album],
         index: this.index,
       },
       panelClass: 'media-modal',
       backdropClass: 'media-modal-backdrop',
       maxWidth: '100vw',
       maxHeight: '100vh',
-
     });
   }
 }
