@@ -104,7 +104,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "EDUCATION", function() { return EDUCATION; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PAST_EMPLOYERS", function() { return PAST_EMPLOYERS; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PAST_EMPLOYERS_SUMMARY", function() { return PAST_EMPLOYERS_SUMMARY; });
-var NJIT_LOGO = 'https://parcoffice.com/wp-content/uploads/2017/10/njit-logo-red-fullres.png';
+var NJIT_LOGO = 'https://i.imgur.com/rxRdi7W.png';
 var GIFTAPART = {
     name: 'Giftapart',
     start_date: new Date(2017, 8),
@@ -117,7 +117,7 @@ var GIFTAPART = {
         'There’s no shortage of things that can go wrong, which means every day has a new challenge to overcome.  I’d be lying if I said it was easy, but I’m learning a ton.'
     ],
     job_title: 'Director of Software Development / Software Engineer',
-    image: 'https://cdn.newswire.com/files/x/f2/dd/7f2033d2f512149579942f3b5441.png',
+    image: 'https://i.imgur.com/KaaMMDT.png',
     url_slug: 'giftapart'
 };
 var RESEARCH_ASSISTANT = {
@@ -146,7 +146,7 @@ var ASTRODYNE = {
         'This internship gave me the important responsibility of developing software to be used by others to perform real business tasks- one of my first times doing so in my career. It taught me to interface with clients, gather information about their needs for the project, and work with them when something doesn\'t go as expected.',
     ],
     job_title: 'Software Developer Intern',
-    image: 'https://www.astrodynetdi.com/images/default-source/default-album/astrodyne-tdi---large-logoff40bdb052456b66b263ff0000e044c6.png?sfvrsn=5505d610_0',
+    image: 'https://i.imgur.com/XSqXutm.png',
     url_slug: 'astrodyne'
 };
 var TEACHING_ASSISTANT = {
@@ -174,7 +174,7 @@ var COLGATE = {
         'My mentor gave me the chance to make this process better as a side project.  By the end of my internship, in addition to my other responsibilities, I created an ABAP application to automate this process, saving my coworkers many hours of tedious work.',
     ],
     job_title: 'Global IT Intern',
-    image: 'https://edgeconsultinginc.net/wp-content/uploads/2018/08/COLGATE-PALMOLIVE-CL-logo.png',
+    image: 'https://i.imgur.com/O1Pjg9h.png',
     url_slug: 'colgate'
 };
 var LSEA = {
@@ -188,7 +188,7 @@ var LSEA = {
         'My takeaway lesson here was one of my most valuable ones.  I learned that being a good problem-solver isn’t about knowing how to do everything, but rather having the persistence and flexibility to master the skills needed for success.',
     ],
     job_title: 'Intern',
-    image: 'http://www.lseacorp.com/assets/logo/logo-white.png',
+    image: 'https://i.imgur.com/pQTtxvH.png',
     url_slug: 'lsea'
 };
 var EDUCATION = {
