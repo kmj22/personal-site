@@ -23,5 +23,9 @@ export const LOCAL_IMAGES = {
   paint: 'https://i.imgur.com/PJrGcuR.jpg',
   plane: 'https://i.imgur.com/TBdk0V9.jpg',
   triumph: 'https://i.imgur.com/qSc9zVR.jpg',
-  gameplay: 'assets/images/ehd-gameplay.gif'
+  gameplay: 'assets/images/ehd-gameplay.gif',
+  polos: 'https://i.ibb.co/G2hYdkf/polos-v2-screen-min.png',
+  blog: 'https://i.ibb.co/r5QG1MW/blog-screen-min.png',
+  giftapart: 'https://i.ibb.co/bBmVJkS/giftapart-screen-min.png',
+  simplisafe: 'https://i.imgur.com/eeaYBUr.png',
 };

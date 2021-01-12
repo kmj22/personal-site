@@ -31,7 +31,7 @@ export class EmploymentHistoryPageComponent implements OnInit, AfterViewInit {
   }
 
   ngOnInit() {
-    this.titleService.setTitle(`Resume`);
+    this.titleService.setTitle(`Resume | Kevyn Jaremko`);
     this.metaService.addTags([
       {
         name: `description`,

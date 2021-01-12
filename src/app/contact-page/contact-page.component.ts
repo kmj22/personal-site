@@ -19,7 +19,7 @@ export class ContactPageComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.titleService.setTitle(`Contact Me`);
+    this.titleService.setTitle(`Contact Me | Kevyn Jaremko`);
     this.metaService.addTags([
       {
         name: `description`,

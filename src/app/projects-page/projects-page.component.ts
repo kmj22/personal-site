@@ -18,11 +18,11 @@ export class ProjectsPageComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.titleService.setTitle(`Projects`);
+    this.titleService.setTitle(`Portfolio | Kevyn Jaremko`);
     this.metaService.addTags([
       {
         name: `description`,
-        content: `Side projects are good.  Here are some things I've been working on outside of the office.`
+        content: `Here are some tangible projects I\'ve worked on.`
       },
     ]);
   }

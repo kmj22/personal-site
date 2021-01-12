@@ -1,5 +1,5 @@
 <div class="projects-page">
-  <app-page-banner title="Projects" subtitle="Other things I've worked on."></app-page-banner>
+  <app-page-banner title="Portfolio" subtitle="Some things I've worked on."></app-page-banner>
 
   <div class="panel" *ngFor="let project of PROJECTS; let i = index" appFadeInOnScroll>
     <div class="panel-header">{{project.name}}</div>
@@ -10,13 +10,9 @@
                appImageThumbnail [album]="project.image"
           >
         </div>
-        <p class="project-description" *ngFor="let paragraph of project.description">{{paragraph}}</p>
+        <p class="project-description" *ngFor="let paragraph of project.description" [innerHTML]="paragraph"></p>
       </div>
     </div>
-  </div>
-
-  <div class="panel" appFadeInOnScroll>
-    <div class="panel-header">(MORE COMING SOON)</div>
   </div>
 
   <app-contact-me-panel></app-contact-me-panel>

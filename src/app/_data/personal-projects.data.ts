@@ -1,6 +1,53 @@
 import {Project} from '../_interfaces/project.interface';
 import {LOCAL_IMAGES} from './local-images.data';
 
+
+export const PROMOSIS: Project = {
+  name: '',
+  description: [
+  ],
+  image: LOCAL_IMAGES.simplisafe
+};
+
+export const SIMPLISAFE: Project = {
+  name: 'SimpliSafe Social Distancing Sweater Donation Page',
+  description: [
+    'I worked with Promosis to build a donation page for SimpliSafe.  The donations were in support of the NeighborWorks America Rental Resilience Fund, which helps keep individuals and families economically impacted by COVID-19 housed through the pandemic.',
+    'In exchange for donations, SimpliSafe offered a social distancing sweater with motion detectors that would allow the sweater to light up when others got just a bit too close.  I can\'t guarantee this page will stay up forever, but the page is (or was) located <a href="https://www.promosis.com/simplisafe/" target="_blank">here</a>.'
+  ],
+  image: LOCAL_IMAGES.simplisafe
+};
+
+export const POLOS: Project = {
+  name: 'Polo\'s Bar & Grill - Site redesign',
+  description: [
+    'To keep my skills sharp, I redesigned the website for a local restaurant. My goal was to give the site a more modern feel while retaining the same info provided by the original.',
+    'To accomplish this, I made a simple web crawler in python to help me pull menu images and information. You can view my updated take on the website <a href="https://kmj22.github.io/polos-v2/" target="_blank">here</a>, and the original site is located <a href="http://www.polosbarandgrill.com/" target="_blank">here</a>.'
+  ],
+  image: LOCAL_IMAGES.polos
+};
+
+export const BLOG: Project = {
+  name: 'Game Dev & Web Design Blog',
+  description: [
+    'I built a blog in order to grow professionally, as well as document progress on the development of my indie game.',
+    'The site is made with and managed through Wordpress, and it\'s being hosted on a DigitalOcean server.  The entire process was a great way to become familiar with Wordpress and reinforce some of the server ops skills I had picked up at Giftapart.',
+    'I continue to post weekly status updates about the development of my game.  Check it out <a href="https://blog.kevynjaremko.com/" target="_blank">here</a>!'
+  ],
+  image: LOCAL_IMAGES.blog
+};
+
+export const GIFTAPART_PROJECT: Project = {
+  name: 'Giftapart',
+  description: [
+    'I can\'t take the full credit for this one, but about 90% of the web frontend of Giftapart was developed by me (not to mention a majority of the backend as well).',
+    'It\'s a fully fledged social media & ecommerce hybrid.  You can setup & share gift registries, plan events, and now, you can even shop internationally- I sound like my boss.  You can check out Giftapart <a href="https://giftapart.com/home" target="_blank">here</a>.',
+    'While working on this project, I\'ve dabbled in just about everything.  Restful APIs, microservices, server ops & maintenance, database design, web development, SEO...  All the buzz words.'
+  ],
+  image: LOCAL_IMAGES.giftapart
+};
+
+
 export const PAPER_MARIO: Project = {
   name: 'Paper Mario - Fan Game',
   description: [
@@ -17,7 +64,7 @@ export const PAPER_MARIO: Project = {
 export const CURRENT_SITE: Project = {
   name: 'Personal Site - Version 2',
   description: [
-    'I made my first attempt at a portfolio site in 2017, before I\'d spent much time working with JavaScript or CSS.',  'It was a good first try.',
+    'I made my first attempt at a portfolio site in 2017, before I\'d spent much time working with JavaScript or CSS.', 'It was a good first try.',
     'But after taking the lead on Giftapart\'s frontend Angular development for over a year, it was starting to look a little dated.  This project was a great way to keep my skills sharp, and I think I\'ve achieved something a lot more modern-looking.',
     'The site was built fully in Angular 7, with a little help from Angular Material for the mobile side-nav and fxLayout for its very useful responsive API and flexbox directives.  It\'s fully responsive- no Bootstrap required!',
     'Coming from a strong Computer Science / programming background, I\'ve always wanted to improve on my design skills.  Given a design and enough time, I could recreate it.  But to create a design from nothing- and THEN replicate it- was a challenge.  The need for a design and utter lack of direction were my biggest hurdles, but I\'m pleased with what I came up with.',
@@ -55,8 +102,12 @@ export const OLD_PORTFOLIO: Project = {
 };
 
 export const PERSONAL_PROJECTS: Project[] = [
-  CURRENT_SITE,
+  SIMPLISAFE,
+  POLOS,
   EVEN_HEROES_DIE,
+  BLOG,
+  GIFTAPART_PROJECT,
+  CURRENT_SITE,
   OLD_PORTFOLIO,
   PAPER_MARIO,
 ];

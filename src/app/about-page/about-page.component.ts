@@ -16,7 +16,7 @@ export class AboutPageComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.titleService.setTitle(`About Me`);
+    this.titleService.setTitle(`About Me | Kevyn Jaremko`);
     this.metaService.addTags([
       {
         name: `description`,
