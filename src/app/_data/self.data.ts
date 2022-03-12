@@ -1,19 +1,19 @@
-import {LOCAL_IMAGES} from './local-images.data';
+import {IMAGES} from './images.data';
 
 export const PICTURES_OF_ME = [
-  LOCAL_IMAGES.food,
-  LOCAL_IMAGES.broadway,
-  LOCAL_IMAGES.boat,
-  LOCAL_IMAGES.prague,
-  LOCAL_IMAGES.munich,
-  LOCAL_IMAGES.appalachian,
-  LOCAL_IMAGES.etail,
-  LOCAL_IMAGES.gap_banner,
-  LOCAL_IMAGES.hike,
-  LOCAL_IMAGES.crepe,
-  LOCAL_IMAGES.junk_art,
-  LOCAL_IMAGES.paint,
-  LOCAL_IMAGES.plane,
-  LOCAL_IMAGES.triumph
+  IMAGES.food,
+  IMAGES.broadway,
+  IMAGES.boat,
+  IMAGES.prague,
+  IMAGES.munich,
+  IMAGES.appalachian,
+  IMAGES.etail,
+  IMAGES.gap_banner,
+  IMAGES.hike,
+  IMAGES.crepe,
+  IMAGES.junk_art,
+  IMAGES.paint,
+  IMAGES.plane,
+  IMAGES.triumph
 ];
 

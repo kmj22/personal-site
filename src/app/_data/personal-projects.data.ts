@@ -1,13 +1,5 @@
 import {Project} from '../_interfaces/project.interface';
-import {LOCAL_IMAGES} from './local-images.data';
-
-
-export const PROMOSIS: Project = {
-  name: '',
-  description: [
-  ],
-  image: LOCAL_IMAGES.simplisafe
-};
+import {IMAGES} from './images.data';
 
 export const SIMPLISAFE: Project = {
   name: 'SimpliSafe Social Distancing Sweater Donation Page',
@@ -15,7 +7,7 @@ export const SIMPLISAFE: Project = {
     'I worked with Promosis to build a donation page for SimpliSafe.  The donations were in support of the NeighborWorks America Rental Resilience Fund, which helps keep individuals and families economically impacted by COVID-19 housed through the pandemic.',
     'In exchange for donations, SimpliSafe offered a social distancing sweater with motion detectors that would allow the sweater to light up when others got just a bit too close.  I can\'t guarantee this page will stay up forever, but the page is (or was) located <a href="https://www.promosis.com/simplisafe/" target="_blank">here</a>.'
   ],
-  image: LOCAL_IMAGES.simplisafe
+  image: IMAGES.simplisafe
 };
 
 export const POLOS: Project = {
@@ -24,7 +16,7 @@ export const POLOS: Project = {
     'To keep my skills sharp, I redesigned the website for a local restaurant. My goal was to give the site a more modern feel while retaining the same info provided by the original.',
     'To accomplish this, I made a simple web crawler in python to help me pull menu images and information. You can view my updated take on the website <a href="https://kmj22.github.io/polos-v2/" target="_blank">here</a>, and the original site is located <a href="http://www.polosbarandgrill.com/" target="_blank">here</a>.'
   ],
-  image: LOCAL_IMAGES.polos
+  image: IMAGES.polos
 };
 
 export const BLOG: Project = {
@@ -34,7 +26,7 @@ export const BLOG: Project = {
     'The site is made with and managed through Wordpress, and it\'s being hosted on a DigitalOcean server.  The entire process was a great way to become familiar with Wordpress and reinforce some of the server ops skills I had picked up at Giftapart.',
     'I continue to post weekly status updates about the development of my game.  Check it out <a href="https://blog.kevynjaremko.com/" target="_blank">here</a>!'
   ],
-  image: LOCAL_IMAGES.blog
+  image: IMAGES.blog
 };
 
 export const GIFTAPART_PROJECT: Project = {
@@ -44,7 +36,7 @@ export const GIFTAPART_PROJECT: Project = {
     'It\'s a fully fledged social media & ecommerce hybrid.  You can setup & share gift registries, plan events, and now, you can even shop internationally- I sound like my boss.  You can check out Giftapart <a href="https://giftapart.com/home" target="_blank">here</a>.',
     'While working on this project, I\'ve dabbled in just about everything.  Restful APIs, microservices, server ops & maintenance, database design, web development, SEO...  All the buzz words.'
   ],
-  image: LOCAL_IMAGES.giftapart
+  image: IMAGES.giftapart
 };
 
 
@@ -71,7 +63,7 @@ export const CURRENT_SITE: Project = {
     'The design isn\'t groundbreaking, but it stands as a proud personal achievement.  Looking back at my first personal site and then this one, I can confidently say I\'ve grown.',
     'Also, I own kevynjaremko.com now.  That\'s pretty cool too.',
   ],
-  image: LOCAL_IMAGES.personal_site_v2,
+  image: IMAGES.personal_site_v2,
 };
 
 export const EVEN_HEROES_DIE: Project = {
@@ -84,7 +76,7 @@ export const EVEN_HEROES_DIE: Project = {
     'The hero will come across various cures to extend his life, but each cure comes with its own adverse side effects. Players must balance these stacking side effects and budget their time between preparation and exploration in order to survive.',
   ],
   // image: 'https://kmj22.github.io/portfolio-site/img/gameplay2-1.gif',
-  image: LOCAL_IMAGES.gameplay,
+  image: IMAGES.gameplay,
 };
 
 export const OLD_PORTFOLIO: Project = {
@@ -98,7 +90,7 @@ export const OLD_PORTFOLIO: Project = {
     'Although it\'s not the most impressive site to look at, this project was an important first step in my web development career.  Aside from smaller assignments in school, it was the first time I could get my hands dirty with HTML, CSS, and even a little JavaScript.  It was also my first time designing a mobile-friendly site.',
     // 'If nothing else, my old portfolio site stands as a benchmark that I can use to measure my professional growth.  And looking at it now, I can confidently say that I\'ve grown a lot.'
   ],
-  image: LOCAL_IMAGES.personal_site_v1,
+  image: IMAGES.personal_site_v1,
 };
 
 export const PERSONAL_PROJECTS: Project[] = [

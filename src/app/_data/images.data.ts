@@ -5,7 +5,7 @@
 //   LOCAL[key] = BASE_ROUTE + LOCAL[key];
 // });
 
-export const LOCAL_IMAGES = {
+export const IMAGES = {
   personal_site_v1: 'https://i.imgur.com/iFRM4p5.png',
   personal_site_v2: 'https://i.imgur.com/48GDl9V.png',
   me: 'https://i.imgur.com/tMrpa1J.jpg',
@@ -28,4 +28,5 @@ export const LOCAL_IMAGES = {
   blog: 'https://i.ibb.co/r5QG1MW/blog-screen-min.png',
   giftapart: 'https://i.ibb.co/bBmVJkS/giftapart-screen-min.png',
   simplisafe: 'https://i.imgur.com/eeaYBUr.png',
+  njit_logo: 'https://i.imgur.com/rxRdi7W.png',
 };

@@ -3,7 +3,7 @@ import {PAST_EMPLOYERS, PAST_EMPLOYERS_SUMMARY} from '../_data/past-employers.da
 import {EVEN_HEROES_DIE, PERSONAL_PROJECTS, PROJECT_SUMMARY} from '../_data/personal-projects.data';
 import {PICTURES_OF_ME} from '../_data/self.data';
 import {SKILL_SUMMARY} from '../_data/skills.data';
-import {LOCAL_IMAGES} from '../_data/local-images.data';
+import {IMAGES} from '../_data/images.data';
 import {Meta, Title} from '@angular/platform-browser';
 import {GIFTAPART_URL} from '../_data/links.data';
 
@@ -16,20 +16,20 @@ export class HomepageComponent implements OnInit {
 
   readonly SUBTITLES = ['Software Engineer', 'Full Stack Developer', 'Game Designer', 'Problem Solver'];
 
-  readonly SELF_PORTRAIT = LOCAL_IMAGES.me;
+  readonly SELF_PORTRAIT = IMAGES.me;
   readonly SKILLS = SKILL_SUMMARY;
   readonly EMPLOYERS = PAST_EMPLOYERS_SUMMARY;
 
-  readonly GIFTAPART_IMG = LOCAL_IMAGES.gap_banner;
-  readonly GAMEPLAY_IMG = LOCAL_IMAGES.gameplay;
+  readonly GIFTAPART_IMG = IMAGES.gap_banner;
+  readonly GAMEPLAY_IMG = IMAGES.gameplay;
 
   readonly GIFTAPART_URL = GIFTAPART_URL;
 
   readonly SELF_PICS = [
-    LOCAL_IMAGES.food,
-    LOCAL_IMAGES.broadway,
-    LOCAL_IMAGES.boat,
-    LOCAL_IMAGES.munich
+    IMAGES.food,
+    IMAGES.broadway,
+    IMAGES.boat,
+    IMAGES.munich
   ];
 
   constructor(private titleService: Title,
