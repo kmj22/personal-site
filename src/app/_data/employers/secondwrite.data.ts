@@ -2,16 +2,16 @@ import {Employer} from '../../_interfaces/employer.interface';
 
 export const SECONDWRITE: Employer = {
   name: 'SecondWrite',
-  start_date: new Date(2020, 4),
+  start_date: new Date(2021, 3),
   description: [
-    'If there’s one constant in software development (or life), it’s change.  Nothing has proven this sentiment to me more than my time at Giftapart.',
-    'Giftapart is an ecommerce startup that hopes to transform the way we gift.  I’ve been part of the team from the first line of code, originally hired as a backend Java/Spring developer.  Since then, I’ve taken on many different roles and challenges.',
-    'Once the core of our application was coming along, I took the lead in developing our web frontend.  Most of what I know about CSS and JavaScript was learned on the job, not to mention the Angular Framework. ',
-    'Each time I’ve gotten comfortable with the UI we’ve built, there has been a redesign.  Each time I look back, I know we’ve improved.  The revisions never stop, but they’re always for the better.',
-    'I’m currently leading development of the frontend website and our backend APIs.  I’m also in charge of ensuring our users can search for products from over 100 different retailers, as well as keeping our servers up and running.',
-    'There’s no shortage of things that can go wrong, which means every day has a new challenge to overcome.  I’d be lying if I said it was easy, but I’m learning a ton.'
+    'SecondWrite is a cybersecurity platform that provides B2B tools for detecting malware.  The SecondWrite AV Scanner uses a unique combination of machine-learning and traditional analysis to achieve a high detection rate for zero-day (brand new) malware while minimizing false positives.',
+    'Much like with my time at Giftapart, I have taken on a variety of roles since joining SecondWrite as a fully remote Software Engineer.',
+    'My most comfortable tasks involved traditional software development in Python- for example, I refactored a file scanning Python Flask API to use a queue-based architecture, resulting in a more than ten-fold increase in capacity to serve simultaneous requests',
+    'In addition, I\'ve also been exposed to some machine learning concepts, such as feature extraction and using ROC curves to choose a threshold for binary classification.  I am responsible for maintaining and retraining our machine learning models to keep our verdicts as accurate as possible.',
+    'Perhaps my greatest challenge thus far has been the DevOps part of the job.  In my day to day work, I manage our cloud-based servers and keep our infrastructure running.  I have become familiar with tools such as Jenkins and Ansible, and I have even learned to use many AWS services such as CloudFormation and EC2 as well.',
+    'Fortunately, I was able to apply and reinforce the Docker knowledge I had gained at Giftapart.  Moreover, my work with Kubernetes has inspired me to begin studying for the Certified Kubernetes Administrator (CKA) exam, in an attempt to broaden my horizons and make me a more well-rounded developer.',
   ],
-  job_title: 'Director of Software Development / Software Engineer',
+  job_title: 'Software Engineer',
   image: 'https://i.imgur.com/LZsZq6b.png',
   url_slug: 'secondwrite'
 };

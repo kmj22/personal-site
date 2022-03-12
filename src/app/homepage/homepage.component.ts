@@ -6,6 +6,7 @@ import {SKILL_SUMMARY} from '../_data/skills.data';
 import {IMAGES} from '../_data/images.data';
 import {Meta, Title} from '@angular/platform-browser';
 import {GIFTAPART_URL} from '../_data/links.data';
+import {SECONDWRITE} from '../_data/employers/secondwrite.data';
 
 @Component({
   selector: 'app-homepage',
@@ -20,7 +21,7 @@ export class HomepageComponent implements OnInit {
   readonly SKILLS = SKILL_SUMMARY;
   readonly EMPLOYERS = PAST_EMPLOYERS_SUMMARY;
 
-  readonly GIFTAPART_IMG = IMAGES.gap_banner;
+  readonly CURRENT_JOB_IMG = 'https://www.secondwrite.com/wp-content/uploads/2019/07/computer.png';
   readonly GAMEPLAY_IMG = IMAGES.gameplay;
 
   readonly GIFTAPART_URL = GIFTAPART_URL;

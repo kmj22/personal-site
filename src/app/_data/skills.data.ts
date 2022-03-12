@@ -51,11 +51,11 @@ export const SKILL_SUMMARY = [
   DATABASE_SKILLS[0],
   DATABASE_SKILLS[3],
   FRONT_SKILLS[0],
-  FRONT_SKILLS[1],
-  FRONT_SKILLS[3],
+  FRONT_SKILLS[2],
   FRONT_SKILLS[4],
-  FRONT_SKILLS[5],
-  OTHER_SKILLS[0],
+  FRONT_SKILLS[6],
+  DEVOPS[1],
+  DEVOPS[0]
 ];
 
 const SKILL_COMPARATOR = (s1: Skill, s2: Skill) => s2.rating - s1.rating;
