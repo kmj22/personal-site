@@ -74,6 +74,7 @@ export const EVEN_HEROES_DIE: Project = {
     'In my spare time, I\'ve been working on a revised take of the project.  Though it inherits a lot of the "soul" of the original demo, this version has evolved into something brand new.',
     'Even Heroes Die is a 2D platforming game about a hero who is slowly dying.  Unlike most other games, the difficulty will increase because of the player weakening, as opposed to the levels becoming harder or the enemies stronger.',
     'The hero will come across various cures to extend his life, but each cure comes with its own adverse side effects. Players must balance these stacking side effects and budget their time between preparation and exploration in order to survive.',
+    'You can check out the demo <a href="https://kevynthejar.itch.io/even-heroes-die" target="_blank">here</a>!'
   ],
   // image: 'https://kmj22.github.io/portfolio-site/img/gameplay2-1.gif',
   image: IMAGES.gameplay,
