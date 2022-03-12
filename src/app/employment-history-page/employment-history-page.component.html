@@ -17,7 +17,7 @@
     <div class="panel-content">
       <div fxLayout="row wrap" fxLayoutAlign="space-between">
         <div class="skill-section" fxFlex.xs="1 1 100%" fxFlex.gt-xs="1 1 45%">
-          <div class="skill-header">Backend Skills:</div>
+          <div class="skill-header">Backend:</div>
 
           <div class="skill-item" *ngFor="let skill of BACK_SKILLS">
             <span class="skill-name">{{skill.name}}</span>
@@ -26,7 +26,7 @@
         </div>
 
         <div class="skill-section" fxFlex.xs="1 1 100%" fxFlex.gt-xs="1 1 45%">
-          <div class="skill-header">Frontend Skills:</div>
+          <div class="skill-header">Frontend:</div>
 
           <div class="skill-item" *ngFor="let skill of FRONT_SKILLS">
             <span class="skill-name">{{skill.name}}</span>
@@ -34,8 +34,17 @@
           </div>
         </div>
 
-        <div fxFlex.xs="1 1 100%" fxFlex.gt-xs="1 1 45%">
-          <div class="skill-header">Database Skills:</div>
+        <div class="skill-section" fxFlex.xs="1 1 100%" fxFlex.gt-xs="1 1 45%">
+          <div class="skill-header">DevOps:</div>
+
+          <div class="skill-item" *ngFor="let skill of DEVOPS">
+            <span class="skill-name">{{skill.name}}</span>
+            <app-star-rating [rating]="skill.rating"></app-star-rating>
+          </div>
+        </div>
+
+        <div class="skill-section" fxFlex.xs="1 1 100%" fxFlex.gt-xs="1 1 45%">
+          <div class="skill-header">Database:</div>
 
           <div class="skill-item" *ngFor="let skill of DATABASE_SKILLS">
             <span class="skill-name">{{skill.name}}</span>
@@ -43,8 +52,8 @@
           </div>
         </div>
 
-        <div fxFlex.xs="1 1 100%" fxFlex.gt-xs="1 1 45%">
-          <div class="skill-header">Other Skills</div>
+        <div class="skill-section" fxFlex.xs="1 1 100%" fxFlex.gt-xs="1 1 45%">
+          <div class="skill-header">Miscellaneous</div>
 
           <div class="skill-item" *ngFor="let skill of OTHER_SKILLS">
             <span class="skill-name">{{skill.name}}</span>
