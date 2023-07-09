@@ -24,7 +24,7 @@ export const BLOG: Project = {
   description: [
     'I built a blog in order to grow professionally, as well as document progress on the development of my indie game.',
     'The site is made with and managed through Wordpress, and it\'s being hosted on a DigitalOcean server.  The entire process was a great way to become familiar with Wordpress and reinforce some of the server ops skills I had picked up at Giftapart.',
-    'I continue to post weekly status updates about the development of my game.  Check it out <a href="https://blog.kevynjaremko.com/" target="_blank">here</a>!'
+    // 'I continue to post weekly status updates about the development of my game.  Check it out <a href="https://blog.kevynjaremko.com/" target="_blank">here</a>!'
   ],
   image: IMAGES.blog
 };
